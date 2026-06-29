@@ -4,46 +4,18 @@ import React from 'react';
 import CompanyLogoCarousel from '@/components/common/CompanyLogoCarousel';
 
 const companyLogos = [
-  {
-    name: "Coca-Cola",
-    logo: "/company-logos/coca-cola.png",
-    alt: "Coca-Cola Logo"
-  },
-  {
-    name: "Dulux",
-    logo: "/company-logos/dulux.png",
-    alt: "Dulux Logo"
-  },
-  {
-    name: "Amul",
-    logo: "/company-logos/amul.png",
-    alt: "Amul Logo"
-  },
-  {
-    name: "Tata",
-    logo: "/company-logos/tata.png",
-    alt: "Tata Logo"
-  },
-  {
-    name: "Coca-Cola",
-    logo: "/company-logos/coca-cola.png",
-    alt: "Coca-Cola Logo"
-  },
-  {
-    name: "Dulux",
-    logo: "/company-logos/dulux.png",
-    alt: "Dulux Logo"
-  },
-  {
-    name: "Amul",
-    logo: "/company-logos/amul.png",
-    alt: "Amul Logo"
-  },
-  {
-    name: "Tata",
-    logo: "/company-logos/tata.png",
-    alt: "Tata Logo"
-  },
+  { name: "Amul", logo: "/company-logos/amul-cm-logo.png", alt: "Amul Logo" },
+  { name: "Bharat Petroleum", logo: "/company-logos/bharatP-cm-logo.png", alt: "Bharat Petroleum Logo" },
+  { name: "BL", logo: "/company-logos/bl-cm-logo.png", alt: "BL Logo" },
+  { name: "GACL", logo: "/company-logos/gacl-cm-logo.png", alt: "GACL Logo" },
+  { name: "Gujarat", logo: "/company-logos/gujarat-cm-logo.png", alt: "Gujarat Logo" },
+  { name: "Igloo", logo: "/company-logos/iglooD-cm-logo.png", alt: "Igloo Logo" },
+  { name: "Jeetsons", logo: "/company-logos/jeetsons-cm-logo.png", alt: "Jeetsons Logo" },
+  { name: "NPL", logo: "/company-logos/npl-cm-logo.png", alt: "NPL Logo" },
+  { name: "Payal", logo: "/company-logos/payal.g-cm-logo.png", alt: "Payal Logo" },
+  { name: "RCG", logo: "/company-logos/rcg-cm-logo.png", alt: "RCG Logo" },
+  { name: "Rossari", logo: "/company-logos/rossari-cm-logo.png", alt: "Rossari Logo" },
+  { name: "SG", logo: "/company-logos/sg-cm-logo.png", alt: "SG Logo" },
 ];
 
 export default function HomeCompanyLogoCarousel() {
