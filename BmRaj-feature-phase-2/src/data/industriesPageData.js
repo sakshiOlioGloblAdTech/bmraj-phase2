@@ -1,0 +1,2264 @@
+// Data for Industry Pages (e.g., /industries/automotive)
+// Mirrors the shape of productListingData so industry pages can reuse the
+// Product Listing components (ProductHeader, ProductGrid, ProductSidebar, etc.).
+
+import {
+  ChemicalsIcon,
+  PesticidesIcon,
+  FoodBeverageIcon,
+  FMCGIcon,
+  IndustrialIcon,
+  AutomotiveIcon,
+  HomecareIcon,
+  PersonalCareIcon,
+  CapsClosuresIcon,
+  HealthcareIcon,
+} from '@/data/industries';
+
+export const industriesPageData = {
+  automotive: {
+    name: 'Automotive',
+    slug: 'automotive',
+    title: 'Automotive',
+    description:
+      'We manufacture plastic parts and packaging for automotive OEMs and aftermarket brands. Our injection and blow-moulded components, from containers to closures, offer chemical resistance, dimensional accuracy, and production consistency for high-volume automotive supply chains.',
+    // Each card links (via `href`) to an existing product detail page and reuses
+    // that product's image.
+    products: [
+      {
+        id: 1,
+        title: '50/55 LTR Lubricant Oil Drum',
+        slug: '50-55-ltr-lubricant-oil-drum',
+        href: '/drums-and-barrels/oil-grease-containers/50-55-ltr-lubricant-oil-drum',
+        imageUrl: '/listing/oil-grease-containers/50-55-ltr-lubricant-oil-drum.png',
+        capacity: '50/55 Liters',
+        material: 'HDPE',
+        features: ['Chemical Resistant', 'Leak Proof', 'UN Certified'],
+      },
+      {
+        id: 2,
+        title: '210 LTR Narrow Mouth Drums',
+        slug: '50-ltr-narrow-mouth-drums',
+        href: '/small-bottles-containers/containers-for-lubricants/50-ltr-narrow-mouth-drums',
+        imageUrl: '/listing/containers-for-lubricants/50-ltr-narrow-mouth-drums.png',
+        capacity: '210 Liters',
+        material: 'HDPE',
+        features: ['Chemical Resistant', 'Leak Proof', 'UN Certified'],
+      },
+      {
+        id: 3,
+        title: '20 LTR Oil Bucket',
+        slug: '20-ltr-oil-bucket',
+        href: '/plastic-buckets-and-pails/lubricant-oil-pail-buckets/20-ltr-oil-bucket',
+        imageUrl: '/listing/lubricant-oil-pail-buckets/20-ltr-oil-bucket.png',
+        capacity: '20 Liters',
+        material: 'HDPE',
+        features: ['Chemical Resistant', 'Leak Proof', 'UN Certified'],
+      },
+      {
+        id: 4,
+        title: 'Handles/Pin',
+        slug: 'handles-pin-assemblies',
+        href: '/blow-molding-accessories/handles-pin-assemblies',
+        imageUrl: '/category/blow-molding-accessories/handles-pin-assemblies.png',
+        capacity: 'Handles/Pin',
+        material: 'HDPE',
+        features: ['Chemical Resistant', 'Leak Proof', 'UN Certified'],
+      },
+      {
+        id: 5,
+        title: '6-inch caps & inner plugs',
+        slug: '6-inch-caps-inner-plugs',
+        href: '/blow-molding-accessories/6-inch-caps-inner-plugs',
+        imageUrl: '/category/blow-molding-accessories/6-inch-caps-inner-plugs.png',
+        capacity: '6 inch caps',
+        material: 'HDPE',
+        features: ['Chemical Resistant', 'Leak Proof', 'UN Certified'],
+      },
+      {
+        id: 6,
+        title: 'Lube Oil Bottle',
+        slug: 'lube-oil-bottle',
+        href: '/small-bottles-containers/containers-for-lubricants/lube-oil-bottle',
+        imageUrl: '/listing/containers-for-lubricants/lube-oil-bottle.png',
+        capacity: 'Lube Oil Bottle',
+        material: 'HDPE',
+        features: ['Chemical Resistant', 'Leak Proof', 'UN Certified'],
+      },
+    ],
+    // Fallback link parts (used only if a product has no explicit `href`).
+    productCategorySlug: 'drums-and-barrels',
+    productParentSlug: 'full-open-top-drums',
+    // Sidebar: "Other Industries" — links resolve to /industries/<slug>.
+    sidebarTitle: 'Other Industries',
+    relatedProducts: [
+      { name: 'Caps and Closures', slug: 'caps-closures' },
+      { name: 'Food & Beverage', slug: 'food-beverage' },
+      { name: 'Healthcare / Pharma', slug: 'healthcare' },
+      { name: 'Homecare', slug: 'homecare' },
+      { name: 'Industrial Storage', slug: 'industrial' },
+    ],
+    parentCategory: 'industries',
+    otherCategories: [],
+    breadcrumbs: [
+      { label: 'Home', href: '/' },
+      { label: 'Industries', href: '/industries' },
+      { label: 'Automotive', href: '/industries/automotive' },
+    ],
+    GlobalReachSection: {
+      title: 'Partner with BMRAJ for Robust Automotive Packaging And Components',
+      description:
+        'Our capacity and process controls help OEMs meet volume, quality, and compliance targets.',
+    },
+    faq: [
+      {
+        title: ' What types of automotive packaging and moulded products does BMRAJ manufacture?',
+        content:
+          'We manufacture lubricant oil drums, oil buckets, caps, closures, handles, and custom blow- and injection-moulded products for automotive OEM and aftermarket applications. ',
+      },
+      {
+        title: ' Are the products heat- and chemical-resistant?',
+        content:
+          'Yes, our HDPE and PP materials are formulated to withstand oils, greases, and temperature variations.',
+      },
+      {
+        title: 'Can you handle OEM production volumes?',
+        content:
+          'Absolutely. Our multi-machine facilities can scale production for OEM and aftermarket supply requirements.',
+      },
+    ],
+    manufacturingExpertise: {
+      title: 'Advanced Tech for Leak-Proof and Quality-Assured Products',
+      description: 'Drums, Containers, Jerrycans, and more storage solutions.',
+      slides: [
+        {
+          id: 1,
+          title: 'Plastic Injection Moulding',
+          imageUrl: '/thumnail/short/Injection-Molding.png',
+          hasVideo: true,
+          videoUrl: "https://youtube.com/shorts/58wk21X8Z-E",
+          hasOverlay: false,
+        },
+        {
+          id: 2,
+          title: 'Plastic Blow Moulding',
+          imageUrl: '/thumnail/short/Blow-Molding.png',
+          hasVideo: true,
+          videoUrl: "https://youtube.com/shorts/65GIkq-9MyI",
+          hasOverlay: false,
+        },
+        {
+          id: 3,
+          title: 'IML & HTL Printing Facility',
+          imageUrl: '/thumnail/short/Printing.png',
+          hasVideo: true,
+          videoUrl: "https://youtube.com/shorts/mclWB1npzF8",
+          hasOverlay: false,
+        },
+        {
+          id: 4,
+          title: 'Quality & Compliance Labs',
+          imageUrl: '/thumnail/short/QC-testing.png',
+          hasVideo: true,
+          videoUrl: "https://youtube.com/shorts/mclWB1npzF8",
+          hasOverlay: false,         
+        },
+        {
+          id: 5,
+          title: 'Assembly & Integration Lines',
+          imageUrl: '/services/assembly-partner.png',
+          hasVideo: true,
+          videoUrl: "https://youtube.com/shorts/8Dp9JophzZo",
+          hasOverlay: false,
+        },
+      ],
+    },
+    industrySection: {
+      title: 'Other Industries',
+      description: '',
+      industries: [
+        {
+          id: 'chemicals',
+          title: 'Chemicals',
+          description: 'Chemical-resistant UN-approved containers for hazardous and industrial chemical storage.',
+          image: '/industry-chemicals.png',
+          icon: <ChemicalsIcon />,
+        },
+        {
+          id: 'pesticides',
+          title: 'Pesticides/Fertilizers',
+          description: 'Secure agrochemical packaging preventing leakage, contamination, and product degradation.',
+          image: '/pesticides-fertilizers.png',
+          icon: <PesticidesIcon />,
+        },
+        {
+          id: 'food-beverage',
+          title: 'Food & Beverage',
+          description: 'Food-grade containers preserving freshness, hygiene, shelf appeal, and safety.',
+          image: '/food-beverage.png',
+          icon: <FoodBeverageIcon />,
+        },
+        {
+          id: 'fmcg',
+          title: 'FMCG',
+          description: 'High-volume retail-ready packaging for fast-moving consumer product brands.',
+          image: '/fmcg.png',
+          icon: <FMCGIcon />,
+        },
+        {
+          id: 'industrial',
+          title: 'Industrial',
+          description: 'Heavy-duty drums and containers for industrial storage and transport.',
+          image: '/industrial.png',
+          icon: <IndustrialIcon />,
+        },
+        {
+          id: 'homecare',
+          title: 'Homecare',
+          description: 'Durable chemical-resistant packaging for cleaners, detergents, and liquid products.',
+          image: '/homecare.png',
+          icon: <HomecareIcon />,
+        },
+        {
+          id: 'personal-care',
+          title: 'Personal Care',
+          description: 'Attractive, customizable packaging for cosmetics, hygiene, and beauty products.',
+          image: '/personal-care.png',
+          icon: <PersonalCareIcon />,
+        },
+      ],
+    },
+  },
+
+  'caps-closures': {
+    name: 'Caps and Closures',
+    slug: 'caps-closures',
+    title: 'Caps and Closures',
+    description:
+      'We design and manufacture precision caps, plugs, and closures for containers, jerrycans, and drums. Our injection-moulded closures ensure perfect torque, leak-proof performance, and secure sealing for industrial and consumer packaging lines.',
+    // Each card links (via `href`) to an existing product detail page and reuses
+    // that product's image.
+    products: [
+      {
+        id: 1,
+        title: 'Bottle Caps & Inner Plugs',
+        slug: 'bottle-caps-inner-plugs',
+        href: '/blow-molding-accessories/bottle-caps-inner-plugs',
+        imageUrl: '/category/blow-molding-accessories/bottle-caps-inner-plugs.png',
+        capacity: 'Standard',
+        material: 'PP',
+        features: ['Leak Proof', 'Easy Dispensing', 'Secure Fit'],
+      },
+      {
+        id: 2,
+        title: '2-Inch Caps & Inner Plugs',
+        slug: '2-inch-caps-inner-plugs',
+        href: '/blow-molding-accessories/2-inch-caps-inner-plugs',
+        imageUrl: '/category/blow-molding-accessories/2-inch-caps-inner-plugs.png',
+        capacity: '2 Inch',
+        material: 'HDPE',
+        features: ['Tamper Evident', 'Bung Size', 'Leak Proof'],
+      },
+      {
+        id: 3,
+        title: '6-Inch Caps & Inner Plugs',
+        slug: '6-inch-caps-inner-plugs',
+        href: '/blow-molding-accessories/6-inch-caps-inner-plugs',
+        imageUrl: '/category/blow-molding-accessories/6-inch-caps-inner-plugs.png',
+        capacity: '6 Inch',
+        material: 'HDPE',
+        features: ['Wide Mouth', 'Reusable', 'Secure Closure'],
+      },
+      {
+        id: 4,
+        title: '10-Inch Caps & Clamps',
+        slug: '10-inch-caps-clamps',
+        href: '/blow-molding-accessories/10-inch-caps-clamps',
+        imageUrl: '/category/blow-molding-accessories/10-inch-caps-clamps.png',
+        capacity: '10 Inch',
+        material: 'HDPE',
+        features: ['Clamp Lock', 'Full Open', 'Chemical Safe'],
+      },
+      {
+        id: 5,
+        title: '14-Inch Caps',
+        slug: '14-inch-caps',
+        href: '/blow-molding-accessories/14-inch-caps',
+        imageUrl: '/category/blow-molding-accessories/1-4-inch-caps.png',
+        capacity: '14 Inch',
+        material: 'HDPE',
+        features: ['Tight Closure', 'Narrow Mouth', 'Low Exposure'],
+      },
+      {
+        id: 6,
+        title: '38mm Oil Cap',
+        slug: '38mm-oil-cap',
+        href: '/blow-molding-accessories/38mm-oil-cap',
+        imageUrl: '/category/blow-molding-accessories/bottle-caps-inner-plugs.png',
+        capacity: '38 mm',
+        material: 'PP',
+        features: ['Leak Proof', 'Tamper Evident', 'Secure Fit'],
+      },
+      {
+        id: 7,
+        title: 'Mouser & Inner Plugs',
+        slug: 'mouser-inner-plugs',
+        href: '/blow-molding-accessories/mouser-inner-plugs',
+        imageUrl: '/category/blow-molding-accessories/mouser-inner-plugs.png',
+        capacity: '35 & 50 LTR',
+        material: 'HDPE',
+        features: ['Tamper Evident', 'Leak Proof', 'Reusable'],
+      },
+    ],
+    // Fallback link parts (used only if a product has no explicit `href`).
+    productCategorySlug: 'blow-molding-accessories',
+    productParentSlug: 'mouser-inner-plugs',
+    // Sidebar: "Other Industries" — links resolve to /industries/<slug>.
+    sidebarTitle: 'Other Industries',
+    relatedProducts: [
+      { name: 'Automotive', slug: 'automotive' },
+      { name: 'Food & Beverage', slug: 'food-beverage' },
+      { name: 'Healthcare / Pharma', slug: 'healthcare' },
+      { name: 'Homecare', slug: 'homecare' },
+      { name: 'Industrial Storage', slug: 'industrial' },
+    ],
+    parentCategory: 'industries',
+    otherCategories: [],
+    breadcrumbs: [
+      { label: 'Home', href: '/' },
+      { label: 'Industries', href: '/industries' },
+      { label: 'Caps and Closures', href: '/industries/caps-closures' },
+    ],
+    GlobalReachSection: {
+      title: 'Partner with BMRAJ for Leak-Proof, Finely-Engineered Closures',
+      description:
+        'Our closures combine engineering accuracy with quality assurance to ensure safety, reliability, and compliance for every product.',
+    },
+    faq: [
+      {
+        title: 'What materials are used for your closures?',
+        content:
+          'We use virgin HDPE and PP for strength, flexibility, and chemical compatibility.',
+      },
+      {
+        title: 'Can you consult on custom closure designs?',
+        content:
+          'Yes, our team would sit with you to finalise the design of the moulds for your required closure products.',
+      },
+      {
+        title: 'Do these closures meet export and UN standards?',
+        content:
+          'Yes. All industrial closures from BMRAJ meet the quality standards, and compliant caps and closures can be made for national and international packaging norms.',
+      },
+    ],
+    blog: {
+      eyebrow: 'Resources and Blogs',
+      title: 'Knowledge is Growth: Explore Our Blog',
+      description: 'Learn about torque testing, closure design, and sealing innovations shaping reliable packaging solutions.',
+    },
+    manufacturingExpertise: {
+      title: 'High-Tech Infrastructure for High-Performance Closures',
+      description: 'Drums, Containers, Jerrycans, and more storage solutions.',
+      slides: [
+        {
+          id: 1,
+          title: 'Plastic Injection Moulding',
+          imageUrl: '/thumnail/short/Injection-Molding.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/58wk21X8Z-E',
+          hasOverlay: false,
+        },
+        {
+          id: 2,
+          title: 'Plastic Blow Moulding',
+          imageUrl: '/thumnail/short/Blow-Molding.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/65GIkq-9MyI',
+          hasOverlay: false,
+        },
+        {
+          id: 3,
+          title: 'IML & HTL Printing Facility',
+          imageUrl: '/thumnail/short/Printing.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/mclWB1npzF8',
+          hasOverlay: false,
+        },
+        {
+          id: 4,
+          title: 'Quality & Compliance Labs',
+          imageUrl: '/thumnail/short/QC-testing.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/mclWB1npzF8',
+          hasOverlay: false,
+        },
+        {
+          id: 5,
+          title: 'Assembly & Integration Lines',
+          imageUrl: '/services/assembly-partner.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/8Dp9JophzZo',
+          hasOverlay: false,
+        },
+      ],
+    },
+    industrySection: {
+      title: 'Other Industries',
+      description: '',
+      industries: [
+        {
+          id: 'automotive',
+          title: 'Automotive',
+          description: 'Leak-proof caps and closures for motor oils, lubricants, and automotive fluids.',
+          image: '/automotive.png',
+          icon: <AutomotiveIcon />,
+        },
+        {
+          id: 'chemicals',
+          title: 'Chemicals',
+          description: 'Chemical-resistant caps and plugs ensuring safe containment of hazardous substances.',
+          image: '/industry-chemicals.png',
+          icon: <ChemicalsIcon />,
+        },
+        {
+          id: 'pesticides',
+          title: 'Pesticides/Fertilizers',
+          description: 'Secure closures preventing leakage and contamination of agrochemicals.',
+          image: '/pesticides-fertilizers.png',
+          icon: <PesticidesIcon />,
+        },
+        {
+          id: 'food-beverage',
+          title: 'Food & Beverage',
+          description: 'Food-grade caps preserving freshness, hygiene, and product safety.',
+          image: '/food-beverage.png',
+          icon: <FoodBeverageIcon />,
+        },
+        {
+          id: 'fmcg',
+          title: 'FMCG',
+          description: 'High-volume, retail-ready closures for fast-moving consumer product brands.',
+          image: '/fmcg.png',
+          icon: <FMCGIcon />,
+        },
+        {
+          id: 'industrial',
+          title: 'Industrial',
+          description: 'Heavy-duty caps and clamps for industrial drums and bulk containers.',
+          image: '/industrial.png',
+          icon: <IndustrialIcon />,
+        },
+        {
+          id: 'homecare',
+          title: 'Homecare',
+          description: 'Reliable closures for cleaners, detergents, and household liquid products.',
+          image: '/homecare.png',
+          icon: <HomecareIcon />,
+        },
+        {
+          id: 'personal-care',
+          title: 'Personal Care',
+          description: 'Attractive, secure closures for cosmetics, hygiene, and beauty products.',
+          image: '/personal-care.png',
+          icon: <PersonalCareIcon />,
+        },
+      ],
+    },
+  },
+
+  'food-beverage': {
+    name: 'Food & Beverage',
+    slug: 'food-beverage',
+    title: 'Food & Beverage',
+    description:
+      'We provide food-grade PP (Polypropylene) and PET (Polyethylene terephthalate) packaging designed for hygiene, freshness, and visual appeal. Our jars, cups, and containers ensure safety, recyclability, and quality for dairy, bakery, and beverage brands worldwide.',
+    // Each card links (via `href`) to an existing product detail page and reuses
+    // that product's image.
+    products: [
+      {
+        id: 1,
+        title: '200 gms Cheese Spread Container with Lid',
+        slug: '200-gms-cheese-spread-container-with-lid',
+        href: '/food-packaging/200-gms-cheese-spread-container-with-lid',
+        imageUrl: '/category/food-packaging/200_gms_cheese_cup.png',
+        capacity: '200 gms',
+        material: 'HDPE/PP',
+        features: ['Food Grade', 'Airtight Lid', 'Stackable'],
+      },
+      {
+        id: 2,
+        title: '400 gms Dahi Masti Cup',
+        slug: '400-gms-dahi-masti-cup',
+        href: '/food-packaging/400-gms-dahi-masti-cup',
+        imageUrl: '/category/food-packaging/dahi-masti-cup.png',
+        capacity: '400 gms',
+        material: 'PP',
+        features: ['Food Grade', 'Leak Proof', 'Hygienic'],
+      },
+      {
+        id: 3,
+        title: '500 gms Sweet Box',
+        slug: '500-gms-sweet-box',
+        href: '/food-packaging/500-gms-sweet-box',
+        imageUrl: '/category/food-packaging/sweet-box-500.png',
+        capacity: '500 gms',
+        material: 'PP',
+        features: ['Food Grade', 'Retail Ready', 'Snap-On Lid'],
+      },
+      {
+        id: 4,
+        title: '1 kg Sweet Box',
+        slug: '1-kg-sweet-box',
+        href: '/food-packaging/1-kg-sweet-box',
+        imageUrl: '/category/food-packaging/sweet-box-1kg.png',
+        capacity: '1 kg',
+        material: 'PP',
+        features: ['Food Grade', 'Bulk Pack', 'Stackable'],
+      },
+      {
+        id: 5,
+        title: '1.5 LTR Cake Magic Box',
+        slug: '1-5-ltr-cake-magic-box',
+        href: '/food-packaging/1-5-ltr-cake-magic-box',
+        imageUrl: '/category/food-packaging/cake-magic-box.png',
+        capacity: '1.5 Liters',
+        material: 'PP',
+        features: ['Food Grade', 'Premium Finish', 'Secure Seal'],
+      },
+    ],
+    // Fallback link parts (used only if a product has no explicit `href`).
+    productCategorySlug: 'food-packaging',
+    productParentSlug: '200-gms-cheese-spread-container-with-lid',
+    // Sidebar: "Other Industries" — links resolve to /industries/<slug>.
+    sidebarTitle: 'Other Industries',
+    relatedProducts: [
+      { name: 'Automotive', slug: 'automotive' },
+      { name: 'Caps and Closures', slug: 'caps-closures' },
+      { name: 'Healthcare / Pharma', slug: 'healthcare' },
+      { name: 'Homecare', slug: 'homecare' },
+      { name: 'Industrial Storage', slug: 'industrial' },
+    ],
+    parentCategory: 'industries',
+    otherCategories: [],
+    breadcrumbs: [
+      { label: 'Home', href: '/' },
+      { label: 'Industries', href: '/industries' },
+      { label: 'Food & Beverage', href: '/industries/food-beverage' },
+    ],
+    GlobalReachSection: {
+      title: 'Partner with BMRAJ for Trusted Food-Grade Packaging Solutions',
+      description:
+        'Our hygienic, high-clarity, and export-ready containers ensure safety and consistency for food and beverage applications.',
+    },
+    faq: [
+      {
+        title: 'Are your containers suitable for food contact?',
+        content:
+          'Yes, all products are made from virgin PP or PET materials approved for food safety.',
+      },
+      {
+        title: 'Can you provide branding or printed designs?',
+        content:
+          'Yes, we offer IML (In-Mould Label), HTL (Heat Transfer Label), and screen-printed options for food packaging.',
+      },
+      {
+        title: 'Can packaging be customized for different filling lines?',
+        content:
+          'Absolutely. We tailor neck size, lid fit, and material thickness for seamless integration.',
+      },
+    ],
+    blog: {
+      eyebrow: 'Resources and Blogs',
+      title: 'Knowledge is Growth: Explore Our Blog',
+      description: 'Discover insights on hygienic food packaging, IML innovation, and food-safe plastic manufacturing processes.',
+    },
+    manufacturingExpertise: {
+      title: 'Hygienic and Food-Safe Manufacturing Environment',
+      description: 'Drums, Containers, Jerrycans, and more storage solutions.',
+      slides: [
+        {
+          id: 1,
+          title: 'Plastic Injection Moulding',
+          imageUrl: '/thumnail/short/Injection-Molding.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/58wk21X8Z-E',
+          hasOverlay: false,
+        },
+        {
+          id: 2,
+          title: 'Plastic Blow Moulding',
+          imageUrl: '/thumnail/short/Blow-Molding.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/65GIkq-9MyI',
+          hasOverlay: false,
+        },
+        {
+          id: 3,
+          title: 'IML & HTL Printing Facility',
+          imageUrl: '/thumnail/short/Printing.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/mclWB1npzF8',
+          hasOverlay: false,
+        },
+        {
+          id: 4,
+          title: 'Quality & Compliance Labs',
+          imageUrl: '/thumnail/short/QC-testing.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/mclWB1npzF8',
+          hasOverlay: false,
+        },
+        {
+          id: 5,
+          title: 'Assembly & Integration Lines',
+          imageUrl: '/services/assembly-partner.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/8Dp9JophzZo',
+          hasOverlay: false,
+        },
+      ],
+    },
+    industrySection: {
+      title: 'Other Industries',
+      description: '',
+      industries: [
+        {
+          id: 'automotive',
+          title: 'Automotive',
+          description: 'Leak-proof packaging for motor oils, lubricants, and automotive fluids.',
+          image: '/automotive.png',
+          icon: <AutomotiveIcon />,
+        },
+        {
+          id: 'caps-closures',
+          title: 'Caps and Closures',
+          description: 'Secure, tamper-evident caps and closures for reliable sealing.',
+          image: '/caps-closures.png',
+          icon: <CapsClosuresIcon />,
+        },
+        {
+          id: 'chemicals',
+          title: 'Chemicals',
+          description: 'Chemical-resistant UN-approved containers for hazardous and industrial storage.',
+          image: '/industry-chemicals.png',
+          icon: <ChemicalsIcon />,
+        },
+        {
+          id: 'pesticides',
+          title: 'Pesticides/Fertilizers',
+          description: 'Secure agrochemical packaging preventing leakage and contamination.',
+          image: '/pesticides-fertilizers.png',
+          icon: <PesticidesIcon />,
+        },
+        {
+          id: 'fmcg',
+          title: 'FMCG',
+          description: 'High-volume, retail-ready packaging for fast-moving consumer product brands.',
+          image: '/fmcg.png',
+          icon: <FMCGIcon />,
+        },
+        {
+          id: 'industrial',
+          title: 'Industrial',
+          description: 'Heavy-duty drums and containers for industrial storage and transport.',
+          image: '/industrial.png',
+          icon: <IndustrialIcon />,
+        },
+        {
+          id: 'homecare',
+          title: 'Homecare',
+          description: 'Durable packaging for cleaners, detergents, and household products.',
+          image: '/homecare.png',
+          icon: <HomecareIcon />,
+        },
+        {
+          id: 'personal-care',
+          title: 'Personal Care',
+          description: 'Attractive, customizable packaging for cosmetics and beauty products.',
+          image: '/personal-care.png',
+          icon: <PersonalCareIcon />,
+        },
+      ],
+    },
+  },
+
+  healthcare: {
+    name: 'Healthcare / Pharma',
+    slug: 'healthcare',
+    title: 'Healthcare / Pharma',
+    description:
+      'We manufacture reliable, contamination-free plastic packaging and containers for pharmaceutical and healthcare applications. From PET bottles to HDPE containers, our products meet hygiene, durability, and regulatory standards.',
+    // Each card links (via `href`) to an existing product detail page and reuses
+    // that product's image.
+    products: [
+      {
+        id: 1,
+        title: 'Chemical Laboratory Bottles',
+        slug: 'chemical-laboratory-bottles',
+        href: '/small-bottles-containers/multipurpose-containers/chemical-laboratory-bottles',
+        imageUrl: '/listing/multipurpose-containers/agro-chemical-bottles.png',
+        capacity: 'Various',
+        material: 'HDPE',
+        features: ['Laboratory Grade', 'Precision Sealing', 'Chemical Resistant'],
+      },
+      {
+        id: 2,
+        title: 'HDPE Bottle Narrow Mouth 100-1000 ml',
+        slug: 'narrow-mouth-100-1000-ml-bottles',
+        href: '/small-bottles-containers/small-bottles/narrow-mouth-100-1000-ml-bottles',
+        imageUrl: '/listing/small-bottles-hdpe/hdpe-bottle-narrow-mouth-100-1000-ml.png',
+        capacity: '100-1000 ml',
+        material: 'HDPE / PET',
+        features: ['Contamination-Free', 'Leak Proof', 'Tamper Evident'],
+      },
+      {
+        id: 3,
+        title: 'HDPE Bottle Wide Mouth 100-1000 ml',
+        slug: 'wide-mouth-100-1000-ml-bottles',
+        href: '/small-bottles-containers/small-bottles/wide-mouth-100-1000-ml-bottles',
+        imageUrl: '/listing/small-bottles-hdpe/hdpe-bottle-wide-mouth-100-1000-ml.png',
+        capacity: '100-1000 ml',
+        material: 'HDPE / PET',
+        features: ['Easy Filling', 'Hygienic', 'Secure Sealing'],
+      },
+      {
+        id: 4,
+        title: 'Pesticides Bottles 100 ml – 1 LTR',
+        slug: 'pesticides-bottles-100ml-250ml-500ml-1ltr',
+        href: '/pet-bottles-preforms/pet-bottles/pesticides-bottles-100ml-250ml-500ml-1ltr',
+        imageUrl: '/listing/pet-bottles/pesticides-bottles.png',
+        capacity: '100 ML – 1 LTR',
+        material: 'PET',
+        features: ['High Clarity', 'Leak Proof', 'Hygienic'],
+      },
+      {
+        id: 5,
+        title: '500 ml Preform for Bottle/Jar',
+        slug: '500-ml-preform-agro-pet-bottles',
+        href: '/pet-bottles-preforms/preforms/500-ml-preform-agro-pet-bottles',
+        imageUrl: '/listing/pet-preforms/500-ml-preform-for-bottle-jar.png',
+        capacity: '500 ML',
+        material: 'PET',
+        features: ['Uniform Wall', 'High Clarity', 'Precision Moulded'],
+      },
+      {
+        id: 6,
+        title: '1 LTR Preform for Bottle/Jar',
+        slug: '1-ltr-preform-oil-bottle',
+        href: '/pet-bottles-preforms/preforms/1-ltr-preform-oil-bottle',
+        imageUrl: '/listing/pet-preforms/1-ltr-preform-for-bottle-jar.png',
+        capacity: '1 Liter',
+        material: 'PET',
+        features: ['Uniform Wall', 'High Clarity', 'Precision Moulded'],
+      },
+    ],
+    // Fallback link parts (used only if a product has no explicit `href`).
+    productCategorySlug: 'small-bottles-containers',
+    productParentSlug: 'multipurpose-containers',
+    // Sidebar: "Other Industries" — links resolve to /industries/<slug>.
+    sidebarTitle: 'Other Industries',
+    relatedProducts: [
+      { name: 'Automotive', slug: 'automotive' },
+      { name: 'Caps and Closures', slug: 'caps-closures' },
+      { name: 'Food & Beverage', slug: 'food-beverage' },
+      { name: 'Homecare', slug: 'homecare' },
+      { name: 'Industrial Storage', slug: 'industrial' },
+    ],
+    parentCategory: 'industries',
+    otherCategories: [],
+    breadcrumbs: [
+      { label: 'Home', href: '/' },
+      { label: 'Industries', href: '/industries' },
+      { label: 'Healthcare / Pharma', href: '/industries/healthcare' },
+    ],
+    GlobalReachSection: {
+      title: 'Partner with BMRAJ for Safe, Compliant Healthcare Packaging',
+      description:
+        'We provide sterile, precision-moulded containers that maintain product integrity across the pharmaceutical value chain.',
+    },
+    faq: [
+      {
+        title: 'Are these containers pharma-grade?',
+        content:
+          'Yes. They are produced in controlled conditions using food and pharma-approved materials.',
+      },
+      {
+        title: 'Can they be used for liquid and solid formulations?',
+        content:
+          'Absolutely. Our products are available in narrow and wide-mouth designs for both uses.',
+      },
+      {
+        title: 'Do you offer printing or labelling for pharma brands?',
+        content:
+          'Yes. We provide HTL (Heat Transfer) and IML (In-Mould) label printing for dosage info and branding compliance.',
+      },
+    ],
+    blog: {
+      eyebrow: 'Resources and Blogs',
+      title: 'Knowledge is Growth: Explore Our Blog',
+      description: 'Learn about pharmaceutical-grade packaging standards, contamination control, and precision blow-moulding for healthcare applications.',
+    },
+    manufacturingExpertise: {
+      title: 'Pharma-Grade Infrastructure with Complete Traceability',
+      description: 'Drums, Containers, Jerrycans, and more storage solutions.',
+      slides: [
+        {
+          id: 1,
+          title: 'Plastic Injection Moulding',
+          imageUrl: '/thumnail/short/Injection-Molding.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/58wk21X8Z-E',
+          hasOverlay: false,
+        },
+        {
+          id: 2,
+          title: 'Plastic Blow Moulding',
+          imageUrl: '/thumnail/short/Blow-Molding.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/65GIkq-9MyI',
+          hasOverlay: false,
+        },
+        {
+          id: 3,
+          title: 'IML & HTL Printing Facility',
+          imageUrl: '/thumnail/short/Printing.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/mclWB1npzF8',
+          hasOverlay: false,
+        },
+        {
+          id: 4,
+          title: 'Quality & Compliance Labs',
+          imageUrl: '/thumnail/short/QC-testing.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/mclWB1npzF8',
+          hasOverlay: false,
+        },
+        {
+          id: 5,
+          title: 'Assembly & Integration Lines',
+          imageUrl: '/services/assembly-partner.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/8Dp9JophzZo',
+          hasOverlay: false,
+        },
+      ],
+    },
+    industrySection: {
+      title: 'Other Industries',
+      description: '',
+      industries: [
+        {
+          id: 'automotive',
+          title: 'Automotive',
+          description: 'Leak-proof packaging for motor oils, lubricants, and automotive fluids.',
+          image: '/automotive.png',
+          icon: <AutomotiveIcon />,
+        },
+        {
+          id: 'caps-closures',
+          title: 'Caps and Closures',
+          description: 'Secure, tamper-evident caps and closures for reliable sealing.',
+          image: '/caps-closures.png',
+          icon: <CapsClosuresIcon />,
+        },
+        {
+          id: 'food-beverage',
+          title: 'Food & Beverage',
+          description: 'Food-grade containers preserving freshness, hygiene, and safety.',
+          image: '/food-beverage.png',
+          icon: <FoodBeverageIcon />,
+        },
+        {
+          id: 'chemicals',
+          title: 'Chemicals',
+          description: 'Chemical-resistant UN-approved containers for hazardous storage.',
+          image: '/industry-chemicals.png',
+          icon: <ChemicalsIcon />,
+        },
+        {
+          id: 'fmcg',
+          title: 'FMCG',
+          description: 'High-volume, retail-ready packaging for fast-moving consumer brands.',
+          image: '/fmcg.png',
+          icon: <FMCGIcon />,
+        },
+        {
+          id: 'industrial',
+          title: 'Industrial',
+          description: 'Heavy-duty drums and containers for industrial storage and transport.',
+          image: '/industrial.png',
+          icon: <IndustrialIcon />,
+        },
+        {
+          id: 'homecare',
+          title: 'Homecare',
+          description: 'Durable packaging for cleaners, detergents, and household products.',
+          image: '/homecare.png',
+          icon: <HomecareIcon />,
+        },
+        {
+          id: 'personal-care',
+          title: 'Personal Care',
+          description: 'Attractive, customizable packaging for cosmetics and beauty products.',
+          image: '/personal-care.png',
+          icon: <PersonalCareIcon />,
+        },
+      ],
+    },
+  },
+
+  homecare: {
+    name: 'Homecare',
+    slug: 'homecare',
+    title: 'Homecare',
+    description:
+      'We supply functional, durable, and visually appealing plastic packaging for detergents, cleaners, and personal-hygiene products. Our HDPE and PET containers combine ergonomic design, secure sealing, and strong chemical resistance for everyday homecare use.',
+    // Each card links (via `href`) to an existing product detail page and reuses
+    // that product's image.
+    products: [
+      {
+        id: 1,
+        title: 'HDPE Bottle Narrow Mouth',
+        slug: 'narrow-mouth-100-1000-ml-bottles',
+        href: '/small-bottles-containers/small-bottles/narrow-mouth-100-1000-ml-bottles',
+        imageUrl: '/listing/small-bottles-hdpe/hdpe-bottle-narrow-mouth-100-1000-ml.png',
+        capacity: '100-1000 ml',
+        material: 'HDPE / PET',
+        features: ['Leak Proof', 'Easy Pour', 'Chemical Resistant'],
+      },
+      {
+        id: 2,
+        title: 'HDPE Bottle Wide Mouth 100-1000 ml',
+        slug: 'wide-mouth-100-1000-ml-bottles',
+        href: '/small-bottles-containers/small-bottles/wide-mouth-100-1000-ml-bottles',
+        imageUrl: '/listing/small-bottles-hdpe/hdpe-bottle-wide-mouth-100-1000-ml.png',
+        capacity: '100-1000 ml',
+        material: 'HDPE / PET',
+        features: ['Wide Mouth', 'Easy Filling', 'Secure Sealing'],
+      },
+      {
+        id: 3,
+        title: 'Plastic Jerry Can',
+        slug: 'plastic-jerry-can',
+        href: '/small-bottles-containers/containers-for-lubricants/plastic-jerry-can',
+        imageUrl: '/listing/containers-for-lubricants/plastic-jerry-can.png',
+        capacity: 'Various',
+        material: 'HDPE',
+        features: ['Stackable', 'Heavy Duty', 'Leak-Proof'],
+      },
+      {
+        id: 4,
+        title: 'Plastic Polycans (5 LTR – 20 LTR Range)',
+        slug: '35-ltr-polycan',
+        href: '/jerrycans-polycans/polycans/35-ltr-polycan',
+        imageUrl: '/listing/polycans/35-ltr-polycan.png',
+        capacity: '5 – 20 Liters',
+        material: 'HDPE',
+        features: ['Chemical Resistant', 'Stackable', 'Easy Handling'],
+      },
+      {
+        id: 5,
+        title: 'Handles / Pin',
+        slug: 'handles-pin-assemblies',
+        href: '/blow-molding-accessories/handles-pin-assemblies',
+        imageUrl: '/category/blow-molding-accessories/handles-pin-assemblies.png',
+        capacity: 'Handles/Pin',
+        material: 'HDPE',
+        features: ['Secure Grip', 'Durable', 'Easy Handling'],
+      },
+      {
+        id: 6,
+        title: 'Bottle Caps & Inner Plugs',
+        slug: 'bottle-caps-inner-plugs',
+        href: '/blow-molding-accessories/bottle-caps-inner-plugs',
+        imageUrl: '/category/blow-molding-accessories/bottle-caps-inner-plugs.png',
+        capacity: 'Standard',
+        material: 'PP',
+        features: ['Leak Proof', 'Easy Dispensing', 'Secure Fit'],
+      },
+    ],
+    // Fallback link parts (used only if a product has no explicit `href`).
+    productCategorySlug: 'small-bottles-containers',
+    productParentSlug: 'small-bottles',
+    // Sidebar: "Other Industries" — links resolve to /industries/<slug>.
+    sidebarTitle: 'Other Industries',
+    relatedProducts: [
+      { name: 'Automotive', slug: 'automotive' },
+      { name: 'Caps and Closures', slug: 'caps-closures' },
+      { name: 'Food & Beverage', slug: 'food-beverage' },
+      { name: 'Healthcare / Pharma', slug: 'healthcare' },
+      { name: 'Industrial Storage', slug: 'industrial' },
+    ],
+    parentCategory: 'industries',
+    otherCategories: [],
+    breadcrumbs: [
+      { label: 'Home', href: '/' },
+      { label: 'Industries', href: '/industries' },
+      { label: 'Homecare', href: '/industries/homecare' },
+    ],
+    GlobalReachSection: {
+      title: 'Partner with BMRAJ for Durable Homecare Packaging Solutions',
+      description:
+        'Our containers combine reliability, safety, and custom design options suited for the global homecare market.',
+    },
+    faq: [
+      {
+        title: 'What homecare products can your bottles package?',
+        content:
+          'Our homecare and personal-care packaging and storage solutions are ideal for liquid detergents, disinfectants, and surface cleaners.',
+      },
+      {
+        title: 'Do you provide branding or custom colour options?',
+        content:
+          'Yes, available with screen or Heat Transfer Label printing and colour-matched moulding.',
+      },
+      {
+        title: 'Can packaging be produced in bulk?',
+        content:
+          'Yes, our large-scale blow moulding lines handle both retail and bulk runs.',
+      },
+    ],
+    blog: {
+      eyebrow: 'Resources and Blogs',
+      title: 'Knowledge is Growth: Explore Our Blog',
+      description: 'Read insights on detergent packaging design, material performance, and innovative closures for home care products.',
+    },
+    manufacturingExpertise: {
+      title: 'Advanced Infrastructure for High-Quality Product Packaging',
+      description: 'Drums, Containers, Jerrycans, and more storage solutions.',
+      slides: [
+        {
+          id: 1,
+          title: 'Plastic Injection Moulding',
+          imageUrl: '/thumnail/short/Injection-Molding.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/58wk21X8Z-E',
+          hasOverlay: false,
+        },
+        {
+          id: 2,
+          title: 'Plastic Blow Moulding',
+          imageUrl: '/thumnail/short/Blow-Molding.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/65GIkq-9MyI',
+          hasOverlay: false,
+        },
+        {
+          id: 3,
+          title: 'IML & HTL Printing Facility',
+          imageUrl: '/thumnail/short/Printing.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/mclWB1npzF8',
+          hasOverlay: false,
+        },
+        {
+          id: 4,
+          title: 'Quality & Compliance Labs',
+          imageUrl: '/thumnail/short/QC-testing.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/mclWB1npzF8',
+          hasOverlay: false,
+        },
+        {
+          id: 5,
+          title: 'Assembly & Integration Lines',
+          imageUrl: '/services/assembly-partner.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/8Dp9JophzZo',
+          hasOverlay: false,
+        },
+      ],
+    },
+    industrySection: {
+      title: 'Other Industries',
+      description: '',
+      industries: [
+        {
+          id: 'automotive',
+          title: 'Automotive',
+          description: 'Leak-proof packaging for motor oils, lubricants, and automotive fluids.',
+          image: '/automotive.png',
+          icon: <AutomotiveIcon />,
+        },
+        {
+          id: 'caps-closures',
+          title: 'Caps and Closures',
+          description: 'Secure, tamper-evident caps and closures for reliable sealing.',
+          image: '/caps-closures.png',
+          icon: <CapsClosuresIcon />,
+        },
+        {
+          id: 'food-beverage',
+          title: 'Food & Beverage',
+          description: 'Food-grade containers preserving freshness, hygiene, and safety.',
+          image: '/food-beverage.png',
+          icon: <FoodBeverageIcon />,
+        },
+        {
+          id: 'healthcare',
+          title: 'Healthcare / Pharma',
+          description: 'Contamination-free containers for pharmaceutical and healthcare use.',
+          image: '/healthcare.png',
+          icon: <HealthcareIcon />,
+        },
+        {
+          id: 'chemicals',
+          title: 'Chemicals',
+          description: 'Chemical-resistant UN-approved containers for hazardous storage.',
+          image: '/industry-chemicals.png',
+          icon: <ChemicalsIcon />,
+        },
+        {
+          id: 'fmcg',
+          title: 'FMCG',
+          description: 'High-volume, retail-ready packaging for fast-moving consumer brands.',
+          image: '/fmcg.png',
+          icon: <FMCGIcon />,
+        },
+        {
+          id: 'industrial',
+          title: 'Industrial',
+          description: 'Heavy-duty drums and containers for industrial storage and transport.',
+          image: '/industrial.png',
+          icon: <IndustrialIcon />,
+        },
+        {
+          id: 'personal-care',
+          title: 'Personal Care',
+          description: 'Attractive, customizable packaging for cosmetics and beauty products.',
+          image: '/personal-care.png',
+          icon: <PersonalCareIcon />,
+        },
+      ],
+    },
+  },
+
+  industrial: {
+    name: 'Industrial Storage',
+    slug: 'industrial',
+    title: 'Industrial Storage',
+    description:
+      'We manufacture heavy-duty plastic drums, barrels, and jerrycans built for industrial strength. Our HDPE (High Density Polyethylene) containers ensure impact resistance, stacking stability, and long-term performance for chemicals, oils, and large-scale process fluids.',
+    // Each card links (via `href`) to an existing product detail page and reuses
+    // that product's image.
+    products: [
+      {
+        id: 1,
+        title: '30-35 LTR Drum',
+        slug: '30-35-ltr-drum',
+        href: '/drums-and-barrels/full-open-top-drums/30-35-ltr-drum',
+        imageUrl: '/listing/full-open-top-drums/30-35-ltr-drum.png',
+        capacity: '30-35 Liters',
+        material: 'HDPE',
+        features: ['Impact Resistant', 'Stackable', 'UN Certified'],
+      },
+      {
+        id: 2,
+        title: '50-55 LTR Drum',
+        slug: '50-55-ltr-drum',
+        href: '/drums-and-barrels/full-open-top-drums/50-55-ltr-drum',
+        imageUrl: '/listing/full-open-top-drums/50-55-ltr-drum.png',
+        capacity: '50-55 Liters',
+        material: 'HDPE',
+        features: ['Impact Resistant', 'Stackable', 'UN Certified'],
+      },
+      {
+        id: 3,
+        title: '60-65 LTR Drum',
+        slug: '60-65-ltr-drum',
+        href: '/drums-and-barrels/full-open-top-drums/60-65-ltr-drum',
+        imageUrl: '/listing/full-open-top-drums/60-65-ltr-drum.png',
+        capacity: '60-65 Liters',
+        material: 'HDPE',
+        features: ['Impact Resistant', 'Stackable', 'UN Certified'],
+      },
+      {
+        id: 4,
+        title: 'L-Ring Type Barrels (210 LTR, 235 LTR, 250 LTR)',
+        slug: 'l-ring-type-barrels',
+        href: '/drums-and-barrels/barrels/l-ring-type-barrels',
+        imageUrl: '/listing/barrels/210-ltr-l-ring-type-drum.png',
+        capacity: '210-250 Liters',
+        material: 'HDPE',
+        features: ['Heavy Duty', 'L-Ring Closure', 'UN Certified'],
+      },
+    ],
+    // Fallback link parts (used only if a product has no explicit `href`).
+    productCategorySlug: 'drums-and-barrels',
+    productParentSlug: 'full-open-top-drums',
+    // Sidebar: "Other Industries" — links resolve to /industries/<slug>.
+    sidebarTitle: 'Other Industries',
+    relatedProducts: [
+      { name: 'Automotive', slug: 'automotive' },
+      { name: 'Caps and Closures', slug: 'caps-closures' },
+      { name: 'Food & Beverage', slug: 'food-beverage' },
+      { name: 'Healthcare / Pharma', slug: 'healthcare' },
+      { name: 'Homecare', slug: 'homecare' },
+    ],
+    parentCategory: 'industries',
+    otherCategories: [],
+    breadcrumbs: [
+      { label: 'Home', href: '/' },
+      { label: 'Industries', href: '/industries' },
+      { label: 'Industrial Storage', href: '/industries/industrial' },
+    ],
+    GlobalReachSection: {
+      title: 'Partner with BMRAJ for Reliable Industrial Packaging Solutions',
+      description:
+        'Our UN-approved drums and barrels deliver unmatched strength and compliance for industrial applications worldwide.',
+    },
+    faq: [
+      {
+        title: 'Are your drums suitable for export?',
+        content:
+          'Yes, all our industrial drums and other storage/packaging products are UN-approved and comply with international standards for global shipments.',
+      },
+      {
+        title: 'Can these containers be reconditioned?',
+        content:
+          'Yes, our products/solutions are designed for multiple use cycles under controlled handling.',
+      },
+      {
+        title: 'What industries use these drums?',
+        content:
+          'The industrial drums and other storage containers by BMRAJ can be used in chemical, lubricant, and process manufacturing sectors.',
+      },
+    ],
+    blog: {
+      eyebrow: 'Resources and Blogs',
+      title: 'Knowledge is Growth: Explore Our Blog',
+      description: 'Explore topics on industrial packaging testing, stacking safety, and long-term material performance under heavy use.',
+    },
+    manufacturingExpertise: {
+      title: 'Industrial-Grade Production with Proven Strength and Consistency',
+      description: 'Drums, Containers, Jerrycans, and more storage solutions.',
+      slides: [
+        {
+          id: 1,
+          title: 'Plastic Injection Moulding',
+          imageUrl: '/thumnail/short/Injection-Molding.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/58wk21X8Z-E',
+          hasOverlay: false,
+        },
+        {
+          id: 2,
+          title: 'Plastic Blow Moulding',
+          imageUrl: '/thumnail/short/Blow-Molding.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/65GIkq-9MyI',
+          hasOverlay: false,
+        },
+        {
+          id: 3,
+          title: 'IML & HTL Printing Facility',
+          imageUrl: '/thumnail/short/Printing.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/mclWB1npzF8',
+          hasOverlay: false,
+        },
+        {
+          id: 4,
+          title: 'Quality & Compliance Labs',
+          imageUrl: '/thumnail/short/QC-testing.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/mclWB1npzF8',
+          hasOverlay: false,
+        },
+        {
+          id: 5,
+          title: 'Assembly & Integration Lines',
+          imageUrl: '/services/assembly-partner.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/8Dp9JophzZo',
+          hasOverlay: false,
+        },
+      ],
+    },
+    industrySection: {
+      title: 'Other Industries',
+      description: '',
+      industries: [
+        {
+          id: 'automotive',
+          title: 'Automotive',
+          description: 'Leak-proof packaging for motor oils, lubricants, and automotive fluids.',
+          image: '/automotive.png',
+          icon: <AutomotiveIcon />,
+        },
+        {
+          id: 'caps-closures',
+          title: 'Caps and Closures',
+          description: 'Secure, tamper-evident caps and closures for reliable sealing.',
+          image: '/caps-closures.png',
+          icon: <CapsClosuresIcon />,
+        },
+        {
+          id: 'food-beverage',
+          title: 'Food & Beverage',
+          description: 'Food-grade containers preserving freshness, hygiene, and safety.',
+          image: '/food-beverage.png',
+          icon: <FoodBeverageIcon />,
+        },
+        {
+          id: 'healthcare',
+          title: 'Healthcare / Pharma',
+          description: 'Contamination-free containers for pharmaceutical and healthcare use.',
+          image: '/healthcare.png',
+          icon: <HealthcareIcon />,
+        },
+        {
+          id: 'homecare',
+          title: 'Homecare',
+          description: 'Durable packaging for cleaners, detergents, and household products.',
+          image: '/homecare.png',
+          icon: <HomecareIcon />,
+        },
+        {
+          id: 'chemicals',
+          title: 'Chemicals',
+          description: 'Chemical-resistant UN-approved containers for hazardous storage.',
+          image: '/industry-chemicals.png',
+          icon: <ChemicalsIcon />,
+        },
+        {
+          id: 'fmcg',
+          title: 'FMCG',
+          description: 'High-volume, retail-ready packaging for fast-moving consumer brands.',
+          image: '/fmcg.png',
+          icon: <FMCGIcon />,
+        },
+        {
+          id: 'personal-care',
+          title: 'Personal Care',
+          description: 'Attractive, customizable packaging for cosmetics and beauty products.',
+          image: '/personal-care.png',
+          icon: <PersonalCareIcon />,
+        },
+      ],
+    },
+  },
+
+  'personal-care': {
+    name: 'Personal Care',
+    slug: 'personal-care',
+    title: 'Personal Care',
+    description:
+      'We design attractive, durable, and customizable packaging for cosmetics, haircare, and personal hygiene products. Our HDPE and PET containers are crafted to balance aesthetic appeal with chemical compatibility and ease of dispensing.',
+    // Each card links (via `href`) to an existing product detail page and reuses
+    // that product's image.
+    products: [
+      {
+        id: 1,
+        title: 'HDPE Bottle Narrow Mouth 100-1000 ml',
+        slug: 'narrow-mouth-100-1000-ml-bottles',
+        href: '/small-bottles-containers/small-bottles/narrow-mouth-100-1000-ml-bottles',
+        imageUrl: '/listing/small-bottles-hdpe/hdpe-bottle-narrow-mouth-100-1000-ml.png',
+        capacity: '100-1000 ml',
+        material: 'HDPE / PET',
+        features: ['Easy Dispensing', 'Leak Proof', 'Branding Ready'],
+      },
+      {
+        id: 2,
+        title: 'HDPE Bottle Wide Mouth 100-1000 ml',
+        slug: 'wide-mouth-100-1000-ml-bottles',
+        href: '/small-bottles-containers/small-bottles/wide-mouth-100-1000-ml-bottles',
+        imageUrl: '/listing/small-bottles-hdpe/hdpe-bottle-wide-mouth-100-1000-ml.png',
+        capacity: '100-1000 ml',
+        material: 'HDPE / PET',
+        features: ['Wide Mouth', 'Easy Filling', 'Branding Ready'],
+      },
+      {
+        id: 3,
+        title: 'Thinner & Cosmetics Bottles',
+        slug: 'thinner-cosmetics-bottles',
+        href: '/small-bottles-containers/multipurpose-containers/thinner-cosmetics-bottles',
+        imageUrl: '/listing/multipurpose-containers/thinner-cosmetics-bottles.png',
+        capacity: 'Various',
+        material: 'HDPE',
+        features: ['Chemical Resistant', 'Ergonomic', 'Durable'],
+      },
+      {
+        id: 4,
+        title: '500 ml Preform for Bottle/Jar',
+        slug: 'open-top-drums',
+        href: '/small-bottles-containers/containers-for-lubricants/open-top-drums',
+        imageUrl: '/listing/containers-for-lubricants/open-top-drums.png',
+        capacity: '500 ML',
+        material: 'PET',
+        features: ['High Clarity', 'Precision Moulded', 'Branding Ready'],
+      },
+      {
+        id: 5,
+        title: '1 LTR Preform for Bottle/Jar',
+        slug: '50-ltr-narrow-mouth-drums',
+        href: '/small-bottles-containers/containers-for-lubricants/50-ltr-narrow-mouth-drums',
+        imageUrl: '/listing/containers-for-lubricants/50-ltr-narrow-mouth-drums.png',
+        capacity: '1 Liter',
+        material: 'PET',
+        features: ['High Clarity', 'Precision Moulded', 'Branding Ready'],
+      },
+      {
+        id: 6,
+        title: 'Fliptop Caps',
+        slug: 'flip-top-cap',
+        href: '/blow-molding-accessories/flip-top-cap',
+        imageUrl: '/category/blow-molding-accessories/bottle-caps-inner-plugs.png',
+        capacity: 'Standard',
+        material: 'PP',
+        features: ['Flip Top', 'Easy Dispensing', 'Secure Seal'],
+      },
+    ],
+    // Fallback link parts (used only if a product has no explicit `href`).
+    productCategorySlug: 'small-bottles-containers',
+    productParentSlug: 'small-bottles',
+    // Sidebar: "Other Industries" — links resolve to /industries/<slug>.
+    sidebarTitle: 'Other Industries',
+    relatedProducts: [
+      { name: 'Automotive', slug: 'automotive' },
+      { name: 'Caps and Closures', slug: 'caps-closures' },
+      { name: 'Food & Beverage', slug: 'food-beverage' },
+      { name: 'Healthcare / Pharma', slug: 'healthcare' },
+      { name: 'Homecare', slug: 'homecare' },
+    ],
+    parentCategory: 'industries',
+    otherCategories: [],
+    breadcrumbs: [
+      { label: 'Home', href: '/' },
+      { label: 'Industries', href: '/industries' },
+      { label: 'Personal Care', href: '/industries/personal-care' },
+    ],
+    GlobalReachSection: {
+      title: 'Partner with BMRAJ for Elegant, Durable Personal Care Packaging',
+      description:
+        'Our PET and HDPE solutions deliver quality, finish, and reliability that elevate your product’s shelf appeal.',
+    },
+    faq: [
+      {
+        title: 'Do you offer clear and tinted cosmetic bottles?',
+        content:
+          'Yes, PET (Polyethylene Terephthalate) and HDPE (High-Density Polyethylene) bottles can be made transparent, opaque, or tinted to your specification.',
+      },
+      {
+        title: 'Can you add branding directly on packaging?',
+        content:
+          'Yes, via In-Mould Label, Heat Transfer Label, or Screen Printing for market-ready presentation.',
+      },
+      {
+        title: 'Are your materials safe for cosmetics?',
+        content:
+          'Absolutely. We use food- and cosmetic-grade HDPE and PET for safety and compliance (national and international).',
+      },
+    ],
+    blog: {
+      eyebrow: 'Resources and Blogs',
+      title: 'Knowledge is Growth: Explore Our Blog',
+      description: 'Read insights on cosmetic bottle design, colour matching, and branding-ready packaging innovations for personal care products.',
+    },
+    manufacturingExpertise: {
+      title: 'Aesthetic, Functional, & Scalable Manufacturing Setup',
+      description: 'Drums, Containers, Jerrycans, and more storage solutions.',
+      slides: [
+        {
+          id: 1,
+          title: 'Plastic Injection Moulding',
+          imageUrl: '/thumnail/short/Injection-Molding.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/58wk21X8Z-E',
+          hasOverlay: false,
+        },
+        {
+          id: 2,
+          title: 'Plastic Blow Moulding',
+          imageUrl: '/thumnail/short/Blow-Molding.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/65GIkq-9MyI',
+          hasOverlay: false,
+        },
+        {
+          id: 3,
+          title: 'IML & HTL Printing Facility',
+          imageUrl: '/thumnail/short/Printing.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/mclWB1npzF8',
+          hasOverlay: false,
+        },
+        {
+          id: 4,
+          title: 'Quality & Compliance Labs',
+          imageUrl: '/thumnail/short/QC-testing.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/mclWB1npzF8',
+          hasOverlay: false,
+        },
+        {
+          id: 5,
+          title: 'Assembly & Integration Lines',
+          imageUrl: '/services/assembly-partner.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/8Dp9JophzZo',
+          hasOverlay: false,
+        },
+      ],
+    },
+    industrySection: {
+      title: 'Other Industries',
+      description: '',
+      industries: [
+        {
+          id: 'automotive',
+          title: 'Automotive',
+          description: 'Leak-proof packaging for motor oils, lubricants, and automotive fluids.',
+          image: '/automotive.png',
+          icon: <AutomotiveIcon />,
+        },
+        {
+          id: 'caps-closures',
+          title: 'Caps and Closures',
+          description: 'Secure, tamper-evident caps and closures for reliable sealing.',
+          image: '/caps-closures.png',
+          icon: <CapsClosuresIcon />,
+        },
+        {
+          id: 'food-beverage',
+          title: 'Food & Beverage',
+          description: 'Food-grade containers preserving freshness, hygiene, and safety.',
+          image: '/food-beverage.png',
+          icon: <FoodBeverageIcon />,
+        },
+        {
+          id: 'healthcare',
+          title: 'Healthcare / Pharma',
+          description: 'Contamination-free containers for pharmaceutical and healthcare use.',
+          image: '/healthcare.png',
+          icon: <HealthcareIcon />,
+        },
+        {
+          id: 'homecare',
+          title: 'Homecare',
+          description: 'Durable packaging for cleaners, detergents, and household products.',
+          image: '/homecare.png',
+          icon: <HomecareIcon />,
+        },
+        {
+          id: 'industrial',
+          title: 'Industrial',
+          description: 'Heavy-duty drums and containers for industrial storage and transport.',
+          image: '/industrial.png',
+          icon: <IndustrialIcon />,
+        },
+        {
+          id: 'chemicals',
+          title: 'Chemicals',
+          description: 'Chemical-resistant UN-approved containers for hazardous storage.',
+          image: '/industry-chemicals.png',
+          icon: <ChemicalsIcon />,
+        },
+        {
+          id: 'fmcg',
+          title: 'FMCG',
+          description: 'High-volume, retail-ready packaging for fast-moving consumer brands.',
+          image: '/fmcg.png',
+          icon: <FMCGIcon />,
+        },
+      ],
+    },
+  },
+
+  fmcg: {
+    name: 'FMCG',
+    slug: 'fmcg',
+    title: 'FMCG',
+    description:
+      'We deliver high-volume, retail-ready plastic packaging for fast-moving consumer goods (FMCG). Our bottles, jars, and containers combine lightweight strength, precision, and branding options for food, personal care, and homecare product lines.',
+    // Each card links (via `href`) to an existing product detail page and reuses
+    // that product's image.
+    products: [
+      {
+        id: 1,
+        title: 'HDPE Bottle Narrow Mouth 100-1000 ml',
+        slug: 'narrow-mouth-100-1000-ml-bottles',
+        href: '/small-bottles-containers/small-bottles/narrow-mouth-100-1000-ml-bottles',
+        imageUrl: '/listing/small-bottles-hdpe/hdpe-bottle-narrow-mouth-100-1000-ml.png',
+        capacity: '100-1000 ml',
+        material: 'HDPE / PET',
+        features: ['Lightweight', 'Leak Proof', 'Branding Ready'],
+      },
+      {
+        id: 2,
+        title: 'HDPE Bottle Wide Mouth 100-1000 ml',
+        slug: 'wide-mouth-100-1000-ml-bottles',
+        href: '/small-bottles-containers/small-bottles/wide-mouth-100-1000-ml-bottles',
+        imageUrl: '/listing/small-bottles-hdpe/hdpe-bottle-wide-mouth-100-1000-ml.png',
+        capacity: '100-1000 ml',
+        material: 'HDPE / PET',
+        features: ['Wide Mouth', 'Easy Filling', 'Branding Ready'],
+      },
+      {
+        id: 3,
+        title: 'Pesticides Bottles 100ML, 250ML, 500ML, 1LTR',
+        slug: 'pesticides-bottles-100ml-250ml-500ml-1ltr',
+        href: '/pet-bottles-preforms/pet-bottles/pesticides-bottles-100ml-250ml-500ml-1ltr',
+        imageUrl: '/listing/pet-bottles/pesticides-bottles.png',
+        capacity: '100 ML – 1 LTR',
+        material: 'PET',
+        features: ['High Clarity', 'Leak Proof', 'Durable'],
+      },
+      {
+        id: 4,
+        title: 'Lube Oil Bottle',
+        slug: 'lube-oil-bottle',
+        href: '/small-bottles-containers/containers-for-lubricants/lube-oil-bottle',
+        imageUrl: '/listing/containers-for-lubricants/lube-oil-bottle.png',
+        capacity: 'Various',
+        material: 'HDPE',
+        features: ['Lightweight', 'Leak Proof', 'Easy Pour'],
+      },
+      {
+        id: 5,
+        title: '500 ml Preform for Bottle/Jar',
+        slug: '500-ml-preform-agro-pet-bottles',
+        href: '/pet-bottles-preforms/preforms/500-ml-preform-agro-pet-bottles',
+        imageUrl: '/listing/pet-preforms/500-ml-preform-for-bottle-jar.png',
+        capacity: '500 ML',
+        material: 'PET',
+        features: ['Uniform Wall', 'High Clarity', 'Precision Moulded'],
+      },
+      {
+        id: 6,
+        title: '1 LTR Preform for Bottle/Jar',
+        slug: '1-ltr-preform-oil-bottle',
+        href: '/pet-bottles-preforms/preforms/1-ltr-preform-oil-bottle',
+        imageUrl: '/listing/pet-preforms/1-ltr-preform-for-bottle-jar.png',
+        capacity: '1 Liter',
+        material: 'PET',
+        features: ['Uniform Wall', 'High Clarity', 'Precision Moulded'],
+      },
+    ],
+    // Fallback link parts (used only if a product has no explicit `href`).
+    productCategorySlug: 'small-bottles-containers',
+    productParentSlug: 'small-bottles',
+    // Sidebar: "Other Industries" — links resolve to /industries/<slug>.
+    sidebarTitle: 'Other Industries',
+    relatedProducts: [
+      { name: 'Automotive', slug: 'automotive' },
+      { name: 'Caps and Closures', slug: 'caps-closures' },
+      { name: 'Food & Beverage', slug: 'food-beverage' },
+      { name: 'Healthcare / Pharma', slug: 'healthcare' },
+      { name: 'Homecare', slug: 'homecare' },
+    ],
+    parentCategory: 'industries',
+    otherCategories: [],
+    breadcrumbs: [
+      { label: 'Home', href: '/' },
+      { label: 'Industries', href: '/industries' },
+      { label: 'FMCG', href: '/industries/fmcg' },
+    ],
+    GlobalReachSection: {
+      title: 'Partner with BMRAJ for Reliable FMCG Packaging at Scale',
+      description:
+        'Our end-to-end control ensures quality consistency, faster lead times, and customizable design flexibility.',
+    },
+    faq: [
+      {
+        title: 'Do you produce packaging for both food and non-food FMCG?',
+        content:
+          'Yes, we have manufacturing capabilities and range of packaging for edible and non-edible FMCG products.',
+      },
+      {
+        title: 'Can you match brand colours and label designs?',
+        content:
+          'Yes, we can customise the colour as per the client’s requirements, and label with in-house HTL (Heat Transfer Label) and IML (In-Mould Label) printing technology.',
+      },
+      {
+        title: 'What’s your production capacity for FMCG packaging?',
+        content:
+          'Absolutely. We use food- and cosmetic-grade HDPE and PET for safety and compliance (national and international).',
+      },
+    ],
+    blog: {
+      eyebrow: 'Resources and Blogs',
+      title: 'Knowledge is Growth: Explore Our Blog',
+      description: 'Explore how packaging design influences FMCG branding, logistics efficiency, and consumer convenience.',
+    },
+    manufacturingExpertise: {
+      title: 'Fast, Flexible, and Quality-Driven Production Capability.',
+      description: 'Drums, Containers, Jerrycans, and more storage solutions.',
+      slides: [
+        {
+          id: 1,
+          title: 'Plastic Injection Moulding',
+          imageUrl: '/thumnail/short/Injection-Molding.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/58wk21X8Z-E',
+          hasOverlay: false,
+        },
+        {
+          id: 2,
+          title: 'Plastic Blow Moulding',
+          imageUrl: '/thumnail/short/Blow-Molding.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/65GIkq-9MyI',
+          hasOverlay: false,
+        },
+        {
+          id: 3,
+          title: 'IML & HTL Printing Facility',
+          imageUrl: '/thumnail/short/Printing.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/mclWB1npzF8',
+          hasOverlay: false,
+        },
+        {
+          id: 4,
+          title: 'Quality & Compliance Labs',
+          imageUrl: '/thumnail/short/QC-testing.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/mclWB1npzF8',
+          hasOverlay: false,
+        },
+        {
+          id: 5,
+          title: 'Assembly & Integration Lines',
+          imageUrl: '/services/assembly-partner.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/8Dp9JophzZo',
+          hasOverlay: false,
+        },
+      ],
+    },
+    industrySection: {
+      title: 'Other Industries',
+      description: '',
+      industries: [
+        {
+          id: 'automotive',
+          title: 'Automotive',
+          description: 'Leak-proof packaging for motor oils, lubricants, and automotive fluids.',
+          image: '/automotive.png',
+          icon: <AutomotiveIcon />,
+        },
+        {
+          id: 'caps-closures',
+          title: 'Caps and Closures',
+          description: 'Secure, tamper-evident caps and closures for reliable sealing.',
+          image: '/caps-closures.png',
+          icon: <CapsClosuresIcon />,
+        },
+        {
+          id: 'food-beverage',
+          title: 'Food & Beverage',
+          description: 'Food-grade containers preserving freshness, hygiene, and safety.',
+          image: '/food-beverage.png',
+          icon: <FoodBeverageIcon />,
+        },
+        {
+          id: 'healthcare',
+          title: 'Healthcare / Pharma',
+          description: 'Contamination-free containers for pharmaceutical and healthcare use.',
+          image: '/healthcare.png',
+          icon: <HealthcareIcon />,
+        },
+        {
+          id: 'homecare',
+          title: 'Homecare',
+          description: 'Durable packaging for cleaners, detergents, and household products.',
+          image: '/homecare.png',
+          icon: <HomecareIcon />,
+        },
+        {
+          id: 'industrial',
+          title: 'Industrial',
+          description: 'Heavy-duty drums and containers for industrial storage and transport.',
+          image: '/industrial.png',
+          icon: <IndustrialIcon />,
+        },
+        {
+          id: 'personal-care',
+          title: 'Personal Care',
+          description: 'Attractive, customizable packaging for cosmetics and beauty products.',
+          image: '/personal-care.png',
+          icon: <PersonalCareIcon />,
+        },
+        {
+          id: 'chemicals',
+          title: 'Chemicals',
+          description: 'Chemical-resistant UN-approved containers for hazardous storage.',
+          image: '/industry-chemicals.png',
+          icon: <ChemicalsIcon />,
+        },
+      ],
+    },
+  },
+
+  chemicals: {
+    name: 'Chemicals',
+    slug: 'chemicals',
+    title: 'Chemicals',
+    description:
+      'We manufacture robust, chemical-resistant containers and drums for industrial and specialty chemical packaging. Our HDPE (High Density Polyethylene) products deliver leak-proof performance, stacking stability, and compatibility with aggressive or reactive substances.',
+    // Each card links (via `href`) to an existing product detail page and reuses
+    // that product's image.
+    products: [
+      {
+        id: 1,
+        title: '30-35 LTR Drum',
+        slug: '30-35-ltr-drum',
+        href: '/drums-and-barrels/full-open-top-drums/30-35-ltr-drum',
+        imageUrl: '/listing/full-open-top-drums/30-35-ltr-drum.png',
+        capacity: '30-35 Liters',
+        material: 'HDPE',
+        features: ['Chemical Resistant', 'Leak Proof', 'UN Certified'],
+      },
+      {
+        id: 2,
+        title: '50-55 LTR Drum',
+        slug: '50-55-ltr-drum',
+        href: '/drums-and-barrels/full-open-top-drums/50-55-ltr-drum',
+        imageUrl: '/listing/full-open-top-drums/50-55-ltr-drum.png',
+        capacity: '50-55 Liters',
+        material: 'HDPE',
+        features: ['Chemical Resistant', 'Leak Proof', 'UN Certified'],
+      },
+      {
+        id: 3,
+        title: '60-65 LTR Drum',
+        slug: '60-65-ltr-drum',
+        href: '/drums-and-barrels/full-open-top-drums/60-65-ltr-drum',
+        imageUrl: '/listing/full-open-top-drums/60-65-ltr-drum.png',
+        capacity: '60-65 Liters',
+        material: 'HDPE',
+        features: ['Chemical Resistant', 'Leak Proof', 'UN Certified'],
+      },
+      {
+        id: 4,
+        title: '210 LTR Narrow Mouth Drums',
+        slug: '50-ltr-narrow-mouth-drums',
+        href: '/small-bottles-containers/containers-for-lubricants/50-ltr-narrow-mouth-drums',
+        imageUrl: '/listing/containers-for-lubricants/50-ltr-narrow-mouth-drums.png',
+        capacity: '210 Liters',
+        material: 'HDPE',
+        features: ['Chemical Resistant', 'Narrow Mouth', 'UN Certified'],
+      },
+      {
+        id: 5,
+        title: '235 LTR L-Ring Type Drum',
+        slug: 'l-ring-type-barrels',
+        href: '/drums-and-barrels/barrels/l-ring-type-barrels',
+        imageUrl: '/listing/barrels/210-ltr-l-ring-type-drum.png',
+        capacity: '235 Liters',
+        material: 'HDPE',
+        features: ['Chemical Resistant', 'L-Ring Closure', 'UN Certified'],
+      },
+      {
+        id: 6,
+        title: '250 LTR L-Ring Type Drum',
+        slug: 'l-ring-type-barrels',
+        href: '/drums-and-barrels/barrels/l-ring-type-barrels',
+        imageUrl: '/listing/barrels/210-ltr-l-ring-type-drum.png',
+        capacity: '250 Liters',
+        material: 'HDPE',
+        features: ['Chemical Resistant', 'L-Ring Closure', 'UN Certified'],
+      },
+    ],
+    // Fallback link parts (used only if a product has no explicit `href`).
+    productCategorySlug: 'drums-and-barrels',
+    productParentSlug: 'full-open-top-drums',
+    // Sidebar: "Other Industries" — links resolve to /industries/<slug>.
+    sidebarTitle: 'Other Industries',
+    relatedProducts: [
+      { name: 'Automotive', slug: 'automotive' },
+      { name: 'Caps and Closures', slug: 'caps-closures' },
+      { name: 'Food & Beverage', slug: 'food-beverage' },
+      { name: 'Healthcare / Pharma', slug: 'healthcare' },
+      { name: 'Industrial Storage', slug: 'industrial' },
+    ],
+    parentCategory: 'industries',
+    otherCategories: [],
+    breadcrumbs: [
+      { label: 'Home', href: '/' },
+      { label: 'Industries', href: '/industries' },
+      { label: 'Chemicals', href: '/industries/chemicals' },
+    ],
+    GlobalReachSection: {
+      title: 'Partner with BMRAJ for Tested and Trusted Chemical Packaging',
+      description:
+        'Our HDPE containers and drums comply with global safety standards for hazardous and non-hazardous chemicals.',
+    },
+    faq: [
+      {
+        title: 'Are these containers UN-approved?',
+        content:
+          'Yes, the range of drums and jerrycans by BMRAJ meet UN standards for chemical packaging.',
+      },
+      {
+        title: 'What chemical types are compatible with your packaging?',
+        content:
+          'The chemical industry packaging and storage solutions by BMRAJ are designed to be suitable for acids, bases, solvents, and industrial reagents.',
+      },
+      {
+        title: 'Do you offer anti-static or colour-coded variants?',
+        content:
+          'Yes, both anti-static and coded packaging can be developed as per client requirements.',
+      },
+    ],
+    blog: {
+      eyebrow: 'Resources and Blogs',
+      title: 'Knowledge is Growth: Explore Our Blog',
+      description: 'Read about chemical packaging safety, HDPE material performance, and UN-certified drum applications.',
+    },
+    manufacturingExpertise: {
+      title: 'Chemical-Resistant and Compliant Manufacturing Environment',
+      description: 'Drums, Containers, Jerrycans, and more storage solutions.',
+      slides: [
+        {
+          id: 1,
+          title: 'Plastic Injection Moulding',
+          imageUrl: '/thumnail/short/Injection-Molding.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/58wk21X8Z-E',
+          hasOverlay: false,
+        },
+        {
+          id: 2,
+          title: 'Plastic Blow Moulding',
+          imageUrl: '/thumnail/short/Blow-Molding.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/65GIkq-9MyI',
+          hasOverlay: false,
+        },
+        {
+          id: 3,
+          title: 'IML & HTL Printing Facility',
+          imageUrl: '/thumnail/short/Printing.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/mclWB1npzF8',
+          hasOverlay: false,
+        },
+        {
+          id: 4,
+          title: 'Quality & Compliance Labs',
+          imageUrl: '/thumnail/short/QC-testing.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/mclWB1npzF8',
+          hasOverlay: false,
+        },
+        {
+          id: 5,
+          title: 'Assembly & Integration Lines',
+          imageUrl: '/services/assembly-partner.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/8Dp9JophzZo',
+          hasOverlay: false,
+        },
+      ],
+    },
+    industrySection: {
+      title: 'Other Industries',
+      description: '',
+      industries: [
+        {
+          id: 'automotive',
+          title: 'Automotive',
+          description: 'Leak-proof packaging for motor oils, lubricants, and automotive fluids.',
+          image: '/automotive.png',
+          icon: <AutomotiveIcon />,
+        },
+        {
+          id: 'caps-closures',
+          title: 'Caps and Closures',
+          description: 'Secure, tamper-evident caps and closures for reliable sealing.',
+          image: '/caps-closures.png',
+          icon: <CapsClosuresIcon />,
+        },
+        {
+          id: 'food-beverage',
+          title: 'Food & Beverage',
+          description: 'Food-grade containers preserving freshness, hygiene, and safety.',
+          image: '/food-beverage.png',
+          icon: <FoodBeverageIcon />,
+        },
+        {
+          id: 'healthcare',
+          title: 'Healthcare / Pharma',
+          description: 'Contamination-free containers for pharmaceutical and healthcare use.',
+          image: '/healthcare.png',
+          icon: <HealthcareIcon />,
+        },
+        {
+          id: 'homecare',
+          title: 'Homecare',
+          description: 'Durable packaging for cleaners, detergents, and household products.',
+          image: '/homecare.png',
+          icon: <HomecareIcon />,
+        },
+        {
+          id: 'industrial',
+          title: 'Industrial',
+          description: 'Heavy-duty drums and containers for industrial storage and transport.',
+          image: '/industrial.png',
+          icon: <IndustrialIcon />,
+        },
+        {
+          id: 'fmcg',
+          title: 'FMCG',
+          description: 'High-volume, retail-ready packaging for fast-moving consumer brands.',
+          image: '/fmcg.png',
+          icon: <FMCGIcon />,
+        },
+        {
+          id: 'personal-care',
+          title: 'Personal Care',
+          description: 'Attractive, customizable packaging for cosmetics and beauty products.',
+          image: '/personal-care.png',
+          icon: <PersonalCareIcon />,
+        },
+      ],
+    },
+  },
+
+  'pesticides-fertilizers': {
+    name: 'Pesticides / Fertilizers',
+    slug: 'pesticides-fertilizers',
+    title: 'Pesticides / Fertilizers',
+    description:
+      'We manufacture reliable, chemical-resistant HDPE and PET packaging for agrochemical, pesticide, and fertilizer formulations. Our bottles, containers, and jerrycans ensure secure sealing, easy handling, and long-term stability for agricultural products.',
+    // Each card links (via `href`) to an existing product detail page and reuses
+    // that product's image.
+    products: [
+      {
+        id: 1,
+        title: 'Pesticides & Insecticides Bottles',
+        slug: 'pesticides-insecticides-bottles',
+        href: '/small-bottles-containers/multipurpose-containers/pesticides-insecticides-bottles',
+        imageUrl: '/listing/multipurpose-containers/pesticides-insecticides-bottles.png',
+        capacity: 'Various',
+        material: 'HDPE',
+        features: ['Chemical Resistant', 'Leak Proof', 'Secure Sealing'],
+      },
+      {
+        id: 2,
+        title: 'Thinner & Cosmetics Bottles',
+        slug: 'thinner-cosmetics-bottles',
+        href: '/small-bottles-containers/multipurpose-containers/thinner-cosmetics-bottles',
+        imageUrl: '/listing/multipurpose-containers/thinner-cosmetics-bottles.png',
+        capacity: 'Various',
+        material: 'HDPE',
+        features: ['Chemical Resistant', 'Durable', 'Easy Handling'],
+      },
+      {
+        id: 3,
+        title: 'Chemical Laboratory Bottles',
+        slug: 'chemical-laboratory-bottles',
+        href: '/small-bottles-containers/multipurpose-containers/chemical-laboratory-bottles',
+        imageUrl: '/listing/multipurpose-containers/agro-chemical-bottles.png',
+        capacity: 'Various',
+        material: 'HDPE',
+        features: ['Laboratory Grade', 'Precision Sealing', 'Chemical Resistant'],
+      },
+      {
+        id: 4,
+        title: 'HDPE Bottle Narrow Mouth 100-1000 ml',
+        slug: 'narrow-mouth-100-1000-ml-bottles',
+        href: '/small-bottles-containers/small-bottles/narrow-mouth-100-1000-ml-bottles',
+        imageUrl: '/listing/small-bottles-hdpe/hdpe-bottle-narrow-mouth-100-1000-ml.png',
+        capacity: '100-1000 ml',
+        material: 'HDPE / PET',
+        features: ['Chemical Resistant', 'Leak Proof', 'Secure Sealing'],
+      },
+      {
+        id: 5,
+        title: 'HDPE Bottle Wide Mouth 100-1000 ml',
+        slug: 'wide-mouth-100-1000-ml-bottles',
+        href: '/small-bottles-containers/small-bottles/wide-mouth-100-1000-ml-bottles',
+        imageUrl: '/listing/small-bottles-hdpe/hdpe-bottle-wide-mouth-100-1000-ml.png',
+        capacity: '100-1000 ml',
+        material: 'HDPE / PET',
+        features: ['Wide Mouth', 'Easy Filling', 'Chemical Resistant'],
+      },
+      {
+        id: 6,
+        title: 'PET Bottles 100ML, 250ML, 500ML, 1LTR',
+        slug: 'pesticides-bottles-100ml-250ml-500ml-1ltr',
+        href: '/pet-bottles-preforms/pet-bottles/pesticides-bottles-100ml-250ml-500ml-1ltr',
+        imageUrl: '/listing/pet-bottles/pesticides-bottles.png',
+        capacity: '100 ML – 1 LTR',
+        material: 'PET',
+        features: ['High Clarity', 'Chemical Resistant', 'Leak Proof'],
+      },
+    ],
+    // Fallback link parts (used only if a product has no explicit `href`).
+    productCategorySlug: 'small-bottles-containers',
+    productParentSlug: 'multipurpose-containers',
+    // Sidebar: "Other Industries" — links resolve to /industries/<slug>.
+    sidebarTitle: 'Other Industries',
+    relatedProducts: [
+      { name: 'Automotive', slug: 'automotive' },
+      { name: 'Chemicals', slug: 'chemicals' },
+      { name: 'Food & Beverage', slug: 'food-beverage' },
+      { name: 'Healthcare / Pharma', slug: 'healthcare' },
+      { name: 'Industrial Storage', slug: 'industrial' },
+    ],
+    parentCategory: 'industries',
+    otherCategories: [],
+    breadcrumbs: [
+      { label: 'Home', href: '/' },
+      { label: 'Industries', href: '/industries' },
+      { label: 'Pesticides / Fertilizers', href: '/industries/pesticides-fertilizers' },
+    ],
+    GlobalReachSection: {
+      title: 'Partner with BMRAJ for Reliable and Compliant Agrochemical Packaging',
+      description:
+        'Our chemical-resistant packaging solutions protect product efficacy and ensure compliance with export and environmental standards.',
+    },
+    faq: [
+      {
+        title: 'Are your bottles suitable for agrochemicals and fertilizers?',
+        content:
+          'Yes, our HDPE (High-Density Polyethylene) and PET (Polyethylene Terephthalate) bottles are resistant to aggressive chemical formulations.',
+      },
+      {
+        title: 'Can I get custom neck designs or tamper-evident closures?',
+        content:
+          'Yes, we offer customized moulding and closure systems for pesticide packaging.',
+      },
+      {
+        title: 'Are these containers suitable for export?',
+        content:
+          'Absolutely. All products comply with UN and international safety packaging standards.',
+      },
+    ],
+    blog: {
+      eyebrow: 'Resources and Blogs',
+      title: 'Knowledge is Growth: Explore Our Blog',
+      description: 'Learn about safe agrochemical packaging, material compatibility, and design innovation for pesticide and fertilizer containers.',
+    },
+    manufacturingExpertise: {
+      title: 'Agrochemical-Ready Production and Quality Assurance',
+      description: 'Drums, Containers, Jerrycans, and more storage solutions.',
+      slides: [
+        {
+          id: 1,
+          title: 'Plastic Injection Moulding',
+          imageUrl: '/thumnail/short/Injection-Molding.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/58wk21X8Z-E',
+          hasOverlay: false,
+        },
+        {
+          id: 2,
+          title: 'Plastic Blow Moulding',
+          imageUrl: '/thumnail/short/Blow-Molding.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/65GIkq-9MyI',
+          hasOverlay: false,
+        },
+        {
+          id: 3,
+          title: 'IML & HTL Printing Facility',
+          imageUrl: '/thumnail/short/Printing.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/mclWB1npzF8',
+          hasOverlay: false,
+        },
+        {
+          id: 4,
+          title: 'Quality & Compliance Labs',
+          imageUrl: '/thumnail/short/QC-testing.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/mclWB1npzF8',
+          hasOverlay: false,
+        },
+        {
+          id: 5,
+          title: 'Assembly & Integration Lines',
+          imageUrl: '/services/assembly-partner.png',
+          hasVideo: true,
+          videoUrl: 'https://youtube.com/shorts/8Dp9JophzZo',
+          hasOverlay: false,
+        },
+      ],
+    },
+    industrySection: {
+      title: 'Other Industries',
+      description: '',
+      industries: [
+        {
+          id: 'automotive',
+          title: 'Automotive',
+          description: 'Leak-proof packaging for motor oils, lubricants, and automotive fluids.',
+          image: '/automotive.png',
+          icon: <AutomotiveIcon />,
+        },
+        {
+          id: 'chemicals',
+          title: 'Chemicals',
+          description: 'Chemical-resistant UN-approved containers for hazardous storage.',
+          image: '/industry-chemicals.png',
+          icon: <ChemicalsIcon />,
+        },
+        {
+          id: 'caps-closures',
+          title: 'Caps and Closures',
+          description: 'Secure, tamper-evident caps and closures for reliable sealing.',
+          image: '/caps-closures.png',
+          icon: <CapsClosuresIcon />,
+        },
+        {
+          id: 'food-beverage',
+          title: 'Food & Beverage',
+          description: 'Food-grade containers preserving freshness, hygiene, and safety.',
+          image: '/food-beverage.png',
+          icon: <FoodBeverageIcon />,
+        },
+        {
+          id: 'healthcare',
+          title: 'Healthcare / Pharma',
+          description: 'Contamination-free containers for pharmaceutical and healthcare use.',
+          image: '/healthcare.png',
+          icon: <HealthcareIcon />,
+        },
+        {
+          id: 'homecare',
+          title: 'Homecare',
+          description: 'Durable packaging for cleaners, detergents, and household products.',
+          image: '/homecare.png',
+          icon: <HomecareIcon />,
+        },
+        {
+          id: 'industrial',
+          title: 'Industrial',
+          description: 'Heavy-duty drums and containers for industrial storage and transport.',
+          image: '/industrial.png',
+          icon: <IndustrialIcon />,
+        },
+        {
+          id: 'fmcg',
+          title: 'FMCG',
+          description: 'High-volume, retail-ready packaging for fast-moving consumer brands.',
+          image: '/fmcg.png',
+          icon: <FMCGIcon />,
+        },
+      ],
+    },
+  },
+};
+
+
+/**
+ * Get industry page data by industry id/slug.
+ * @param {string} industrySlug
+ * @returns {Object|null}
+ */
+export const getIndustryPageData = (industrySlug) => {
+  return industriesPageData[industrySlug] || null;
+};
+
+/**
+ * Get all industry slugs that have a dedicated page (for static generation).
+ * @returns {string[]}
+ */
+export const getAllIndustryPageSlugs = () => {
+  return Object.keys(industriesPageData);
+};

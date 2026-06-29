@@ -1,0 +1,9 @@
+/* Hide the main header on services pages since we use a custom header */
+body:has(.services-layout) #main-header {
+  display: none;
+}
+
+/* Hide the main footer since services layout has its own */
+body:has(.services-layout) #main-footer {
+  display: none;
+}
