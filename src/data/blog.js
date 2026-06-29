@@ -260,11 +260,11 @@ export const blogPosts = [
     slug: 'complete-industrial-guide-to-full-open-top-hdpe-drums',
     title: 'Complete Industrial Guide to Full Open Top HDPE Drums',
     // TODO: replace with a real Full Open Top Drum image when available.
-    imageUrl: '/warehouse-worker.png',
+    imageUrl: '/thumnail/full-open--top.jpg',
     altText: 'Full Open Top HDPE drums in an industrial warehouse',
     excerpt:
       'Full Open Top HDPE drums are easy to fill, clean, store, and transport — a complete guide to why industries choose them.',
-    heroImage: '/warehouse-worker.png',
+    heroImage: '/thumnail/full-open--top.jpg',
     content: [
       { type: 'paragraph', text: 'Full Open Top HDPE drums are widely used across industries such as Chemicals, Lubricants, Agrochemicals, Paints, and Food Processing because they are easy to fill, handle safely, store securely, and transport in bulk.' },
       { type: 'paragraph', text: 'They are often preferred over conventional narrow-mouth drums. And, for good reason.' },
