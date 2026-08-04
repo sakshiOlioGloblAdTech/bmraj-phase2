@@ -18,8 +18,7 @@ const heroData = {
   heroImage: '/facilities-hero.jpg',
   buttons: [
     { text: 'Get a Quote', type: 'primary' },
-    // TODO: point to the actual brochure file/URL once available.
-    { text: 'Schedule a Plant Visit', type: 'secondary', link: '#' },
+    { text: 'Schedule a Plant Visit', type: 'secondary', link: '/contact-us#enquiry-form' },
   ],
 };
 

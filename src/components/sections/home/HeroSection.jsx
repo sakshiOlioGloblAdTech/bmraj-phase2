@@ -106,7 +106,7 @@ export default function HeroSection() {
               />
             </div>
             <Image
-              src="/bmraj-hero-image.png"
+              src="/heroimg.png"
               alt="Plastic products showcase"
               fill
               sizes="100vw"

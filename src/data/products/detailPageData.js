@@ -145,7 +145,10 @@ export const productDetailData = {
           '/product-details/full-open-top-drums/50-55-ltr-drum/50-55-ltr-drum-01.png',
           '/product-details/full-open-top-drums/50-55-ltr-drum/50-55-ltr-drum-02.png',
           '/product-details/full-open-top-drums/50-55-ltr-drum/50-55-ltr-drum-03.png',
-          '/product-details/full-open-top-drums/50-55-ltr-drum/50-55-ltr-drum-04.png'
+          '/product-details/full-open-top-drums/50-55-ltr-drum/50-55-ltr-drum-04.png',
+          // Liner-type variant images, carried over from the retired Liner Type Drum page.
+          '/product-details/full-open-top-drums/50-55-ltr-drum/50-55-ltr-drum-liner-01.jpg',
+          '/product-details/full-open-top-drums/50-55-ltr-drum/50-55-ltr-drum-liner-02.jpg'
         ],
         technicalSpecification: {
           description: 'The 50–55 LTR Drum, made from virgin HDPE, offers 50–55 litres of capacity, weighs 2.5–3.2 kg, features a 14-inch mouth opening, comes in customer-specified colours, and includes a clamp or threaded lid.'
@@ -226,51 +229,49 @@ export const productDetailData = {
           }
         ]
       },
-      '185-kgs-210-ltr-drum': {
-        title: '185 KGS / 210 LTR DRUM',
-        subtitle: 'With Metal Clamp & Lid or Threaded Lid',
-        description: 'The 185 KGS / 210 LTR Full Open Top Drum is built for large-volume packaging. Designed for bulk chemicals, agro, and industrial uses, it ensures global compliance, strength, and reliability.',
+      'open-top-drums': {
+        title: 'FULL OPEN TOP (FOT) DRUM',
+        subtitle: 'Heavy-Duty HDPE Drum for Easy-Fill and Reusable Lubricant Storage',
+        description: 'BMRAJ Full Open Top (FOT) Drums are designed for easy filling, cleaning, and reuse. Manufactured from virgin HDPE with reinforced walls, they deliver chemical resistance, secure locking, and long-lasting durability for industrial lubricants and greases.',
         images: [
-          '/product-details/full-open-top-drums/185-kgs-210-ltr-drum/185-kgs-210-ltr-drum-01.png',
-          '/product-details/full-open-top-drums/185-kgs-210-ltr-drum/185-kgs-210-ltr-drum-02.png',
-          '/product-details/full-open-top-drums/185-kgs-210-ltr-drum/185-kgs-210-ltr-drum-03.png',
-          '/product-details/full-open-top-drums/185-kgs-210-ltr-drum/185-kgs-210-ltr-drum-04.png'
+          '/product-details/containers-for-lubricants/open-top-drums/open-top-drums-01.png',
+          '/product-details/containers-for-lubricants/open-top-drums/open-top-drums-02.png',
+          '/product-details/containers-for-lubricants/open-top-drums/open-top-drums-03.png',
+          '/product-details/containers-for-lubricants/open-top-drums/open-top-drums-04.png',
         ],
         technicalSpecification: {
-          description: 'The 185 KGS / 210 LTR Drum, made from HDPE, offers a capacity of 185 Kgs / 210 litres, weighs as per the design requirements, features a 470 mm mouth opening, is available in custom colours, and uses clamp or threaded lids for secure sealing.'
+          description: 'Injection- and blow-moulded with precision, each drum includes a removable lid with a locking ring for secure sealing. Ideal for storage, transport, and reconditioning applications.'
         },
         specifications: [
-          { label: 'Capacity', value: '210 Litres / 185 Kgs' },
-          { label: 'Weight', value: '8.0 – 9.5 Kgs' },
-          { label: 'Mouth OD', value: '470 mm (Full Open Top)' },
-          { label: 'Material', value: 'Virgin High-Density Polyethylene (HDPE)' },
-          { label: 'Molding Process', value: 'Blow Moulded for Uniform Wall Thickness' },
-          { label: 'Lid Type', value: 'Metal Clamp with Lid or Threaded Lid' },
-          { label: 'Colour', value: 'Customizable' },
-          { label: 'Applications', value: 'Bulk chemicals, paints, adhesives, agricultural goods, food-safe storage, and industrial materials' }
+          { label: 'Capacity', value: '30 L – 210 L' },
+          { label: 'Material', value: 'HDPE (High-Density Polyethylene)' },
+          { label: 'Molding Process', value: 'Blow / Injection Moulded' },
+          { label: 'Closure Type', value: 'Locking Lid with Clamp Ring' },
+          { label: 'Colour', value: 'As per Requirement' },
+          { label: 'Certification', value: 'UN Approved' },
+          { label: 'Applications', value: 'Lubricants, Greases, Adhesives, Industrial Fluids' }
         ],
         parentCategory: 'drums-and-barrels',
         parentProduct: 'full-open-top-drums',
         GlobalReachSection: {
-          title: 'Choose the 185 KGS / 210 LTR Full Open Top Drum',
-          description: 'Industrial-grade capacity with secure packaging for large-scale storage and transport requirements.'
+          title: 'Choose the Open Top Drum',
+          description: 'Easy to clean, refill, and reuse, designed for long-term lubricant packaging.'
         },
         faq: [
           {
-            title: 'What applications is the 185 KGS / 210 LTR Drum best suited for?',
-            content: 'Perfect for bulk chemicals, paints, adhesives, agricultural goods, and food-safe materials requiring large-volume containment.'
+            title: 'What is the advantage of an Full Open Top drum (FOT Drum)?',
+            content: 'FOT allows easy filling, inspection, and cleaning, ideal for lubricants and greases.'
           },
           {
-            title: 'Is this drum UN-certified?',
-            content: 'Yes, UN-certified versions are available for hazardous materials and international shipping compliance.'
+            title: 'Are they suitable for reconditioning programs?',
+            content: 'Yes, they are built for multiple reuse cycles with reinforced walls and secure locking.'
           },
           {
-            title: 'Can the drum be customised?',
-            content: 'Yes, customisation includes colours, fittings, branding, and printing. Specs: Capacity: 210 Litres / 185 Kgs, Weight: 8.0–9.5 Kgs, Mouth OD: 470 mm, Colour: As Per Requirement'
+            title: 'Do they meet export standards?',
+            content: 'Yes, they comply with UN-approved specifications for international lubricant transport.'
           }
         ]
       },
-
     },
     'wide-narrow-drum': {
       '50-ltr-wide-mouth-6-inch-8-inch': {
@@ -402,6 +403,48 @@ export const productDetailData = {
           {
             title: 'Can I customize the drum?',
             content: 'Yes, available in different colours, mouth sizes, and branding options. Capacity: 100 Ltr, Weight: 5–6 Kgs, Mouth OD: 210 mm, Colour: As Per Requirement'
+          }
+        ]
+      },
+      '50-ltr-narrow-mouth-drums': {
+        title: '50 LTR NARROW MOUTH DRUM',
+        subtitle: 'UN-Approved Drum for Lubricants and Industrial Liquid Packaging',
+        description: 'The 50 LTR Narrow Mouth Drum is built for safe, mid-volume storage and transport of lubricants and industrial liquids. Made from virgin HDPE, it offers strong sealing, chemical resistance, and reliable performance for industrial and export packaging operations.',
+        images: [
+          '/product-details/containers-for-lubricants/50-ltr-narrow-mouth-drums/50-ltr-narrow-mouth-drums-01.png',
+          '/product-details/containers-for-lubricants/50-ltr-narrow-mouth-drums/50-ltr-narrow-mouth-drums-02.png',
+          '/product-details/containers-for-lubricants/50-ltr-narrow-mouth-drums/50-ltr-narrow-mouth-drums-03.png',
+        ],
+        technicalSpecification: {
+          description: 'Blow moulded with reinforced ribs for structural strength, this UN-approved drum includes twin closure bungs for safe filling and discharge. Built to withstand stacking and long-haul transport conditions.'
+        },
+        specifications: [
+          { label: 'Capacity', value: '50 Litres' },
+          { label: 'Material', value: 'HDPE (High-Density Polyethylene)' },
+          { label: 'Molding Process', value: 'Blow / Injection Moulded' },
+          { label: 'Closure Type', value: 'Dual Bung Cap (2-inch & ¾-inch)' },
+          { label: 'Colour', value: 'As per Requirement' },
+          { label: 'Certification', value: 'UN Approved' },
+          { label: 'Applications', value: 'Lubricants, Industrial Oils, Chemicals, Export Packaging' }
+        ],
+        parentCategory: 'drums-and-barrels',
+        parentProduct: 'wide-narrow-drum',
+        GlobalReachSection: {
+          title: 'Choose the 50 LTR Narrow Mouth Drum',
+          description: 'Reliable mid-volume capacity, global compliance, built for industrial and export-grade performance.'
+        },
+        faq: [
+          {
+            title: 'What industries use this drum?',
+            content: 'Used by lubricant, chemical, and oil manufacturers for bulk storage and export.'
+          },
+          {
+            title: 'Is it UN-approved?',
+            content: 'Yes, this drum meets UN standards for safe transportation of hazardous and non-hazardous liquids.'
+          },
+          {
+            title: 'Can it be reused?',
+            content: 'Yes. Its durable HDPE body supports multiple use cycles under standard industrial reconditioning.'
           }
         ]
       },
@@ -624,55 +667,6 @@ export const productDetailData = {
       },
     },
     'barrels': {
-      'liner-type-drum': {
-        title: 'LINER TYPE DRUM',
-        subtitle: 'Dual-Layer HDPE Drum with Internal Liner for High-Purity Packaging',
-        description: 'The Liner Type Drum from BMRaj Plastics features a dual-layer barrier design—combining a robust outer HDPE shell with a built-in inner liner—to safeguard sensitive contents against contamination and chemical interaction. Engineered for industries where product purity is non-negotiable, these drums are perfect for chemicals, pharmaceutical ingredients, food additives, and specialty liquids that demand extra protection.',
-        images: [
-          '/product-details/barrels/liner-type-drum/liner-type-drum-01.jpg',
-          '/product-details/barrels/liner-type-drum/liner-type-drum-02.jpg',
-          '/product-details/barrels/liner-type-drum/liner-type-drum-03.jpg',
-          '/product-details/barrels/liner-type-drum/liner-type-drum-04.jpg',
-        ],
-        technicalSpecification: {
-          description: 'Made from virgin High-Density Polyethylene (HDPE) with a built-in inner liner, this drum provides a dual-layer barrier against moisture, UV rays, and chemical reactions. With a typical capacity of 210 litres, it is blow moulded for uniform strength and can be customised in colour, closure type, and branding to meet your specific application needs.'
-        },
-        specifications: [
-          { label: 'Capacity', value: '210 Litres' },
-          { label: 'Weight', value: '~As per Requirement' },
-          { label: 'Mouth Opening', value: '50mm & 70mm top and bottom seal' },
-          { label: 'Material', value: 'Virgin HDPE' },
-          { label: 'Molding Process', value: 'Blow Molding' },
-          { label: 'Colour', value: 'As per Requirement' },
-          { label: 'Applications', value: 'Chemicals, Pharmaceutical Ingredients, Food Additives, Specialty Liquids' }
-        ],
-        parentCategory: {
-          name: 'Drums & Barrels',
-          slug: 'drums-and-barrels'
-        },
-        parentProduct: {
-          name: 'Barrels',
-          slug: 'barrels'
-        },
-        GlobalReachSection: {
-          title: 'Choose the Liner Type Drum',
-          description: 'Ideal for industries where product purity is non-negotiable, these drums are perfect for chemicals, pharmaceutical ingredients, food additives, and specialty liquids that demand extra protection.'
-        },
-        faq: [
-          {
-            title: 'Which industries commonly use Liner Type Drums?',
-            content: 'Liner Type Drums are widely used in: Pharmaceuticals & APIs, Agrochemicals & Pesticides, Food Additives & Flavours, Specialty Chemicals & Industrial Fluids.'
-          },
-          {
-            title: 'What makes the liner drum unique compared to standard HDPE drums?',
-            content: 'The key differentiator is the built-in inner liner that acts as an additional barrier to: Prevent permeation of aromatic or aggressive substances, Protect product integrity from external contamination, Extend storage life for sensitive materials.'
-          },
-          {
-            title: 'Can I customise the drum?',
-            content: 'Yes. Tailor this product to your operational and branding requirements: Capacity: 210 Litres Standard / Custom Available, Approximate Weight: As per Requirement (depends on model), Material: Virgin HDPE Outer Shell + Built-in Inner Liner, Molding Process: Blow Moulded for Consistent Wall Thickness, Closure Options: 50 mm & 70 mm Top and Bottom Seal Plugs, Colour: Standard Blue / Custom Colours on Request, Branding: Label or Print Options Available.'
-          }
-        ]
-      },
       '210-ltr-full-open-top-barrel': {
         title: '210 LTR FULL OPEN TOP BARREL',
         subtitle: 'Versatile HDPE Barrel for Easy Filling and Cleaning',
@@ -800,6 +794,49 @@ export const productDetailData = {
           {
             title: 'Can I customise the barrel?',
             content: 'Yes. Customisation options include: Capacity: 210 / 235 / 250 Litres, Typical Empty Weight: 7.8-10 kg (Depending on Model), Material: Virgin HDPE (High-Density Polyethylene), Molding Process: Blow Moulded, Mouth Opening: As per the model, Body Type: Reinforced L-Ring Base & Shoulder, Colour: Standard Blue / Custom Colours, Certification: UN-Certified Models Available, Applications: Lubricants, Chemicals, Agrochemicals, Industrial Liquids.'
+          }
+        ]
+      },
+      'plastic-barrels-drums': {
+        title: 'PLASTIC BARRELS & DRUMS',
+        subtitle: 'High-Capacity HDPE Barrels for Lubricants and Industrial Oils',
+        description: 'Engineered for heavy-duty applications, BMRAJ Plastic Barrels ensure superior strength and reusability. Blow moulded from virgin HDPE, they provide outstanding chemical resistance and stacking stability for lubricant, oil, and process fluid packaging.',
+        images: [
+          '/product-details/containers-for-lubricants/plastic-barrels-drums/plastic-barrels-drums-01.png',
+          '/product-details/containers-for-lubricants/plastic-barrels-drums/plastic-barrels-drums-02.png',
+          '/product-details/containers-for-lubricants/plastic-barrels-drums/plastic-barrels-drums-03.png',
+          '/product-details/containers-for-lubricants/plastic-barrels-drums/plastic-barrels-drums-04.png',
+        ],
+        technicalSpecification: {
+          description: 'Manufactured with uniform wall thickness and reinforced rings, these barrels meet UN-approved performance standards for industrial liquids. Ideal for bulk lubricant storage and export shipments.'
+        },
+        specifications: [
+          { label: 'Capacity', value: '60 L – 210 L' },
+          { label: 'Material', value: 'HDPE (High-Density Polyethylene)' },
+          { label: 'Molding Process', value: 'Blow Moulded' },
+          { label: 'Closure Type', value: 'Double Cap / Bung Type' },
+          { label: 'Colour', value: 'As per Requirement' },
+          { label: 'Certification', value: 'UN Approved' },
+          { label: 'Applications', value: 'Lubricants, Oils, Coolants, Industrial Fluids' }
+        ],
+        parentCategory: 'drums-and-barrels',
+        parentProduct: 'barrels',
+        GlobalReachSection: {
+          title: 'Choose the Plastic Barrels & Drums',
+          description: 'Strong, compliant, and reliable, built for global lubricant packaging standards.'
+        },
+        faq: [
+          {
+            title: 'Are these barrels UN-approved?',
+            content: 'Yes, they comply with UN packaging standards for liquid storage and transport.'
+          },
+          {
+            title: 'What are the typical uses?',
+            content: 'They’re used for lubricants, hydraulic fluids, and industrial oils requiring long-term containment.'
+          },
+          {
+            title: 'Are they reusable?',
+            content: 'Yes, made from durable HDPE, they can withstand multiple usage cycles when properly handled.'
           }
         ]
       },
@@ -2270,7 +2307,7 @@ export const productDetailData = {
         { label: 'Capacity', value: '400 gms (Customizable)' },
         { label: 'Material', value: 'PP (Polypropylene – Food Grade)' },
         { label: 'Molding Process', value: 'Injection Moulded' },
-        { label: 'Labeling', value: 'IML (Injection Mould Labeling)' },
+        { label: 'Printing Process', value: 'In Mould Labeling (IML)' },
         { label: 'Colour', value: 'As Per Requirement' },
         { label: 'Applications', value: 'Dahi (Curd), Yogurt, Dairy Desserts, Lassi' }
       ],
@@ -2879,134 +2916,6 @@ export const productDetailData = {
       },
     },
     'containers-for-lubricants': {
-      '50-ltr-narrow-mouth-drums': {
-        title: '50 LTR NARROW MOUTH DRUM',
-        subtitle: 'UN-Approved Drum for Lubricants and Industrial Liquid Packaging',
-        description: 'The 50 LTR Narrow Mouth Drum is built for safe, mid-volume storage and transport of lubricants and industrial liquids. Made from virgin HDPE, it offers strong sealing, chemical resistance, and reliable performance for industrial and export packaging operations.',
-        images: [
-          '/product-details/containers-for-lubricants/50-ltr-narrow-mouth-drums/50-ltr-narrow-mouth-drums-01.png',
-          '/product-details/containers-for-lubricants/50-ltr-narrow-mouth-drums/50-ltr-narrow-mouth-drums-02.png',
-          '/product-details/containers-for-lubricants/50-ltr-narrow-mouth-drums/50-ltr-narrow-mouth-drums-03.png',
-        ],
-        technicalSpecification: {
-          description: 'Blow moulded with reinforced ribs for structural strength, this UN-approved drum includes twin closure bungs for safe filling and discharge. Built to withstand stacking and long-haul transport conditions.'
-        },
-        specifications: [
-          { label: 'Capacity', value: '50 Litres' },
-          { label: 'Material', value: 'HDPE (High-Density Polyethylene)' },
-          { label: 'Molding Process', value: 'Blow / Injection Moulded' },
-          { label: 'Closure Type', value: 'Dual Bung Cap (2-inch & ¾-inch)' },
-          { label: 'Colour', value: 'As per Requirement' },
-          { label: 'Certification', value: 'UN Approved' },
-          { label: 'Applications', value: 'Lubricants, Industrial Oils, Chemicals, Export Packaging' }
-        ],
-        parentCategory: 'small-bottles-containers',
-        parentProduct: 'containers-for-lubricants',
-        GlobalReachSection: {
-          title: 'Choose the 50 LTR Narrow Mouth Drum',
-          description: 'Reliable mid-volume capacity, global compliance, built for industrial and export-grade performance.'
-        },
-        faq: [
-          {
-            title: 'What industries use this drum?',
-            content: 'Used by lubricant, chemical, and oil manufacturers for bulk storage and export.'
-          },
-          {
-            title: 'Is it UN-approved?',
-            content: 'Yes, this drum meets UN standards for safe transportation of hazardous and non-hazardous liquids.'
-          },
-          {
-            title: 'Can it be reused?',
-            content: 'Yes. Its durable HDPE body supports multiple use cycles under standard industrial reconditioning.'
-          }
-        ]
-      },
-      'open-top-drums': {
-        title: 'FULL OPEN TOP (FOT) DRUM',
-        subtitle: 'Heavy-Duty HDPE Drum for Easy-Fill and Reusable Lubricant Storage',
-        description: 'BMRAJ Full Open Top (FOT) Drums are designed for easy filling, cleaning, and reuse. Manufactured from virgin HDPE with reinforced walls, they deliver chemical resistance, secure locking, and long-lasting durability for industrial lubricants and greases.',
-        images: [
-          '/product-details/containers-for-lubricants/open-top-drums/open-top-drums-01.png',
-          '/product-details/containers-for-lubricants/open-top-drums/open-top-drums-02.png',
-          '/product-details/containers-for-lubricants/open-top-drums/open-top-drums-03.png',
-          '/product-details/containers-for-lubricants/open-top-drums/open-top-drums-04.png',
-        ],
-        technicalSpecification: {
-          description: 'Injection- and blow-moulded with precision, each drum includes a removable lid with a locking ring for secure sealing. Ideal for storage, transport, and reconditioning applications.'
-        },
-        specifications: [
-          { label: 'Capacity', value: '30 L – 210 L' },
-          { label: 'Material', value: 'HDPE (High-Density Polyethylene)' },
-          { label: 'Molding Process', value: 'Blow / Injection Moulded' },
-          { label: 'Closure Type', value: 'Locking Lid with Clamp Ring' },
-          { label: 'Colour', value: 'As per Requirement' },
-          { label: 'Certification', value: 'UN Approved' },
-          { label: 'Applications', value: 'Lubricants, Greases, Adhesives, Industrial Fluids' }
-        ],
-        parentCategory: 'small-bottles-containers',
-        parentProduct: 'containers-for-lubricants',
-        GlobalReachSection: {
-          title: 'Choose the Open Top Drum',
-          description: 'Easy to clean, refill, and reuse, designed for long-term lubricant packaging.'
-        },
-        faq: [
-          {
-            title: 'What is the advantage of an Full Open Top drum (FOT Drum)?',
-            content: 'FOT allows easy filling, inspection, and cleaning, ideal for lubricants and greases.'
-          },
-          {
-            title: 'Are they suitable for reconditioning programs?',
-            content: 'Yes, they are built for multiple reuse cycles with reinforced walls and secure locking.'
-          },
-          {
-            title: 'Do they meet export standards?',
-            content: 'Yes, they comply with UN-approved specifications for international lubricant transport.'
-          }
-        ]
-      },
-      'plastic-barrels-drums': {
-        title: 'PLASTIC BARRELS & DRUMS',
-        subtitle: 'High-Capacity HDPE Barrels for Lubricants and Industrial Oils',
-        description: 'Engineered for heavy-duty applications, BMRAJ Plastic Barrels ensure superior strength and reusability. Blow moulded from virgin HDPE, they provide outstanding chemical resistance and stacking stability for lubricant, oil, and process fluid packaging.',
-        images: [
-          '/product-details/containers-for-lubricants/plastic-barrels-drums/plastic-barrels-drums-01.png',
-          '/product-details/containers-for-lubricants/plastic-barrels-drums/plastic-barrels-drums-02.png',
-          '/product-details/containers-for-lubricants/plastic-barrels-drums/plastic-barrels-drums-03.png',
-          '/product-details/containers-for-lubricants/plastic-barrels-drums/plastic-barrels-drums-04.png',
-        ],
-        technicalSpecification: {
-          description: 'Manufactured with uniform wall thickness and reinforced rings, these barrels meet UN-approved performance standards for industrial liquids. Ideal for bulk lubricant storage and export shipments.'
-        },
-        specifications: [
-          { label: 'Capacity', value: '60 L – 210 L' },
-          { label: 'Material', value: 'HDPE (High-Density Polyethylene)' },
-          { label: 'Molding Process', value: 'Blow Moulded' },
-          { label: 'Closure Type', value: 'Double Cap / Bung Type' },
-          { label: 'Colour', value: 'As per Requirement' },
-          { label: 'Certification', value: 'UN Approved' },
-          { label: 'Applications', value: 'Lubricants, Oils, Coolants, Industrial Fluids' }
-        ],
-        parentCategory: 'small-bottles-containers',
-        parentProduct: 'containers-for-lubricants',
-        GlobalReachSection: {
-          title: 'Choose the Plastic Barrels & Drums',
-          description: 'Strong, compliant, and reliable, built for global lubricant packaging standards.'
-        },
-        faq: [
-          {
-            title: 'Are these barrels UN-approved?',
-            content: 'Yes, they comply with UN packaging standards for liquid storage and transport.'
-          },
-          {
-            title: 'What are the typical uses?',
-            content: 'They’re used for lubricants, hydraulic fluids, and industrial oils requiring long-term containment.'
-          },
-          {
-            title: 'Are they reusable?',
-            content: 'Yes, made from durable HDPE, they can withstand multiple usage cycles when properly handled.'
-          }
-        ]
-      },
       'plastic-jerry-can': {
         title: 'PLASTIC JERRY CAN',
         subtitle: 'High-Performance HDPE Bottles for Engine and Gear Oil Packaging',
@@ -3161,7 +3070,6 @@ export const productDetailData = {
           { label: 'Material', value: 'PET (Polyethylene Terephthalate)' },
           { label: 'Weight', value: '28 g / 36 g / 66 g' },
           { label: 'Molding Process', value: 'Blow Moulded' },
-          // { label: 'Weight', value: '66 g / 36 g / 28 g' },
           { label: 'Colour', value: 'As per Requirement' },
           { label: 'Mouth OD', value: '45 mm' },
           { label: 'Applications', value: 'Pesticides, Insecticides, Fertilizers, Agro Formulations' },
@@ -3206,7 +3114,7 @@ export const productDetailData = {
           { label: 'Capacity', value: '1000 ml' },
           { label: 'Material', value: 'PET (Polyethylene Terephthalate)' },
           { label: 'Molding Process', value: 'Blow Moulded' },
-          // { label: 'Weight', value: '70 g' },
+          { label: 'Weight', value: '70 g' },
           { label: 'Colour', value: 'As per Requirement' },
           { label: 'Mouth OD', value: '38 mm' },
           { label: 'Applications', value: 'Edible Oil, Lubricants, Food Packaging, Industrial Fluids' }
@@ -3235,7 +3143,7 @@ export const productDetailData = {
     },
     'preforms': {
       '500-ml-preform-agro-pet-bottles': {
-        title: '500 ML PREFORM FOR AGRO PET BOTTLES',
+        title: 'PREFORM FOR AGRO PET BOTTLES',
         subtitle: 'High-Clarity PET Preform for Beverage, Edible Oil, and FMCG Packaging',
         description: 'The 500 ml PET Preform is engineered for consistent performance in beverage, edible oil, and FMCG bottle manufacturing. Injection moulded from virgin PET, it offers clarity, dimensional precision, and strength, ensuring smooth blowing and uniform results in every production cycle.',
         images: [
@@ -3251,9 +3159,10 @@ export const productDetailData = {
           { label: 'Capacity', value: '500 ml' },
           { label: 'Material', value: 'PET (Polyethylene Terephthalate)' },
           { label: 'Molding Process', value: 'Injection Moulded' },
-          // { label: 'Weight', value: '55 gms' },
+          { label: 'Weight', value: '55 gms' },
           { label: 'Colour', value: 'As per Requirement' },
           { label: 'Mouth OD', value: '38 mm' },
+          { label: 'Cap', value: 'Available' },
           { label: 'Applications', value: 'Agriculture, Water, Juice, Edible Oil, FMCG Bottles & Jars' }
         ],
         parentCategory: 'pet-bottles-preforms',
@@ -3295,7 +3204,7 @@ export const productDetailData = {
           { label: 'Capacity', value: '1000 ml' },
           { label: 'Material', value: 'PET (Polyethylene Terephthalate)' },
           { label: 'Molding Process', value: 'Injection Moulded' },
-          // { label: 'Weight', value: '68 gms' },
+          { label: 'Weight', value: '68 gms' },
           { label: 'Colour', value: 'As per Requirement' },
           { label: 'Mouth OD', value: '38 mm' },
           { label: 'Applications', value: 'Lubricant, Edible Oil, Beverages, Food, FMCG, and Homecare Packaging' },
@@ -3326,10 +3235,11 @@ export const productDetailData = {
         subtitle: 'Reliable PET ROPP Preform for Pharma and Small-Volume Liquid Bottles',
         description: 'The ROPP Preform 90 ml stands out as a virgin PET (Polyethylene Terephthalate) solution designed specifically for compact pharmaceutical, nutraceutical, and specialty liquid bottles. It delivers excellent clarity, consistent dimensions, and reliable neck accuracy, ensuring secure ROPP cap sealing, smooth bottle blowing, and dependable product protection.',
         images: [
-          // TODO: replace with real ROPP Preform 90 ml images when available.
-          '/product-details/preforms/500-ml-preform-agro-pet-bottles/500-ml-preform-agro-pet-bottles-01.png',
-          '/product-details/preforms/500-ml-preform-agro-pet-bottles/500-ml-preform-agro-pet-bottles-02.png',
-          '/product-details/preforms/500-ml-preform-agro-pet-bottles/500-ml-preform-agro-pet-bottles-03.png',
+          '/product-details/preforms/ropp-preform-90-ml/ropp-preform-90-ml-05.jpg',
+          '/product-details/preforms/ropp-preform-90-ml/ropp-preform-90-ml-01.jpg',
+          '/product-details/preforms/ropp-preform-90-ml/ropp-preform-90-ml-02.jpg',
+          '/product-details/preforms/ropp-preform-90-ml/ropp-preform-90-ml-03.jpg',
+          '/product-details/preforms/ropp-preform-90-ml/ropp-preform-90-ml-06.jpg',
         ],
         technicalSpecification: {
           description: 'Engineered for consistent weight and accurate necks, this lightweight PET preform ensures clear bottles, reliable sealing, and compatibility with standard filling lines to streamline your production and reduce costs.'
@@ -3372,10 +3282,12 @@ export const productDetailData = {
         subtitle: 'Production-Ready PET ROPP Preform for Syrup and Liquid Packaging',
         description: 'The ROPP Preform 180 ml is a virgin PET (Polyethylene Terephthalate) packaging solution designed for pharmaceutical syrups, nutraceutical products, personal-care liquids, and FMCG bottles. It delivers excellent clarity, consistent dimensions, and reliable neck accuracy, ensuring secure ROPP cap sealing, smooth bottle blowing, and dependable packaging performance across high-volume production lines.',
         images: [
-          // TODO: replace with real ROPP Preform 180 ml images when available.
-          '/product-details/preforms/500-ml-preform-agro-pet-bottles/500-ml-preform-agro-pet-bottles-01.png',
-          '/product-details/preforms/500-ml-preform-agro-pet-bottles/500-ml-preform-agro-pet-bottles-02.png',
-          '/product-details/preforms/500-ml-preform-agro-pet-bottles/500-ml-preform-agro-pet-bottles-03.png',
+          // Shares the 90 ml ROPP photography until 180 ml shots are available.
+          '/product-details/preforms/ropp-preform-90-ml/ropp-preform-90-ml-05.jpg',
+          '/product-details/preforms/ropp-preform-90-ml/ropp-preform-90-ml-01.jpg',
+          '/product-details/preforms/ropp-preform-90-ml/ropp-preform-90-ml-02.jpg',
+          '/product-details/preforms/ropp-preform-90-ml/ropp-preform-90-ml-03.jpg',
+          '/product-details/preforms/ropp-preform-90-ml/ropp-preform-90-ml-06.jpg',
         ],
         technicalSpecification: {
           description: 'Designed for stable bottle production and reliable filling-line compatibility, this PET ROPP preform offers controlled weight distribution, accurate neck dimensions, and consistent blowing performance for medium-volume liquid packaging applications.'
@@ -3596,10 +3508,10 @@ export const productDetailData = {
       subtitle: 'LDPE Spout Set for Controlled Dispensing in Industrial Buckets and Pails',
       description: 'The Spout Flower Set is manufactured from virgin LDPE (Low-Density Polyethylene) for smooth and controlled liquid dispensing in industrial bucket and pail applications. Designed for secure fitment and easy pouring, it helps improve handling convenience and supports cleaner dispensing of paints, lubricants, chemicals, adhesives, and other liquid products.',
       images: [
-        // TODO: replace with real Spout Flower Set images when available.
-        '/product-details/blow-molding-accessories/bottle-caps-inner-plugs/bottle-caps-inner-plugs-1.jpg',
-        '/product-details/blow-molding-accessories/bottle-caps-inner-plugs/bottle-caps-inner-plugs-2.jpg',
-        '/product-details/blow-molding-accessories/bottle-caps-inner-plugs/bottle-caps-inner-plugs-3.jpg',
+        '/product-details/spout-flower-set/spout-flower-set-01.jpg',
+        '/product-details/spout-flower-set/spout-flower-set-02.jpg',
+        '/product-details/spout-flower-set/spout-flower-set-03.jpg',
+        '/product-details/spout-flower-set/spout-flower-set-04.jpg',
       ],
       technicalSpecification: {
         description: 'Built for consistent fitment and controlled dispensing, the LDPE Spout Flower Set offers stable dimensions and flexible usability for industrial packaging applications and bucket lid integration.'
@@ -3680,10 +3592,9 @@ export const productDetailData = {
       subtitle: 'HDPE Bottle Cap for Agrochemical and Liquid Packaging Applications',
       description: 'BMRAJ’s Agro Bottle Caps are made from virgin HDPE (High-Density Polyethylene) to provide a secure closure for bottles used in pesticides, fertilizers, agrochemicals, and other liquids. It is designed for a reliable fit and easy use, offering consistent sealing and wad compatibility for different packaging needs (wad options available).',
       images: [
-        // TODO: replace with real Agro Bottle Cap images when available.
-        '/product-details/blow-molding-accessories/bottle-caps-inner-plugs/bottle-caps-inner-plugs-1.jpg',
-        '/product-details/blow-molding-accessories/bottle-caps-inner-plugs/bottle-caps-inner-plugs-2.jpg',
-        '/product-details/blow-molding-accessories/bottle-caps-inner-plugs/bottle-caps-inner-plugs-3.jpg',
+        '/product-details/agro-bottle-cap/agro-bottle-cap-01.png',
+        '/product-details/agro-bottle-cap/agro-bottle-cap-02.png',
+        '/product-details/agro-bottle-cap/agro-bottle-cap-03.png',
       ],
       technicalSpecification: {
         description: 'The Agro Bottle Cap fits bottle necks securely and can be used multiple times. It keeps its shape and provides a tight seal for agrochemical, industrial, and liquid packaging bottles.'

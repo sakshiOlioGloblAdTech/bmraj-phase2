@@ -111,7 +111,10 @@ export default function ContactForm() {
     `${baseInputClass} ${fieldErrors[name] ? "border-red-500" : "border-primary"}`;
 
   return (
-    <div className="flex-1 bg-white rounded-2xl shadow-soft p-6 lg:p-8">
+    <div
+      id="enquiry-form"
+      className="flex-1 bg-white rounded-2xl shadow-soft p-6 lg:p-8 scroll-mt-28"
+    >
       <h2 className="text-[22px] lg:text-[26px] font-bold text-[#183F34] mb-6">
         Get an Instant Quote
       </h2>

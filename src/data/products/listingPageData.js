@@ -57,12 +57,12 @@ export const productListingData = {
         },
         {
           id: 6,
-          title: '185 KGS / 210 LTR DRUM',
-          slug: '185-kgs-210-ltr-drum',
-          imageUrl: '/listing/full-open-top-drums/185-kgs-210-ltr-drum.png',
-          capacity: '185 KGS / 210 LTR DRUM',
+          title: 'Full Open Top Drums',
+          slug: 'open-top-drums',
+          imageUrl: '/listing/containers-for-lubricants/open-top-drums.png',
+          capacity: '30-210 Liters',
           material: 'HDPE',
-          features: ['Food Grade', 'Chemical Resistant', 'UN Certified']
+          features: ['Easy Access', 'Chemical Resistant', 'Heavy Duty']
         }
       ],
       relatedProducts: [
@@ -152,6 +152,15 @@ export const productListingData = {
           capacity: '100 Liters',
           material: '',
           features: ['Wide Opening', 'Easy Filling', 'UN Certified']
+        },
+        {
+          id: 4,
+          title: '50 LTR NARROW MOUTH DRUMS',
+          slug: '50-ltr-narrow-mouth-drums',
+          imageUrl: '/listing/containers-for-lubricants/50-ltr-narrow-mouth-drums.png',
+          capacity: '50 Liters',
+          material: 'HDPE',
+          features: ['Narrow Mouth', 'Chemical Resistant', 'UN Certified']
         }
       ],
       relatedProducts: [
@@ -372,15 +381,6 @@ export const productListingData = {
       products: [
         {
           id: 1,
-          title: 'Liner Type Drum',
-          slug: 'liner-type-drum',
-          imageUrl: '/listing/barrels/liner-type-drum.png',
-          capacity: '210 Liters',
-          material: 'HDPE',
-          features: ['Liner Compatible', 'Chemical Resistant', 'UN Certified']
-        },
-        {
-          id: 2,
           title: '210 LTR FULL OPEN TOP',
           slug: '210-ltr-full-open-top-barrel',
           imageUrl: '/listing/barrels/210-ltr-full-open-top.png',
@@ -389,7 +389,7 @@ export const productListingData = {
           features: ['Full Open Top', 'Easy Access', 'UN Certified']
         },
         {
-          id: 3,
+          id: 2,
           title: '210 LTR STRAIGHT BODY - L RING C TYPE',
           slug: '210-ltr-straight-body-l-ring-c-type-barrel',
           imageUrl: '/listing/barrels/210-ltr-straight-body-l-ring-c-type.png',
@@ -398,13 +398,22 @@ export const productListingData = {
           features: ['L Ring Design', 'Straight Body', 'UN Certified']
         },
         {
-          id: 4,
+          id: 3,
           title: 'L-Ring Type Drums (210 LTR, 235 LTR, 250 LTR)',
           slug: 'l-ring-type-barrels',
           imageUrl: '/listing/barrels/210-ltr-l-ring-type-drum.png',
           capacity: '210-250 Liters',
           material: 'HDPE',
           features: ['Multiple Capacities', 'L Ring Design', 'UN Certified']
+        },
+        {
+          id: 4,
+          title: 'Plastic Barrels & Drums',
+          slug: 'plastic-barrels-drums',
+          imageUrl: '/listing/containers-for-lubricants/plastic-barrels-drums.png',
+          capacity: '60-210 Liters',
+          material: 'HDPE',
+          features: ['Industrial Grade', 'Chemical Resistant', 'UN Certified']
         }
       ],
       relatedProducts: [
@@ -925,33 +934,6 @@ export const productListingData = {
           capacity: 'Various',
           material: 'HDPE',
           features: ['Stackable', 'Heavy Duty', 'Leak-Proof']
-        },
-        {
-          id: 4,
-          title: 'Plastic Barrels & Drums',
-          slug: 'plastic-barrels-drums',
-          imageUrl: '/listing/containers-for-lubricants/plastic-barrels-drums.png',
-          capacity: 'Various',
-          material: 'HDPE',
-          features: ['Industrial Grade', 'Chemical Resistant', 'UN Certified']
-        },
-        {
-          id: 5,
-          title: 'Full Open Top Drums',
-          slug: 'open-top-drums',
-          imageUrl: '/listing/containers-for-lubricants/open-top-drums.png',
-          capacity: 'Various',
-          material: 'HDPE',
-          features: ['Easy Access', 'Chemical Resistant', 'Heavy Duty']
-        },
-        {
-          id: 6,
-          title: '50 LTR Narrow Mouth Drums',
-          slug: '50-ltr-narrow-mouth-drums',
-          imageUrl: '/listing/containers-for-lubricants/50-ltr-narrow-mouth-drums.png',
-          capacity: '50 Liters',
-          material: 'HDPE',
-          features: ['Narrow Mouth', 'Chemical Resistant', 'UN Certified']
         }
       ],
       relatedProducts: [
@@ -1095,7 +1077,7 @@ export const productListingData = {
       products: [
         {
           id: 1,
-          title: '500 ML Preform for Agro PET Bottles',
+          title: 'Preform for Agro PET Bottles',
           slug: '500-ml-preform-agro-pet-bottles',
           imageUrl: '/listing/pet-preforms/500-ml-preform-for-bottle-jar.png',
           capacity: '500 ML',
@@ -1115,8 +1097,7 @@ export const productListingData = {
           id: 3,
           title: 'ROPP Preform 90 ml',
           slug: 'ropp-preform-90-ml',
-          // TODO: replace with real ROPP Preform 90 ml image when available.
-          imageUrl: '/listing/pet-preforms/500-ml-preform-for-bottle-jar.png',
+          imageUrl: '/product-details/preforms/ropp-preform-90-ml/ropp-preform-90-ml-05.jpg',
           capacity: '90 ml',
           material: 'PET',
           features: ['High Clarity', 'ROPP Neck', 'Pharma Grade']
@@ -1125,8 +1106,8 @@ export const productListingData = {
           id: 4,
           title: 'ROPP Preform 180 ml',
           slug: 'ropp-preform-180-ml',
-          // TODO: replace with real ROPP Preform 180 ml image when available.
-          imageUrl: '/listing/pet-preforms/500-ml-preform-for-bottle-jar.png',
+          // Shares the 90 ml ROPP photography until 180 ml shots are available.
+          imageUrl: '/product-details/preforms/ropp-preform-90-ml/ropp-preform-90-ml-05.jpg',
           capacity: '180 ml',
           material: 'PET',
           features: ['High Clarity', 'ROPP Neck', 'Pharma Grade']
