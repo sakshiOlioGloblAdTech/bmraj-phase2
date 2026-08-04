@@ -17,6 +17,7 @@ import { row1Items, row2Items, row3Items } from '@/data';
 import { getTrustStats } from '@/data/stats';
 import { getIndustryPageData, getAllIndustryPageSlugs } from '@/data/industriesPageData';
 import { companyLogos } from '@/data/companyLogos';
+import { withSeoMeta } from '@/data/seoMeta';
 
 
 
@@ -35,14 +36,14 @@ export async function generateMetadata({ params }) {
     return { title: 'Industry Not Found' };
   }
 
-  return {
+  return withSeoMeta(`/industries/${industry}`, {
     title: `${data.title} | BMRAJ Plastics`,
     description: data.description,
     openGraph: {
       title: data.title,
       description: data.description,
     },
-  };
+  });
 }
 
 

@@ -11,6 +11,9 @@ import PackagingSolutionsSection from '@/components/sections/home/PackagingSolut
 import PETPreformsHero from '@/components/sections/home/PETPreformsHero';
 // import TestimonialCarousel from '@/components/sections/home/TestimonialCarousel';
 import StatatsTrustSection from '@/components/sections/home/TrustSection';
+import { withSeoMeta } from '@/data/seoMeta';
+
+export const metadata = withSeoMeta('/');
 
 export default function Home() {
   return (

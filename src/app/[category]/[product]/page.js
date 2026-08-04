@@ -9,6 +9,7 @@ import GlobalReachSection from '@/components/common/GlobalReachSection';
 import FrequentlyAsked from '@/components/sections/ProductCategory/FrequentlyAsked';
 import IdealRangeSection from '@/components/sections/ProductListing/IdealRangeSection';
 import ProductDetailClient from '@/components/sections/ProductDetail/ProductDetailClient';
+import { withSeoMeta } from '@/data/seoMeta';
 
 // Categories that have direct detail pages (no listing page)
 const DIRECT_DETAIL_CATEGORIES = ['food-packaging', 'crates', 'blow-molding-accessories', 'cosmetic-caps'];
@@ -56,7 +57,7 @@ export async function generateMetadata({ params }) {
         title: 'Product Not Found',
       };
     }
-    return {
+    return withSeoMeta(`/${category}/${product}`, {
       title: `${data.title} | BMRAJ Plastics`,
       description: data.description,
       openGraph: {
@@ -64,7 +65,7 @@ export async function generateMetadata({ params }) {
         description: data.description,
         images: data.images,
       },
-    };
+    });
   }
 
   // Normal listing page
@@ -76,14 +77,14 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  return {
+  return withSeoMeta(`/${category}/${product}`, {
     title: `${data.title} | BMRAJ Plastics`,
     description: data.description,
     openGraph: {
       title: data.title,
       description: data.description,
     },
-  };
+  });
 }
 
 

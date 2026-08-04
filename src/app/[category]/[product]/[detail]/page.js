@@ -6,6 +6,7 @@ import ProductDetailClient from '@/components/sections/ProductDetail/ProductDeta
 import GlobalReachSection from '@/components/common/GlobalReachSection';
 import FrequentlyAsked from '@/components/sections/ProductCategory/FrequentlyAsked';
 import IdealRangeSection from '@/components/sections/ProductListing/IdealRangeSection';
+import { withSeoMeta } from '@/data/seoMeta';
 
 // Generate static params for all product details (SEO optimization)
 export async function generateStaticParams() {
@@ -43,7 +44,7 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  return {
+  return withSeoMeta(`/${category}/${product}/${detail}`, {
     title: `${data.title} | BMRAJ Plastics`,
     description: data.description,
     openGraph: {
@@ -51,7 +52,7 @@ export async function generateMetadata({ params }) {
       description: data.description,
       images: data.images,
     },
-  };
+  });
 }
 
 
