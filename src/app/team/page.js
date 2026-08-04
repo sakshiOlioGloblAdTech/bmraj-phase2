@@ -22,17 +22,17 @@ export default function TeamPage() {
     <>
       <Header />
       <main className="bg-[#F6F6EF] mt-20">
-        <div className="max pad mx-auto py-12">
+        <div className="max pad mx-auto py-8 sm:py-12">
           <Breadcrumbs items={generateTeamBreadcrumbs()} />
 
-          <div className="max-w-3xl mb-10 lg:mb-12">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#183F34] mb-4">
+          <div className="max-w-3xl mb-8 lg:mb-12">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#183F34] mb-3 sm:mb-4">
               {title.start} <span className="text-[#139C57]">{title.highlight}</span>
             </h1>
-            <h2 className="text-xl md:text-2xl font-[600] text-[#23322E] mb-4">
+            <h2 className="text-lg sm:text-xl md:text-2xl font-[600] text-[#23322E] mb-3 sm:mb-4">
               {subtitle}
             </h2>
-            <p className="text-[#66726F] text-base md:text-[16px] font-[400] leading-relaxed">
+            <p className="text-[#66726F] text-[15px] md:text-[16px] font-[400] leading-relaxed">
               {description}
             </p>
           </div>

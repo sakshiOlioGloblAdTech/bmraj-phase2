@@ -9,7 +9,7 @@ export default function TeamGrid({ members }) {
   });
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+    <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5 lg:gap-8">
       {members.map((member, index) => (
         <article
           ref={setRef(index)}
@@ -24,16 +24,16 @@ export default function TeamGrid({ members }) {
               src={member.image}
               alt={member.name}
               fill
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+              sizes="(max-width: 1024px) 50vw, 25vw"
               className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
             />
           </div>
 
-          <div className="p-5 text-left">
-            <h3 className="text-[18px] font-[600] text-[#183F34] mb-1">
+          <div className="p-3 sm:p-4 lg:p-5 text-left">
+            <h3 className="text-[14px] sm:text-[16px] lg:text-[18px] font-[600] text-[#183F34] leading-tight mb-0.5 sm:mb-1">
               {member.name}
             </h3>
-            <p className="text-[14px] font-[400] text-[#139C57]">
+            <p className="text-[12px] sm:text-[13px] lg:text-[14px] font-[400] text-[#139C57] leading-tight">
               {member.designation}
             </p>
           </div>
