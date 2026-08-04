@@ -3487,10 +3487,13 @@ export const productDetailData = {
       subtitle: 'HDPE Screw Cap for Secure Bottle Sealing and Tamper-Evident Packaging',
       description: 'The 38mm Oil cap, manufactured from virgin HDPE (High-Density Polyethylene), provides reliable bottle sealing and secure closure fitment. Compatible with 38 mm neck finishes, it offers smooth opening and closing, tamper-evident slit options, and wad customization to meet specific sealing requirements for FMCG, pharmaceutical, beverage, and industrial applications.',
       images: [
-        // TODO: replace with real 38mm Oil Cap images when available.
+        // Confirmed by the client: these are the oil caps. Shared with the
+        // Bottle Caps & Inner Plugs page, which is where they were shot.
+        // Leads with the branded lubricant cap and the threaded interior.
+        '/product-details/blow-molding-accessories/bottle-caps-inner-plugs/bottle-caps-inner-plugs-4.jpg',
+        '/product-details/blow-molding-accessories/bottle-caps-inner-plugs/bottle-caps-inner-plugs-3.jpg',
         '/product-details/blow-molding-accessories/bottle-caps-inner-plugs/bottle-caps-inner-plugs-1.jpg',
         '/product-details/blow-molding-accessories/bottle-caps-inner-plugs/bottle-caps-inner-plugs-2.jpg',
-        '/product-details/blow-molding-accessories/bottle-caps-inner-plugs/bottle-caps-inner-plugs-3.jpg',
       ],
       technicalSpecification: {
         description: 'The 38mm oil Cap fits 38 mm necks, provides a secure screw fit, and allows customization for FMCG, pharmaceutical, beverage, and industrial applications.'
