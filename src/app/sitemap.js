@@ -11,6 +11,7 @@ const DIRECT_DETAIL_CATEGORIES = new Set([
   "food-packaging",
   "crates",
   "blow-molding-accessories",
+  "cosmetic-caps",
 ]);
 
 function url(path, { priority = 0.7, changeFrequency = "monthly" } = {}) {

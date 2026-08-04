@@ -1276,6 +1276,12 @@ export const allCategoryData = {
           slug: '1-5-ltr-cake-magic-box',
           image: '/category/food-packaging/cake-magic-box.png',
           description: 'Premium cake boxes for bakery and dessert packaging'
+        },
+        {
+          name: 'Shrikhand Container',
+          slug: 'shrikhand-container',
+          image: '/product-details/shrikhand-container/shrikhand-container-02.jpg',
+          description: ''
         }
       ]
     },
@@ -1657,6 +1663,129 @@ export const allCategoryData = {
           image: "/product-image/Pail-containers-buckets-1.png",
           bgColor: "#D1EEAE",
           description: "Wide range of pail containers and buckets, ideal for lubricants, grease, and chemical packaging.",
+        },
+        {
+          id: 4,
+          title: "Food Packaging",
+          slug: "food-packaging",
+          image: "/product-image/Food-packaging-001.png",
+          bgColor: "#FFF9C4",
+          description: "Consumer-safe, lightweight, and attractive food packaging, from dairy cups and jars to sweet and dessert boxes.",
+        },
+      ]
+    }
+  },
+
+  // TODO: awaiting content from the client. The hero image, copy, stats and
+  // FAQs below are placeholders so the category renders; replace before go-live.
+  'cosmetic-caps': {
+    name: 'Cosmetic Caps',
+    slug: 'cosmetic-caps',
+    IndustrialHero: {
+      title: 'Cosmetic Caps',
+      subtitle: 'Cosmetic caps and closures manufactured by BMRAJ Industries. Full product details coming soon.',
+      image: '/leading-manufacturing.png',
+      floatingItems: [
+        "Injection Molding",
+        "Blow Molding",
+        "Jerrycans & Polycans",
+        "Drums & Barrels",
+        "Small Bottles",
+        "Injection Molding",
+        "Blow Molding",
+        "Jerrycans & Polycans",
+        "Drums & Barrels",
+        "Small Bottles",
+      ],
+      durableSection: {
+        titleHighlight: "Precision-Moulded",
+        titleNormal: "Caps & Closures",
+        description: "Details of this range are being finalised and will be published shortly."
+      }
+    },
+    categoryStats: [
+      {
+        id: 'precision-moulding',
+        title: 'Precision Moulding',
+        subtitle: 'Details to be confirmed.'
+      },
+      {
+        id: 'material-options',
+        title: 'Material Options',
+        subtitle: 'Details to be confirmed.'
+      },
+      {
+        id: 'custom-finishes',
+        title: 'Custom Finishes',
+        subtitle: 'Details to be confirmed.'
+      },
+      {
+        id: 'quality-assured',
+        title: 'Quality Assured',
+        subtitle: 'Manufactured under the same ISO 9001:2015 certified processes as our wider range.'
+      }
+    ],
+    productLine: {
+      title: 'Our Range of Cosmetic Caps',
+      description: 'Full range details are being finalised and will be published shortly.',
+      categories: [
+        {
+          name: 'Cosmetic Caps',
+          slug: 'cosmetic-caps',
+          image: '/product-details/cosmetic-caps/cosmetic-caps-01.jpg',
+          description: ''
+        }
+      ]
+    },
+    whyChoose: {
+      title: 'Why Choose BMRAJ',
+      points: [
+        {
+          title: 'Two Decades of Moulding Experience',
+          content: 'BMRAJ has manufactured plastic packaging components for global brands for over twenty years.'
+        },
+        {
+          title: 'ISO 9001:2015 Certified Facility',
+          content: 'All processes run under one certified roof in Silvassa, ensuring consistent quality and traceability.'
+        },
+        {
+          title: 'Custom Configurations',
+          content: 'Colour, branding and finish options available to suit your product line.'
+        }
+      ]
+    },
+    GlobalReachSection: {
+      title: 'Get Your Ideal Packaging Solution',
+      description: "Talk to our team about cosmetic caps and closures for your product range."
+    },
+    faq: [],
+    exploreMoreProducts: {
+      title: "Explore More Products",
+      subtitle: "Explore BMRAJ's broader packaging and storage solutions across industrial sectors.",
+      products: [
+        {
+          id: 1,
+          title: "Blow Molding Accessories",
+          slug: "blow-molding-accessories",
+          image: "/product-image/Blow-moulding-accesories-01.png",
+          bgColor: "#E1BEE7",
+          description: "High-quality caps, plugs, handles, and clamps engineered to complement our blow-moulded packaging solutions.",
+        },
+        {
+          id: 2,
+          title: "Small Bottles & Containers",
+          slug: "small-bottles-containers",
+          image: "/product-image/Small-bottles-containers-01.png",
+          bgColor: "#FFE0B2",
+          description: "HDPE bottles and multi-purpose containers for lubricants, pesticides, cosmetics, and laboratory use.",
+        },
+        {
+          id: 3,
+          title: "PET Bottles & Preforms",
+          slug: "pet-bottles-preforms",
+          image: "/product-image/Pet-bottles-preforms-01.png",
+          bgColor: "#C8E6F5",
+          description: "PET bottles and preforms for beverage and liquid packaging.",
         },
         {
           id: 4,

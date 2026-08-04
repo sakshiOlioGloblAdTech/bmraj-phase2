@@ -21,6 +21,7 @@ const productLinks = [
   { name: 'Preforms', href: '/pet-bottles-preforms/preforms' },
   { name: 'Food Packaging', href: '/food-packaging' },
   { name: 'Crates', href: '/crates' },
+  { name: 'Cosmetic Caps', href: '/cosmetic-caps' },
   { name: 'Blow Molding Accessories', href: '/blow-molding-accessories' },
 ];
 
