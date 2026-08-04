@@ -15,6 +15,7 @@ import { notFound } from 'next/navigation'
 import { getCategoryIndustries } from '@/data/products/categoryPageData'
 import ExploreMoreProducts from '@/components/common/ExploreMoreProducts'
 import { Header } from '@/components/layouts'
+import { withSeoMeta } from '@/data/seoMeta'
 
 
 // Generate static params for all categories (SEO optimization)
@@ -38,7 +39,7 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  return {
+  return withSeoMeta(`/${category}`, {
     title: `${data.name} | BMRAJ Plastics`,
     description: data.IndustrialHero.subtitle,
     openGraph: {
@@ -46,7 +47,7 @@ export async function generateMetadata({ params }) {
       description: data.IndustrialHero.subtitle,
       images: [data.IndustrialHero.image],
     },
-  };
+  });
 }
 
 

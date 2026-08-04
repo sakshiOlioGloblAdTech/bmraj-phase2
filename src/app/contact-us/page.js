@@ -2,8 +2,9 @@ import { Header } from "@/components/layouts";
 import Breadcrumbs from "@/components/common/Breadcrumbs";
 import { generateContactBreadcrumbs } from "@/utils/breadcrumbs";
 import ContactForm from "@/components/sections/Contact/ContactForm";
+import { withSeoMeta } from "@/data/seoMeta";
 
-export const metadata = {
+export const metadata = withSeoMeta("/contact-us", {
   title: "Contact Us | BMRAJ Plastics",
   description:
     "Get in touch with BMRAJ Industries for custom plastic packaging, drums, jerrycans, and contract manufacturing inquiries.",
@@ -12,7 +13,7 @@ export const metadata = {
     description:
       "Get in touch with BMRAJ Industries for custom plastic packaging and contract manufacturing inquiries.",
   },
-};
+});
 
 export default function ContactUsPage() {
   return (

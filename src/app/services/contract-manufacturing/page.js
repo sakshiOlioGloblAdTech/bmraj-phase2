@@ -14,11 +14,12 @@ import GlobalReachSection from '@/components/common/GlobalReachSection';
 import FrequentlyAsked from '@/components/sections/ProductCategory/FrequentlyAsked';
 import { getIndustries } from '@/data/industries';
 import ContractManufacturingData from '@/data/contractManufacturing';
+import { withSeoMeta } from '@/data/seoMeta';
 
-export const metadata = {
+export const metadata = withSeoMeta('/services/contract-manufacturing', {
   title: 'Contract Manufacturing - BMRAJ Industries',
   description: 'End-to-End Contract Manufacturing for Plastic Packaging & Containers. BMRAJ delivers compliant, durable, and design-perfect storage and packaging solutions.',
-};
+});
 
 export default function ContractManufacturingPage() {
   const industries = getIndustries();
