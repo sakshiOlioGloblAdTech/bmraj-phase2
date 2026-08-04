@@ -93,7 +93,10 @@ export default function HeroSection() {
           ref={imageRef}
           className={`relative px-4 sm:px-8 md:px-[8%] scroll-scale-up stagger-4 ${imageInView ? 'in-view' : ''}`}
         >
-          <div className="relative w-full h-[80px] sm:h-[250px]">
+          {/* Box matches heroimg.png's native 5073x1292 ratio, so object-fill
+              stretches it by exactly 0% — no distortion and no cropping at any
+              viewport width. Change this ratio only alongside the image. */}
+          <div className="relative w-full aspect-[5073/1292]">
 
             <div className="absolute inset-0 pointer-events-none">
               <Image
@@ -110,7 +113,7 @@ export default function HeroSection() {
               alt="Plastic products showcase"
               fill
               sizes="100vw"
-              className="object-cover sm:object-contain"
+              className="object-fill"
               priority
             />
           </div>
