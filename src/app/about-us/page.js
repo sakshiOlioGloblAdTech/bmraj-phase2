@@ -1,4 +1,5 @@
 import React from "react";
+import { withSeoMeta } from "@/data/seoMeta";
 import {
   AboutHeroSection,
   VideoSection,
@@ -21,7 +22,7 @@ import { getIndustries } from "@/data/industries";
 import { Header } from "@/components/layouts";
 
 // Generate metadata for SEO
-export const metadata = {
+export const metadata = withSeoMeta("/about-us", {
   title: "About Us | BMRAJ Plastics",
   description:
     "Learn about BMRAJ Plastics, a leading manufacturer of high-quality plastic packaging solutions. Discover our journey, mission, and commitment to excellence.",
@@ -30,7 +31,7 @@ export const metadata = {
     description:
       "Learn about BMRAJ Plastics, a leading manufacturer of high-quality plastic packaging solutions.",
   },
-};
+});
 
 // Main About Us Page
 export default function AboutUs() {

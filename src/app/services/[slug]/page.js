@@ -10,6 +10,7 @@ import IndustrySection from '@/components/common/IndustrySection';
 import GlobalReachSection from '@/components/common/GlobalReachSection';
 import FrequentlyAsked from '@/components/sections/ProductCategory/FrequentlyAsked';
 import { getIndustriesWithIcons } from '@/data/services/industryIcons';
+import { withSeoMeta } from '@/data/seoMeta';
 
 // Generate static params for all services (SEO optimization)
 export async function generateStaticParams() {
@@ -28,14 +29,14 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  return {
+  return withSeoMeta(`/services/${slug}`, {
     title: `${data.hero.title.line1} ${data.hero.title.line2} | BMRAJ Plastics`,
     description: data.hero.subtitle,
     openGraph: {
       title: `${data.hero.title.line1} ${data.hero.title.line2}`,
       description: data.hero.subtitle,
     },
-  };
+  });
 }
 
 export default async function ServicePage({ params }) {
