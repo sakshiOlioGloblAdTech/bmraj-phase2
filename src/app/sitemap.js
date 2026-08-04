@@ -28,6 +28,7 @@ export default function sitemap() {
   // --- Static pages ---
   entries.push(url("/", { priority: 1.0, changeFrequency: "weekly" }));
   entries.push(url("/about-us", { priority: 0.8 }));
+  entries.push(url("/team", { priority: 0.6 }));
   entries.push(url("/contact-us", { priority: 0.8 }));
   entries.push(url("/products", { priority: 0.9, changeFrequency: "weekly" }));
   entries.push(url("/services/contract-manufacturing", { priority: 0.8 }));

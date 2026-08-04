@@ -4,6 +4,7 @@ import Image from 'next/image';
 const companyLinks = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about-us' },
+  { name: 'Our Team', href: '/team' },
   { name: 'Blogs', href: '/blogs' },
   { name: 'Contact Us', href: '/contact-us' },
   { name: 'Facilities', href: '/facilities' },

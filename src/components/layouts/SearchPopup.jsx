@@ -3,7 +3,8 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { allCategoryData, productListingData } from "@/data/products";
+import { allCategoryData, productListingData, productDetailData } from "@/data/products";
+import { getCategoryName } from "@/utils/breadcrumbs";
 
 // Build searchable product list from category data
 const buildSearchableProducts = () => {
@@ -53,6 +54,27 @@ const buildSearchableProducts = () => {
           });
         });
       }
+    });
+  });
+
+  // Add "direct detail" SKUs — Food Packaging, Crates and Blow Molding
+  // Accessories skip the listing level, so their products live only in
+  // productDetailData and would otherwise be missing from search entirely.
+  // A detail entry with its own `title` is a SKU; without one it's a group of
+  // SKUs already covered by productListingData above.
+  Object.entries(productDetailData).forEach(([categorySlug, categoryContent]) => {
+    Object.entries(categoryContent).forEach(([productSlug, entry]) => {
+      if (!entry || typeof entry !== 'object' || !entry.title) return;
+
+      products.push({
+        id: `${categorySlug}-${productSlug}`,
+        name: entry.title,
+        type: 'product',
+        href: `/${categorySlug}/${productSlug}`,
+        image: entry.images?.[0] || '/product-placeholder.png',
+        description: entry.subtitle || '',
+        parentCategory: getCategoryName(categorySlug)
+      });
     });
   });
 

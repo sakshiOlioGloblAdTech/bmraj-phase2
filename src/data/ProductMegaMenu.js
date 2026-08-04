@@ -2,7 +2,7 @@ export const ProductWithCategories = [
     {
       id: 0,
       name: "Drums & Barrels",
-      productCount: 17,
+      productCount: 18,
       icon: "drums",
       description:
         "For over two decades, BMRaj has been a leader in plastic manufacturing, partnering with global brands.",
@@ -18,7 +18,7 @@ export const ProductWithCategories = [
             { name: "45-50 LTR Drum", slug: "45-50-ltr-drum" },
             { name: "50-55 LTR Drum", slug: "50-55-ltr-drum" },
             { name: "60-65 LTR Drum", slug: "60-65-ltr-drum" },
-            { name: "185 KGS / 210 LTR Drum", slug: "185-kgs-210-ltr-drum" },
+            { name: "Full Open Top Drums", slug: "open-top-drums" },
           ],
         },
         {
@@ -28,6 +28,7 @@ export const ProductWithCategories = [
             { name: "50 LTR Wide Mouth (6 & 8 Inch)", slug: "50-ltr-wide-mouth-6-inch-8-inch" },
             { name: "50 LTR Narrow Mouth (2\" & 1\")", slug: "50-ltr-narrow-mouth-2-inch-1-inch" },
             { name: "100 LTR Wide Mouth", slug: "100-ltr-wide-mouth" },
+            { name: "50 LTR Narrow Mouth Drums", slug: "50-ltr-narrow-mouth-drums" },
           ],
         },
         {
@@ -51,10 +52,10 @@ export const ProductWithCategories = [
           title: "Barrels",
           slug: "barrels",
           products: [
-            { name: "Liner Type Drum", slug: "liner-type-drum" },
             { name: "210 LTR Full Open Top", slug: "210-ltr-full-open-top-barrel" },
             { name: "210 LTR Straight Body - L Ring C Type", slug: "210-ltr-straight-body-l-ring-c-type-barrel" },
             { name: "L-Ring Type Drums (210, 235, 250 LTR)", slug: "l-ring-type-barrels" },
+            { name: "Plastic Barrels & Drums", slug: "plastic-barrels-drums" },
           ],
         },
       ],
@@ -142,7 +143,7 @@ export const ProductWithCategories = [
     {
       id: 3,
       name: "Small Bottles & Containers",
-      productCount: 11,
+      productCount: 8,
       icon: "bottles",
       description: "Small bottles and containers for various packaging needs.",
       image: "/product-image/Small-bottles-containers-01.png",
@@ -172,9 +173,6 @@ export const ProductWithCategories = [
             { name: "Lubricating Oil Plastic Bottle", slug: "lubricating-oil-plastic-bottle" },
             { name: "Lube Oil Bottle", slug: "lube-oil-bottle" },
             { name: "Plastic Jerry Can", slug: "plastic-jerry-can" },
-            { name: "Plastic Barrels & Drums", slug: "plastic-barrels-drums" },
-            { name: "Full Open Top Drums", slug: "open-top-drums" },
-            { name: "50 LTR Narrow Mouth Drums", slug: "50-ltr-narrow-mouth-drums" },
           ],
         },
       ],
@@ -200,7 +198,7 @@ export const ProductWithCategories = [
           title: "Preforms (PET)",
           slug: "preforms",
           products: [
-            { name: "500 ML Preform for Agro PET Bottles", slug: "500-ml-preform-agro-pet-bottles" },
+            { name: "Preform for Agro PET Bottles", slug: "500-ml-preform-agro-pet-bottles" },
             { name: "1 LTR Preform for Oil Bottle", slug: "1-ltr-preform-oil-bottle" },
             { name: "ROPP Preform 90 ml", slug: "ropp-preform-90-ml" },
             { name: "ROPP Preform 180 ml", slug: "ropp-preform-180-ml" },

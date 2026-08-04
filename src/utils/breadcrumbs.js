@@ -33,7 +33,7 @@ const productNames = {
   'open-top-drums': 'Full Open Top (FOT) Drum',
   '50-ltr-narrow-mouth-drums': '50 LTR Narrow Mouth Drum',
   '1-ltr-oil-jar': '1 LTR Oil Jar (PET)',
-  '500-ml-preform-agro-pet-bottles': '500 ML Preform for Agro PET Bottles',
+  '500-ml-preform-agro-pet-bottles': 'Preform for Agro PET Bottles',
   '1-ltr-preform-oil-bottle': '1 LTR Preform for Oil Bottle',
   // PET Bottles & Preforms
   'pet-bottles': 'PET Bottles',
@@ -66,6 +66,7 @@ const pageRoutes = {
   'products': { label: 'Products', href: '/products' },
   'services': { label: 'Services', href: '/services' },
   'blog': { label: 'Blog', href: '/blog' },
+  'team': { label: 'Our Team', href: '/team' },
 };
 
 
@@ -195,6 +196,17 @@ export const generateContactBreadcrumbs = () => {
   return [
     pageRoutes.home,
     pageRoutes.contact
+  ];
+};
+
+/**
+ * Generate breadcrumbs for the Team page
+ * @returns {Array<Object>} Array of breadcrumb items
+ */
+export const generateTeamBreadcrumbs = () => {
+  return [
+    pageRoutes.home,
+    pageRoutes.team
   ];
 };
 

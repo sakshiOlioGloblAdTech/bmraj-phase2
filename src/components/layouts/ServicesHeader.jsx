@@ -12,7 +12,7 @@ import SearchPopup from './SearchPopup';
 const allNavigationItems = [
   { name: 'Home', href: '/' },
   { name: 'Products', href: '/products', hasMegaMenu: true },
-  // { name: 'Industries', href: '/industries', hasIndustriesMenu: true },
+  { name: 'Industries', href: '/industries', hasIndustriesMenu: true },
   { name: 'Services', href: '/services/contract-manufacturing', hasServicesMenu: true, active: true },
   { name: 'About Us', href: '/about-us' },
   { name: 'More', href: '/more', hasMoreMenu: true },

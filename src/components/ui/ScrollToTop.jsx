@@ -7,6 +7,10 @@ export default function ScrollToTop() {
   const pathname = usePathname();
 
   useEffect(() => {
+    // Let the browser handle #anchor links (e.g. /contact-us#enquiry-form)
+    // instead of yanking the page back to the top.
+    if (window.location.hash) return;
+
     // Smooth scroll to top when pathname changes
     // window.scrollTo({
     //   top: 0,
