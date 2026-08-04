@@ -525,6 +525,17 @@ export const industriesPageData = {
         material: 'PP',
         features: ['Food Grade', 'Premium Finish', 'Secure Seal'],
       },
+      {
+        // TODO: capacity, material and features pending from the client.
+        id: 6,
+        title: 'Shrikhand Container',
+        slug: 'shrikhand-container',
+        href: '/food-packaging/shrikhand-container',
+        imageUrl: '/product-details/shrikhand-container/shrikhand-container-02.jpg',
+        capacity: '',
+        material: '',
+        features: [],
+      },
     ],
     // Fallback link parts (used only if a product has no explicit `href`).
     productCategorySlug: 'food-packaging',
@@ -1408,6 +1419,17 @@ export const industriesPageData = {
         capacity: 'Standard',
         material: 'PP',
         features: ['Flip Top', 'Easy Dispensing', 'Secure Seal'],
+      },
+      {
+        // TODO: capacity, material and features pending from the client.
+        id: 7,
+        title: 'Cosmetic Caps',
+        slug: 'cosmetic-caps',
+        href: '/cosmetic-caps/cosmetic-caps',
+        imageUrl: '/product-details/cosmetic-caps/cosmetic-caps-01.jpg',
+        capacity: '',
+        material: '',
+        features: [],
       },
     ],
     // Fallback link parts (used only if a product has no explicit `href`).

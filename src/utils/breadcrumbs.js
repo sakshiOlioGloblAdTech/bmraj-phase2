@@ -8,7 +8,8 @@ const categoryNames = {
   'pet-bottles-preforms': 'PET Bottles & Preforms',
   'food-packaging': 'Food Packaging',
   'crates': 'Industrial Crates',
-  'blow-molding-accessories': 'Blow Molding Accessories'
+  'blow-molding-accessories': 'Blow Molding Accessories',
+  'cosmetic-caps': 'Cosmetic Caps'
 };
 
 // Product name mapping (slug to display name)
@@ -44,6 +45,7 @@ const productNames = {
   '500-gms-sweet-box': '500 gms Sweet Box',
   '1-kg-sweet-box': '1 kg Sweet Box',
   '1-5-ltr-cake-magic-box': '1.5 LTR Cake Magic Box',
+  'shrikhand-container': 'Shrikhand Container',
   // Industrial Crates
   'milk-crate': 'Milk Crate',
   'vegetable-fruit-crate': 'Vegetable & Fruit Crate',

@@ -2550,6 +2550,29 @@ export const productDetailData = {
         }
       ]
     },
+    // TODO: awaiting copy and specifications from the client.
+    'shrikhand-container': {
+      title: 'Shrikhand Container',
+      subtitle: '',
+      description: 'Product details coming soon.',
+      images: [
+        '/product-details/shrikhand-container/shrikhand-container-01.jpg',
+        '/product-details/shrikhand-container/shrikhand-container-02.jpg',
+        '/product-details/shrikhand-container/shrikhand-container-03.jpg',
+      ],
+      technicalSpecification: {
+        description: ''
+      },
+      specifications: [
+        { label: 'Capacity', value: 'To be confirmed' },
+        { label: 'Material', value: 'To be confirmed' },
+        { label: 'Molding Process', value: 'To be confirmed' },
+        { label: 'Colour', value: 'To be confirmed' },
+        { label: 'Applications', value: 'To be confirmed' }
+      ],
+      parentCategory: 'food-packaging',
+      faq: []
+    },
   },
 
   // Crates - Direct Detail Pages (category -> detail, no listing page)
@@ -4013,6 +4036,34 @@ export const productDetailData = {
           content: 'Yes. We offer design, colour, and size customization for OEM and container-specific applications.'
         }
       ]
+    },
+  },
+
+  // Cosmetic Caps - Direct Detail Pages (category -> detail, no listing page)
+  // TODO: awaiting copy and specifications from the client.
+  'cosmetic-caps': {
+    'cosmetic-caps': {
+      title: 'Cosmetic Caps',
+      subtitle: '',
+      description: 'Product details coming soon.',
+      images: [
+        '/product-details/cosmetic-caps/cosmetic-caps-01.jpg',
+        '/product-details/cosmetic-caps/cosmetic-caps-02.png',
+        '/product-details/cosmetic-caps/cosmetic-caps-03.jpg',
+        '/product-details/cosmetic-caps/cosmetic-caps-04.jpg',
+        '/product-details/cosmetic-caps/cosmetic-caps-05.jpg',
+      ],
+      technicalSpecification: {
+        description: ''
+      },
+      specifications: [
+        { label: 'Material', value: 'To be confirmed' },
+        { label: 'Molding Process', value: 'To be confirmed' },
+        { label: 'Colour', value: 'To be confirmed' },
+        { label: 'Applications', value: 'To be confirmed' }
+      ],
+      parentCategory: 'cosmetic-caps',
+      faq: []
     },
   },
 };

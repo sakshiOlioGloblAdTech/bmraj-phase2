@@ -209,7 +209,7 @@ export const ProductWithCategories = [
     {
       id: 5,
       name: "Food Packaging",
-      productCount: 5,
+      productCount: 6,
       icon: "food",
       description: "Food-grade packaging solutions.",
       image: "/product-image/Food-packaging-001.png",
@@ -225,6 +225,7 @@ export const ProductWithCategories = [
             { name: "500 gms Sweet Box", slug: "500-gms-sweet-box" },
             { name: "1 kg Sweet Box", slug: "1-kg-sweet-box" },
             { name: "1.5 LTR Cake Magic Box", slug: "1-5-ltr-cake-magic-box" },
+            { name: "Shrikhand Container", slug: "shrikhand-container" },
           ],
         },
       ],
@@ -251,6 +252,25 @@ export const ProductWithCategories = [
     },
     {
       id: 7,
+      name: "Cosmetic Caps",
+      productCount: 1,
+      icon: "molding",
+      description: "Cosmetic caps and closures. Full range details coming soon.",
+      image: "/product-details/cosmetic-caps/cosmetic-caps-01.jpg",
+      slug: "cosmetic-caps",
+      skipSectionSlug: true,
+      sections: [
+        {
+          title: "Cosmetic Caps",
+          slug: "cosmetic-caps",
+          products: [
+            { name: "Cosmetic Caps", slug: "cosmetic-caps" },
+          ],
+        },
+      ],
+    },
+    {
+      id: 8,
       name: "Blow Molding Accessories",
       productCount: 11,
       icon: "molding",

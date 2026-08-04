@@ -61,7 +61,6 @@ export async function POST(request) {
 
   // Append to the Google Sheet first. Both the sheet write and the email must
   // succeed, so if this fails we abort before sending the email (no duplicate).
-  console.log("[contact] sheet configured:", isSheetConfigured(), "| URL present:", Boolean(process.env.SHEET_WEBHOOK_URL));
   if (isSheetConfigured()) {
     try {
       await appendToSheet({

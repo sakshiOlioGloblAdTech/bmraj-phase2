@@ -11,7 +11,7 @@ import IdealRangeSection from '@/components/sections/ProductListing/IdealRangeSe
 import ProductDetailClient from '@/components/sections/ProductDetail/ProductDetailClient';
 
 // Categories that have direct detail pages (no listing page)
-const DIRECT_DETAIL_CATEGORIES = ['food-packaging', 'crates', 'blow-molding-accessories'];
+const DIRECT_DETAIL_CATEGORIES = ['food-packaging', 'crates', 'blow-molding-accessories', 'cosmetic-caps'];
 
 // Generate static params for all products (SEO optimization)
 export async function generateStaticParams() {
