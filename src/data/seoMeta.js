@@ -305,7 +305,7 @@ export const seoMeta = {
     title: '1 Litre PET Preform for Bottle & Jar Manufacturer | BMRAJ',
     description: 'BMRAJ\'s 1 LTR PET preform for bottle & jar — 1 ltr preform for oil bottle/jar, agro bottle preforms. 38mm, 46mm & 25mm neck sizes. ISO 9001 certified manufacturer India.',
   },
-  '/pet-bottles-preforms/preforms/500-ml-preform-agro-pet-bottles': {
+  '/pet-bottles-preforms/preforms/pet-preform-agro-bottles': {
     title: '500ml PET Preform for Bottle & Jar Manufacturer | BMRAJ India',
     description: 'BMRAJ\'s 500 ML PET preform for bottle & jar — pesticide bottle preforms, 500 ml preform for oil bottle. 38mm, 46mm & 25mm neck. ISO 9001 certified manufacturer India.',
   },
@@ -458,24 +458,37 @@ export function getSeoMeta(route) {
 }
 
 /**
- * Merge the sheet's title/description into a page's metadata object, keeping
- * whatever else that page already sets (openGraph images, etc.).
+ * Build a page's metadata: the sheet's title and description when the route has
+ * an entry, the page's own values when it doesn't, plus a self-referencing
+ * canonical URL either way.
  *
- * @param {string} route - the page's own path
- * @param {Object} fallback - metadata to use when the route has no entry
+ * Canonical lives here rather than being repeated in each page so that every
+ * route calling this gets one automatically and they cannot drift apart.
+ * Next.js resolves the relative path against metadataBase in layout.js.
+ *
+ * @param {string} route - the page's own path, e.g. '/drums-and-barrels'
+ * @param {Object} fallback - metadata to use when the route has no sheet entry
  */
 export function withSeoMeta(route, fallback = {}) {
   const meta = getSeoMeta(route);
-  if (!meta) return fallback;
+  const canonical = route && route !== '/' ? route.replace(/\/+$/, '') : '/';
+
+  const title = meta ? meta.title : fallback.title;
+  const description = meta ? meta.description : fallback.description;
 
   return {
     ...fallback,
-    title: meta.title,
-    description: meta.description,
+    title,
+    description,
+    alternates: { ...(fallback.alternates || {}), canonical },
     openGraph: {
       ...(fallback.openGraph || {}),
-      title: meta.title,
-      description: meta.description,
+      // A sheet entry overrides the page's own OG copy; without one we keep it.
+      title: meta ? title : fallback.openGraph?.title || title,
+      description: meta ? description : fallback.openGraph?.description || description,
+      url: canonical,
+      siteName: 'BMRAJ Industries',
+      type: fallback.openGraph?.type || 'website',
     },
   };
 }

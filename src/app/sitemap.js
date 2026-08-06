@@ -4,7 +4,7 @@
 import { productDetailData, productListingData, allCategoryData } from "@/data/products";
 import { getAllServiceSlugs } from "@/data/services";
 
-const BASE_URL = "https://www.bmraj.com";
+import { SITE_URL as BASE_URL } from "@/lib/site";
 
 // Same list as in app/[category]/[product]/page.js
 const DIRECT_DETAIL_CATEGORIES = new Set([

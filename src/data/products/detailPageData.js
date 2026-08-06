@@ -667,6 +667,55 @@ export const productDetailData = {
       },
     },
     'barrels': {
+      'liner-type-drum': {
+        title: 'LINER TYPE DRUM',
+        subtitle: 'Dual-Layer HDPE Drum with Internal Liner for High-Purity Packaging',
+        description: 'The Liner Type Drum from BMRaj Plastics features a dual-layer barrier design—combining a robust outer HDPE shell with a built-in inner liner—to safeguard sensitive contents against contamination and chemical interaction. Engineered for industries where product purity is non-negotiable, these drums are perfect for chemicals, pharmaceutical ingredients, food additives, and specialty liquids that demand extra protection.',
+        images: [
+          '/product-details/barrels/liner-type-drum/liner-type-drum-01.jpg',
+          '/product-details/barrels/liner-type-drum/liner-type-drum-02.jpg',
+          '/product-details/barrels/liner-type-drum/liner-type-drum-03.jpg',
+          '/product-details/barrels/liner-type-drum/liner-type-drum-04.jpg',
+        ],
+        technicalSpecification: {
+          description: 'Made from virgin High-Density Polyethylene (HDPE) with a built-in inner liner, this drum provides a dual-layer barrier against moisture, UV rays, and chemical reactions. With a typical capacity of 210 litres, it is blow moulded for uniform strength and can be customised in colour, closure type, and branding to meet your specific application needs.'
+        },
+        specifications: [
+          { label: 'Capacity', value: '210 Litres' },
+          { label: 'Weight', value: '~As per Requirement' },
+          { label: 'Mouth Opening', value: '50mm & 70mm top and bottom seal' },
+          { label: 'Material', value: 'Virgin HDPE' },
+          { label: 'Molding Process', value: 'Blow Molding' },
+          { label: 'Colour', value: 'As per Requirement' },
+          { label: 'Applications', value: 'Chemicals, Pharmaceutical Ingredients, Food Additives, Specialty Liquids' }
+        ],
+        parentCategory: {
+          name: 'Drums & Barrels',
+          slug: 'drums-and-barrels'
+        },
+        parentProduct: {
+          name: 'Barrels',
+          slug: 'barrels'
+        },
+        GlobalReachSection: {
+          title: 'Choose the Liner Type Drum',
+          description: 'Ideal for industries where product purity is non-negotiable, these drums are perfect for chemicals, pharmaceutical ingredients, food additives, and specialty liquids that demand extra protection.'
+        },
+        faq: [
+          {
+            title: 'Which industries commonly use Liner Type Drums?',
+            content: 'Liner Type Drums are widely used in: Pharmaceuticals & APIs, Agrochemicals & Pesticides, Food Additives & Flavours, Specialty Chemicals & Industrial Fluids.'
+          },
+          {
+            title: 'What makes the liner drum unique compared to standard HDPE drums?',
+            content: 'The key differentiator is the built-in inner liner that acts as an additional barrier to: Prevent permeation of aromatic or aggressive substances, Protect product integrity from external contamination, Extend storage life for sensitive materials.'
+          },
+          {
+            title: 'Can I customise the drum?',
+            content: 'Yes. Tailor this product to your operational and branding requirements: Capacity: 210 Litres Standard / Custom Available, Approximate Weight: As per Requirement (depends on model), Material: Virgin HDPE Outer Shell + Built-in Inner Liner, Molding Process: Blow Moulded for Consistent Wall Thickness, Closure Options: 50 mm & 70 mm Top and Bottom Seal Plugs, Colour: Standard Blue / Custom Colours on Request, Branding: Label or Print Options Available.'
+          }
+        ]
+      },
       '210-ltr-full-open-top-barrel': {
         title: '210 LTR FULL OPEN TOP BARREL',
         subtitle: 'Versatile HDPE Barrel for Easy Filling and Cleaning',
@@ -2552,7 +2601,7 @@ export const productDetailData = {
     },
     // TODO: awaiting copy and specifications from the client.
     'shrikhand-container': {
-      title: 'Shrikhand Container',
+      title: '500 Gram & 1 Kilo Shrikhand Container',
       subtitle: '',
       description: 'Product details coming soon.',
       images: [
@@ -2564,7 +2613,7 @@ export const productDetailData = {
         description: ''
       },
       specifications: [
-        { label: 'Capacity', value: 'To be confirmed' },
+        { label: 'Capacity', value: '500 gm & 1 kg' },
         { label: 'Material', value: 'To be confirmed' },
         { label: 'Molding Process', value: 'To be confirmed' },
         { label: 'Colour', value: 'To be confirmed' },
@@ -3165,8 +3214,8 @@ export const productDetailData = {
       },
     },
     'preforms': {
-      '500-ml-preform-agro-pet-bottles': {
-        title: 'PREFORM FOR AGRO PET BOTTLES',
+      'pet-preform-agro-bottles': {
+        title: 'PET Preform for Agro Bottles',
         subtitle: 'High-Clarity PET Preform for Beverage, Edible Oil, and FMCG Packaging',
         description: 'The 500 ml PET Preform is engineered for consistent performance in beverage, edible oil, and FMCG bottle manufacturing. Injection moulded from virgin PET, it offers clarity, dimensional precision, and strength, ensuring smooth blowing and uniform results in every production cycle.',
         images: [
@@ -3174,18 +3223,37 @@ export const productDetailData = {
           '/product-details/preforms/500-ml-preform-agro-pet-bottles/500-ml-preform-agro-pet-bottles-02.png',
           '/product-details/preforms/500-ml-preform-agro-pet-bottles/500-ml-preform-agro-pet-bottles-03.png',
           '/product-details/preforms/500-ml-preform-agro-pet-bottles/500-ml-preform-agro-pet-bottles-04.png',
+          // The cap and the blown bottle are both listed as available in the
+          // table, so both are shown. Labelled so they're not mistaken for the
+          // preform itself — shared with the Agro Bottle Cap page.
+          {
+            src: '/product-details/agro-bottle-cap/agro-bottle-cap-01.png',
+            label: 'Cap',
+            related: true,
+          },
+          {
+            src: '/product-details/agro-bottle-cap/agro-bottle-cap-02.png',
+            label: 'Blown Bottle',
+            related: true,
+          },
+          {
+            src: '/product-details/agro-bottle-cap/agro-bottle-cap-03.png',
+            label: 'Blown Bottle',
+            related: true,
+          },
         ],
         technicalSpecification: {
           description: 'Manufactured using high-precision injection molding, this preform ensures even wall thickness, accurate neck finish, and crystal clarity. Designed for 38 mm mouth OD, it delivers excellent flow and transparency for small-volume PET bottles and jars.'
         },
         specifications: [
-          { label: 'Capacity', value: '500 ml' },
+          { label: 'Capacity', value: '100 ml, 250 ml, 500 ml & 1000 ml' },
           { label: 'Material', value: 'PET (Polyethylene Terephthalate)' },
           { label: 'Molding Process', value: 'Injection Moulded' },
           { label: 'Weight', value: '55 gms' },
           { label: 'Colour', value: 'As per Requirement' },
           { label: 'Mouth OD', value: '38 mm' },
           { label: 'Cap', value: 'Available' },
+          { label: 'Blowing Bottle', value: 'Available' },
           { label: 'Applications', value: 'Agriculture, Water, Juice, Edible Oil, FMCG Bottles & Jars' }
         ],
         parentCategory: 'pet-bottles-preforms',
@@ -3618,7 +3686,16 @@ export const productDetailData = {
       subtitle: 'HDPE Bottle Cap for Agrochemical and Liquid Packaging Applications',
       description: 'BMRAJ’s Agro Bottle Caps are made from virgin HDPE (High-Density Polyethylene) to provide a secure closure for bottles used in pesticides, fertilizers, agrochemicals, and other liquids. It is designed for a reliable fit and easy use, offering consistent sealing and wad compatibility for different packaging needs (wad options available).',
       images: [
-        '/product-details/agro-bottle-cap/agro-bottle-cap-01.png',
+        // Both materials are offered, so each is badged rather than leaving a
+        // visitor to guess which cap they're looking at.
+        {
+          src: '/product-details/agro-bottle-cap/agro-bottle-cap-01.png',
+          label: 'HDPE Agro Cap',
+        },
+        {
+          src: '/product-details/agro-bottle-cap/agro-bottle-cap-pet-01.png',
+          label: 'PET Agro Cap',
+        },
         '/product-details/agro-bottle-cap/agro-bottle-cap-02.png',
         '/product-details/agro-bottle-cap/agro-bottle-cap-03.png',
       ],
@@ -4043,30 +4120,144 @@ export const productDetailData = {
   },
 
   // Cosmetic Caps - Direct Detail Pages (category -> detail, no listing page)
-  // TODO: awaiting copy and specifications from the client.
+  // Galleries are capped at 5 images. The 40 DIA set has three further shots on
+  // disk (-06 to -08) that are not shown; swap them in here if preferred.
   'cosmetic-caps': {
-    'cosmetic-caps': {
-      title: 'Cosmetic Caps',
-      subtitle: '',
-      description: 'Product details coming soon.',
+    '35-dia-flip-top-cap': {
+      title: '35 DIA FLIP TOP CAP',
+      subtitle: 'Compact PP Flip Top Cap for Controlled and Convenient Product Dispensing',
+      description: 'The 35 DIA Flip Top Cap is a compact polypropylene closure made for easy opening and controlled dispensing. It works well for personal care, cosmetic, healthcare, and FMCG packaging. You can choose a 3 mm or 5 mm orifice, depending on your product\'s flow needs. Both matt and gloss finishes are available to match your packaging design.',
       images: [
-        '/product-details/cosmetic-caps/cosmetic-caps-01.jpg',
-        '/product-details/cosmetic-caps/cosmetic-caps-02.png',
-        '/product-details/cosmetic-caps/cosmetic-caps-03.jpg',
-        '/product-details/cosmetic-caps/cosmetic-caps-04.jpg',
-        '/product-details/cosmetic-caps/cosmetic-caps-05.jpg',
+        '/product-details/cosmetic-caps/35-dia-flip-top-cap-01.jpg',
+        '/product-details/cosmetic-caps/35-dia-flip-top-cap-02.jpg',
+        '/product-details/cosmetic-caps/35-dia-flip-top-cap-03.jpg',
       ],
       technicalSpecification: {
-        description: ''
+        description: 'The 35 DIA Flip Top Cap is compact and comes with two orifice sizes. It gives manufacturers a practical way to control product dispensing and make bottles easy to use every day.'
       },
       specifications: [
-        { label: 'Material', value: 'To be confirmed' },
-        { label: 'Molding Process', value: 'To be confirmed' },
-        { label: 'Colour', value: 'To be confirmed' },
-        { label: 'Applications', value: 'To be confirmed' }
+        { label: 'Product Type', value: '35 DIA Flip Top Cap' },
+        { label: 'Material', value: 'PP (Polypropylene)' },
+        { label: 'Cap Weight', value: '4.40 ± 0.30 g' },
+        { label: 'Cap Height', value: '20.00 ± 0.2 mm' },
+        { label: 'Cap OD', value: '33.00 ± 0.2 mm' },
+        { label: 'Sleeve Ring OD', value: '22.90 ± 0.2 mm' },
+        { label: 'BIP Ring OD', value: '10.00 ± 0.15 mm' },
+        { label: 'Cap Orifice', value: '3 mm & 5 mm Available' },
+        { label: 'Cap Finish', value: 'Matt & Gloss Available' },
+        { label: 'Metalization', value: 'Available' }
       ],
       parentCategory: 'cosmetic-caps',
-      faq: []
+      GlobalReachSection: {
+        title: 'Get Better Control While Dispensing with Compact Closure',
+        description: 'The 35 DIA Flip Top Cap is made for simple dispensing. You can choose the orifice size and finish that best fit your product and packaging needs.'
+      },
+      faq: [
+        {
+          title: 'What orifice sizes are available for the 35 DIA Flip Top Cap?',
+          content: 'The 35 DIA Flip Top Cap is available with 3 mm and 5 mm orifice options, allowing the dispensing opening to be selected according to the product and packaging requirements.'
+        },
+        {
+          title: 'What packaging applications can use the 35 DIA Flip Top Cap?',
+          content: 'Flip top closures of this type can be used across personal care, cosmetic, healthcare, and FMCG packaging where convenient opening and controlled dispensing are required. Suitability for a specific formulation should be confirmed before selection.'
+        },
+        {
+          title: 'What finish options are available for the 35 DIA Flip Top Cap?',
+          content: 'The 35 DIA Flip Top Cap is available in both matt and gloss finishes to accommodate different packaging and branding preferences.'
+        }
+      ]
+    },
+    '40-dia-flip-top-cap': {
+      title: '40 DIA FLIP TOP CAP',
+      subtitle: 'Versatile PP Flip Top Cap with 3 mm and 5 mm Dispensing Options',
+      description: 'The 40 DIA Flip Top Cap is made from polypropylene and is great for packaging that needs easy access and controlled dispensing. Its larger size offers an option besides the 35 DIA model, but you can still choose between 3 mm and 5 mm orifices. You can also pick matt or gloss finishes to match your bottle and brand.',
+      images: [
+        '/product-details/cosmetic-caps/40-dia-flip-top-cap-01.png',
+        '/product-details/cosmetic-caps/40-dia-flip-top-cap-02.jpg',
+        '/product-details/cosmetic-caps/40-dia-flip-top-cap-03.jpg',
+        '/product-details/cosmetic-caps/40-dia-flip-top-cap-04.png',
+        '/product-details/cosmetic-caps/40-dia-flip-top-cap-05.jpg',
+      ],
+      technicalSpecification: {
+        description: 'The 40 DIA Flip Top Cap is a versatile closure with a 38.30 mm outer diameter and a choice of 3 mm or 5 mm orifices. Its size fits bottles well, and you can pick from two finishes for more flexibility in your packaging.'
+      },
+      specifications: [
+        { label: 'Product Type', value: '40 DIA Flip Top Cap' },
+        { label: 'Material', value: 'PP (Polypropylene)' },
+        { label: 'Cap Weight', value: '5.75 ± 0.30 g' },
+        { label: 'Cap Height', value: '23.30 ± 0.2 mm' },
+        { label: 'Cap OD', value: '38.30 ± 0.2 mm' },
+        { label: 'Sleeve Ring OD', value: '22.90 ± 0.2 mm' },
+        { label: 'BIP Ring OD', value: '10.00 ± 0.15 mm' },
+        { label: 'Cap Orifice', value: '3 mm & 5 mm Available' },
+        { label: 'Cap Finish', value: 'Matt & Gloss Available' },
+        { label: 'Metalization', value: 'Available' }
+      ],
+      parentCategory: 'cosmetic-caps',
+      GlobalReachSection: {
+        title: 'Greater Flexibility for Regular Product Dispensing',
+        description: 'The 40 DIA Flip Top Cap is a flexible closure with different orifice and finish options, making it suitable for liquid and semi-liquid consumer packaging.'
+      },
+      faq: [
+        {
+          title: 'What dispensing options are available for the 40 DIA Flip Top Cap?',
+          content: 'The 40 DIA Flip Top Cap can be supplied with either a 3 mm or 5 mm orifice, providing options for different product dispensing requirements.'
+        },
+        {
+          title: 'Where can the 40 DIA Flip Top Cap be used?',
+          content: 'The closure can suit a range of personal care, cosmetic, healthcare, and FMCG packaging applications. Final compatibility depends on the bottle neck and the product being packed.'
+        },
+        {
+          title: 'Is the 40 DIA Flip Top Cap available in matt and gloss finishes?',
+          content: 'Yes. Both matt and gloss finish options are available, giving brands flexibility in matching the closure with their overall packaging design.'
+        }
+      ]
+    },
+    '50-dia-flip-top-cap': {
+      title: '50 DIA FLIP TOP CAP',
+      subtitle: 'Large-Format PP Flip Top Cap for Convenient and Controlled Dispensing',
+      description: 'The 50 DIA Flip Top Cap is the biggest model in BMRAJ\'s flip top cap range, with a 47.60 mm outer diameter and 24.30 mm height. Made from polypropylene, it\'s designed for easy opening and controlled dispensing in larger packaging. You can choose a 3 mm or 5 mm orifice and pick either a matt or gloss finish.',
+      images: [
+        '/product-details/cosmetic-caps/50-dia-flip-top-cap-01.png',
+        '/product-details/cosmetic-caps/50-dia-flip-top-cap-02.jpg',
+        // Borrowed from the 35 DIA set until a third 50 DIA shot is available —
+        // the two closures look near-identical in white.
+        '/product-details/cosmetic-caps/35-dia-flip-top-cap-01.jpg',
+      ],
+      technicalSpecification: {
+        description: 'The 50 DIA Flip Top Cap is bigger and heavier than the 35 DIA and 40 DIA versions. It\'s a good choice if you need a larger closure, and you still get the same orifice and finish options.'
+      },
+      specifications: [
+        { label: 'Product Type', value: '50 DIA Flip Top Cap' },
+        { label: 'Material', value: 'PP (Polypropylene)' },
+        { label: 'Cap Weight', value: '8.30 ± 0.30 g' },
+        { label: 'Cap Height', value: '24.30 ± 0.2 mm' },
+        { label: 'Cap OD', value: '47.60 ± 0.2 mm' },
+        { label: 'Sleeve Ring OD', value: '22.90 ± 0.2 mm' },
+        { label: 'BIP Ring OD', value: '10.00 ± 0.15 mm' },
+        { label: 'Cap Orifice', value: '3 mm & 5 mm Available' },
+        { label: 'Cap Finish', value: 'Matt & Gloss Available' },
+        { label: 'Metalization', value: 'Available' }
+      ],
+      parentCategory: 'cosmetic-caps',
+      GlobalReachSection: {
+        title: 'Go Larger with the 50 DIA Flip Top Cap',
+        description: 'This larger flip top closure gives you faster options for dispensing and finish, so you can meet your bottle and packaging demands.'
+      },
+      faq: [
+        {
+          title: 'How does the 50 DIA Flip Top Cap differ from the 35 DIA and 40 DIA models?',
+          content: 'The 50 DIA model has the largest cap profile of the three, with a 47.60 ± 0.2 mm outer diameter, 24.30 ± 0.2 mm height, and 8.30 ± 0.30 g weight.'
+        },
+        {
+          title: 'What orifice sizes are available for the 50 DIA Flip Top Cap?',
+          content: 'It is available with 3 mm and 5 mm orifice options, allowing manufacturers to select the opening according to their dispensing requirements.'
+        },
+        {
+          title: 'Can the 50 DIA Flip Top Cap be supplied with different surface finishes?',
+          content: 'Yes. BMRAJ offers the 50 DIA Flip Top Cap in both matt and gloss finishes to suit different bottle designs and packaging presentations.'
+        }
+      ]
     },
   },
 };

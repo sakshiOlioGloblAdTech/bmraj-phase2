@@ -3,8 +3,9 @@ import Breadcrumbs from "@/components/common/Breadcrumbs";
 import { generateTeamBreadcrumbs } from "@/utils/breadcrumbs";
 import TeamGrid from "@/components/sections/Team/TeamGrid";
 import { teamPageData } from "@/data/team";
+import { withSeoMeta } from "@/data/seoMeta";
 
-export const metadata = {
+export const metadata = withSeoMeta("/team", {
   title: "Our Team | BMRAJ Industries",
   description:
     "Meet the team behind BMRAJ Industries — decades of combined experience in plastic manufacturing, quality assurance, and global supply chain management.",
@@ -13,7 +14,7 @@ export const metadata = {
     description:
       "Meet the people behind BMRAJ Industries' plastic manufacturing operations in Silvassa, India.",
   },
-};
+});
 
 export default function TeamPage() {
   const { title, subtitle, description, members } = teamPageData;

@@ -34,7 +34,7 @@ const productNames = {
   'open-top-drums': 'Full Open Top (FOT) Drum',
   '50-ltr-narrow-mouth-drums': '50 LTR Narrow Mouth Drum',
   '1-ltr-oil-jar': '1 LTR Oil Jar (PET)',
-  '500-ml-preform-agro-pet-bottles': 'Preform for Agro PET Bottles',
+  'pet-preform-agro-bottles': 'PET Preform for Agro Bottles',
   '1-ltr-preform-oil-bottle': '1 LTR Preform for Oil Bottle',
   // PET Bottles & Preforms
   'pet-bottles': 'PET Bottles',
@@ -45,7 +45,11 @@ const productNames = {
   '500-gms-sweet-box': '500 gms Sweet Box',
   '1-kg-sweet-box': '1 kg Sweet Box',
   '1-5-ltr-cake-magic-box': '1.5 LTR Cake Magic Box',
-  'shrikhand-container': 'Shrikhand Container',
+  'shrikhand-container': '500 Gram & 1 Kilo Shrikhand Container',
+  // Cosmetic Caps (direct detail pages)
+  '35-dia-flip-top-cap': '35 DIA Flip Top Cap',
+  '40-dia-flip-top-cap': '40 DIA Flip Top Cap',
+  '50-dia-flip-top-cap': '50 DIA Flip Top Cap',
   // Industrial Crates
   'milk-crate': 'Milk Crate',
   'vegetable-fruit-crate': 'Vegetable & Fruit Crate',

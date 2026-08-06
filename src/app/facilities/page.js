@@ -6,11 +6,12 @@ import FacilityQualityTesting from '@/components/sections/Facilities/FacilityQua
 import TrustedCertifications from '@/components/sections/Facilities/TrustedCertifications';
 import FacilityHighlights from '@/components/sections/Facilities/FacilityHighlights';
 import GlobalReachSection from '@/components/common/GlobalReachSection';
+import { withSeoMeta } from '@/data/seoMeta';
 
-export const metadata = {
+export const metadata = withSeoMeta('/facilities', {
   title: 'Facilities & Capabilities | BMRAJ Industries',
   description: 'Engineering Excellence for Scalable Plastic Manufacturing. Explore BMRAJ\'s manufacturing facilities and capabilities.',
-};
+});
 
 const heroData = {
   title: 'Facilities & Capabilities',

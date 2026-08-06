@@ -1278,7 +1278,7 @@ export const allCategoryData = {
           description: 'Premium cake boxes for bakery and dessert packaging'
         },
         {
-          name: 'Shrikhand Container',
+          name: '500 Gram & 1 Kilo Shrikhand Container',
           slug: 'shrikhand-container',
           image: '/product-details/shrikhand-container/shrikhand-container-02.jpg',
           description: ''
@@ -1683,57 +1683,69 @@ export const allCategoryData = {
     slug: 'cosmetic-caps',
     IndustrialHero: {
       title: 'Cosmetic Caps',
-      subtitle: 'Cosmetic caps and closures manufactured by BMRAJ Industries. Full product details coming soon.',
+      subtitle: "BMRAJ's cosmetic caps are injection moulded from polypropylene for smooth, repeatable opening and controlled dispensing. Our flip top closures are available in 35, 40 and 50 DIA profiles, with 3 mm and 5 mm orifice options and a choice of matt or gloss finish to suit personal care, cosmetic, healthcare and FMCG packaging.",
       image: '/leading-manufacturing.png',
       floatingItems: [
+        "Flip Top Caps",
         "Injection Molding",
-        "Blow Molding",
-        "Jerrycans & Polycans",
-        "Drums & Barrels",
-        "Small Bottles",
+        "Personal Care",
+        "Cosmetics",
+        "Healthcare",
+        "Flip Top Caps",
         "Injection Molding",
-        "Blow Molding",
-        "Jerrycans & Polycans",
-        "Drums & Barrels",
-        "Small Bottles",
+        "Personal Care",
+        "Cosmetics",
+        "Healthcare",
       ],
       durableSection: {
-        titleHighlight: "Precision-Moulded",
-        titleNormal: "Caps & Closures",
-        description: "Details of this range are being finalised and will be published shortly."
+        titleHighlight: "Precision-Moulded Closures for",
+        titleNormal: "Everyday Dispensing",
+        description: "A flip top cap is opened and closed hundreds of times over a product's life, so the hinge has to keep working long after the first use. We injection mould ours in polypropylene, the material of choice for living hinges because it flexes repeatedly without cracking. Tight dimensional control on the cap bore, sleeve ring and bung keeps the closure sealing correctly on the bottle neck through the whole pack."
       }
     },
     categoryStats: [
       {
-        id: 'precision-moulding',
-        title: 'Precision Moulding',
-        subtitle: 'Details to be confirmed.'
+        id: 'three-cap-profiles',
+        title: 'Three Cap Profiles',
+        subtitle: '35, 40 and 50 DIA flip top caps to suit different bottle necks and pack sizes.'
       },
       {
-        id: 'material-options',
-        title: 'Material Options',
-        subtitle: 'Details to be confirmed.'
+        id: 'controlled-dispensing',
+        title: 'Controlled Dispensing',
+        subtitle: '3 mm and 5 mm orifice options to match the flow your formulation needs.'
       },
       {
-        id: 'custom-finishes',
-        title: 'Custom Finishes',
-        subtitle: 'Details to be confirmed.'
+        id: 'finish-options',
+        title: 'Matt & Gloss Finishes',
+        subtitle: 'Both surface finishes available so the closure matches your bottle and branding.'
       },
       {
         id: 'quality-assured',
         title: 'Quality Assured',
-        subtitle: 'Manufactured under the same ISO 9001:2015 certified processes as our wider range.'
+        subtitle: 'Moulded under the same ISO 9001:2015 certified processes as our wider range.'
       }
     ],
     productLine: {
       title: 'Our Range of Cosmetic Caps',
-      description: 'Full range details are being finalised and will be published shortly.',
+      description: 'BMRAJ manufactures polypropylene flip top caps in three diameters, each available with a 3 mm or 5 mm orifice and in matt or gloss finish.',
       categories: [
         {
-          name: 'Cosmetic Caps',
-          slug: 'cosmetic-caps',
-          image: '/product-details/cosmetic-caps/cosmetic-caps-01.jpg',
-          description: ''
+          name: '35 DIA Flip Top Cap',
+          slug: '35-dia-flip-top-cap',
+          image: '/product-details/cosmetic-caps/35-dia-flip-top-cap-01.jpg',
+          description: 'Compact 33 mm OD closure for controlled, convenient dispensing'
+        },
+        {
+          name: '40 DIA Flip Top Cap',
+          slug: '40-dia-flip-top-cap',
+          image: '/product-details/cosmetic-caps/40-dia-flip-top-cap-01.png',
+          description: 'Mid-size 38.30 mm OD closure with 3 mm and 5 mm dispensing options'
+        },
+        {
+          name: '50 DIA Flip Top Cap',
+          slug: '50-dia-flip-top-cap',
+          image: '/product-details/cosmetic-caps/50-dia-flip-top-cap-01.png',
+          description: 'Large-format 47.60 mm OD closure for bigger packs'
         }
       ]
     },
@@ -1750,15 +1762,52 @@ export const allCategoryData = {
         },
         {
           title: 'Custom Configurations',
-          content: 'Colour, branding and finish options available to suit your product line.'
+          content: 'Orifice size, surface finish, colour and branding options available to suit your product line.'
+        },
+        {
+          title: 'Dimensional Consistency',
+          content: 'Cap weight, height, outer diameter, sleeve ring and bung are held to stated tolerances so closures fit and seal the same way across every batch.'
+        },
+        {
+          title: 'Single-Source Packaging',
+          content: 'Closures can be supplied alongside our bottles, jars and containers, keeping cap and neck compatibility with one manufacturer.'
         }
       ]
     },
     GlobalReachSection: {
-      title: 'Get Your Ideal Packaging Solution',
-      description: "Talk to our team about cosmetic caps and closures for your product range."
+      title: 'Find the Right Closure for Your Pack',
+      description: "Tell us your bottle neck, fill volume and dispensing requirement, and our team will help you select between the 35, 40 and 50 DIA flip top caps."
     },
-    faq: [],
+    faq: [
+      {
+        title: 'What are cosmetic caps?',
+        content: 'Cosmetic caps are the closures fitted to bottles and tubes for personal care and cosmetic products such as shampoos, conditioners, lotions, gels and sanitisers. They do more than seal the pack: the closure controls how much product comes out, how easily the pack opens with one hand, and how the product presents on shelf. BMRAJ manufactures flip top caps for this segment in three diameters.'
+      },
+      {
+        title: 'What is a flip top cap and how does it work?',
+        content: 'A flip top cap has a hinged lid that flips open and snaps shut against a sealing bung, so the pack can be opened and closed one-handed without removing the closure. Product is dispensed through an orifice in the cap, and the size of that orifice sets how fast the product flows.'
+      },
+      {
+        title: 'Why are flip top caps made from polypropylene?',
+        content: 'Polypropylene is used because of its living hinge. PP can be flexed repeatedly at a thin moulded section without cracking or fatiguing, which is what allows the lid to be opened and closed hundreds of times over the life of a pack. All three BMRAJ flip top caps are moulded in PP.'
+      },
+      {
+        title: 'What orifice sizes are available?',
+        content: 'All three caps — 35 DIA, 40 DIA and 50 DIA — are available with either a 3 mm or 5 mm orifice. A smaller orifice suits thinner, free-flowing liquids where you want to restrict flow, and a larger orifice suits thicker or higher-volume dispensing. The right choice depends on the viscosity of your formulation.'
+      },
+      {
+        title: 'Which cap size should I choose?',
+        content: 'The three sizes differ mainly in cap outer diameter and weight: 33.00 mm and 4.40 g for the 35 DIA, 38.30 mm and 5.75 g for the 40 DIA, and 47.60 mm and 8.30 g for the 50 DIA. Selection is normally driven by the bottle neck the closure has to fit and the size of the pack. Share your bottle specification and we can advise.'
+      },
+      {
+        title: 'What is the difference between matt and gloss finish?',
+        content: 'This is a surface finish on the moulded cap and it is purely a presentation choice — matt gives a softer, non-reflective surface while gloss gives a shiny one. Both are available across all three sizes, so the closure can be matched to the look of your bottle and branding.'
+      },
+      {
+        title: 'Which industries use these closures?',
+        content: 'Flip top caps of this type are used across personal care, cosmetics, healthcare and FMCG packaging wherever convenient opening and controlled dispensing are needed. Suitability for a specific formulation should be confirmed before selection.'
+      }
+    ],
     exploreMoreProducts: {
       title: "Explore More Products",
       subtitle: "Explore BMRAJ's broader packaging and storage solutions across industrial sectors.",

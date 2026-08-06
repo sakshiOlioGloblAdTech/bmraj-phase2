@@ -45,7 +45,9 @@ export const companyLogos = [
   { name: 'Khemani Group', logo: khemani, alt: 'Khemani Group Logo' },
   { name: 'KLJ', logo: klj, alt: 'KLJ Logo' },
   { name: 'Meliora', logo: meliora, alt: 'Meliora Logo' },
-  { name: 'Navin Fluorine', logo: navinFluorine, alt: 'Navin Fluorine International Limited Logo' },
+  // Two-line wordmark — the second line is small, so it needs a nudge above
+  // what the area calculation gives it to stay readable in the strip.
+  { name: 'Navin Fluorine', logo: navinFluorine, alt: 'Navin Fluorine International Limited Logo', scale: 1.22 },
   { name: 'NPL', logo: npl, alt: 'NPL Logo' },
   { name: 'Payal', logo: payal, alt: 'Payal Logo' },
   { name: 'RCG', logo: rcg, alt: 'RCG Logo' },

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { getAllProductOptions } from "@/data/products";
+import FormSuccess from "@/components/common/FormSuccess";
 
 const PRODUCT_OPTIONS = getAllProductOptions();
 
@@ -99,7 +100,6 @@ export default function ContactForm() {
         message: "",
       });
       setFieldErrors({});
-      setTimeout(() => setIsSubmitted(false), 4000);
     } catch (err) {
       setServerError(err.message || "Something went wrong. Please try again.");
     } finally {
@@ -115,6 +115,14 @@ export default function ContactForm() {
       id="enquiry-form"
       className="flex-1 bg-white rounded-2xl shadow-soft p-6 lg:p-8 scroll-mt-28"
     >
+      {isSubmitted ? (
+        <FormSuccess
+          message="Your enquiry has been received. Our team will review it and get back to you shortly."
+          actionLabel="Send another enquiry"
+          onAction={() => setIsSubmitted(false)}
+        />
+      ) : (
+      <>
       <h2 className="text-[22px] lg:text-[26px] font-bold text-[#183F34] mb-6">
         Get an Instant Quote
       </h2>
@@ -237,12 +245,6 @@ export default function ContactForm() {
           />
         </div>
 
-        {isSubmitted && (
-          <p className="text-[14px] text-[#139C57] font-medium">
-            Thanks — your enquiry has been received. We&apos;ll be in touch shortly.
-          </p>
-        )}
-
         {serverError && (
           <p className="text-[14px] text-red-600 font-medium">{serverError}</p>
         )}
@@ -265,6 +267,8 @@ export default function ContactForm() {
           )}
         </button>
       </form>
+      </>
+      )}
     </div>
   );
 }

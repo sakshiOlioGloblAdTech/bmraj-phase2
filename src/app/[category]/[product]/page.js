@@ -10,6 +10,9 @@ import FrequentlyAsked from '@/components/sections/ProductCategory/FrequentlyAsk
 import IdealRangeSection from '@/components/sections/ProductListing/IdealRangeSection';
 import ProductDetailClient from '@/components/sections/ProductDetail/ProductDetailClient';
 import { withSeoMeta } from '@/data/seoMeta';
+import JsonLd from '@/components/common/JsonLd';
+import { productSchema } from '@/lib/schema';
+import { imageSrcList, productImageList } from '@/lib/images';
 
 // Categories that have direct detail pages (no listing page)
 const DIRECT_DETAIL_CATEGORIES = ['food-packaging', 'crates', 'blow-molding-accessories', 'cosmetic-caps'];
@@ -63,7 +66,7 @@ export async function generateMetadata({ params }) {
       openGraph: {
         title: data.title,
         description: data.description,
-        images: data.images,
+        images: imageSrcList(data.images),
       },
     });
   }
@@ -103,6 +106,15 @@ export default async function ListingPage({ params }) {
     return (
       <>
         <Header />
+        <JsonLd
+          data={productSchema({
+            title: data.title,
+            description: data.description,
+            images: productImageList(data.images),
+            route: `/${category}/${product}`,
+            material: data.specifications?.find((s) => s.label === 'Material')?.value,
+          })}
+        />
         <div className="bg-[#F6F6EF]">
           <div className="max pad mx-auto p-4 md:p-8 lg:p-12">
             <ProductDetailClient data={data} />
