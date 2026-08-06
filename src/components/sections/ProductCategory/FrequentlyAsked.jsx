@@ -2,6 +2,8 @@
 
 import Accordion from '@/components/ui/Accordion';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import JsonLd from '@/components/common/JsonLd';
+import { faqSchema } from '@/lib/schema';
 
 export default function FrequentlyAsked({faqData}) {
     const { ref: titleRef, isInView: titleInView } = useScrollAnimation({ threshold: 0.2 });
@@ -10,6 +12,8 @@ export default function FrequentlyAsked({faqData}) {
     return (
 
         <section className="bg-[#E3EAD9]">
+            {/* FAQPage structured data for the questions rendered below. */}
+            <JsonLd data={faqSchema(faqData)} />
             <div className="pad max py-16 md:py-20">
 
                 <div className="flex flex-col md:flex-row gap-12 lg:gap-16">

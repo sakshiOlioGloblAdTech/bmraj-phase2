@@ -3,6 +3,9 @@ import Script from "next/script";
 import { Inter_Tight } from "next/font/google";
 import { Footer } from "@/components/layouts";
 import { QuoteProvider } from "@/context/QuoteContext";
+import { SITE_URL } from "@/lib/site";
+import JsonLd from "@/components/common/JsonLd";
+import { organisationSchema, webSiteSchema } from "@/lib/schema";
 
 const interTight = Inter_Tight({
   variable: "--font-inter-tight",
@@ -15,7 +18,7 @@ const GTM_ID = "GTM-534XZCJG";
 const GA_ID = "G-PMQ5SPD3LR";
 
 export const metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
+  metadataBase: new URL(SITE_URL),
   title: "BMRAJ Industries - Custom Plastic Solutions",
   description: "For over two decades, BMRAJ has been a leader in plastic manufacturing, partnering with global brands.",
   verification: {
@@ -60,6 +63,10 @@ gtag('config', '${GA_ID}');`}
           />
         </noscript>
         {/* End Google Tag Manager (noscript) */}
+
+        {/* Site-wide structured data */}
+        <JsonLd data={organisationSchema()} />
+        <JsonLd data={webSiteSchema()} />
 
         <QuoteProvider>
           {children}

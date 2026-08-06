@@ -7,6 +7,8 @@ import GlobalReachSection from '@/components/common/GlobalReachSection';
 import FrequentlyAsked from '@/components/sections/ProductCategory/FrequentlyAsked';
 import IdealRangeSection from '@/components/sections/ProductListing/IdealRangeSection';
 import { withSeoMeta } from '@/data/seoMeta';
+import JsonLd from '@/components/common/JsonLd';
+import { productSchema } from '@/lib/schema';
 
 // Generate static params for all product details (SEO optimization)
 export async function generateStaticParams() {
@@ -67,6 +69,15 @@ export default async function ProductDetailPage({ params }) {
   return (
     <>
       <Header />
+      <JsonLd
+        data={productSchema({
+          title: data.title,
+          description: data.description,
+          images: data.images,
+          route: `/${category}/${product}/${detail}`,
+          material: data.specifications?.find((s) => s.label === 'Material')?.value,
+        })}
+      />
       <div className="bg-[#F6F6EF] mt-20">
         <div className="max pad mx-auto p-4 md:p-8 lg:p-12">
         <ProductDetailClient data={data} />

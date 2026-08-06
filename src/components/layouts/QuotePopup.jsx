@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { getAllProductOptions } from "@/data/products";
+import FormSuccess from "@/components/common/FormSuccess";
 
 const PRODUCT_OPTIONS = getAllProductOptions();
 
@@ -59,6 +60,7 @@ const QuotePopup = ({ isOpen, onClose }) => {
   });
   const [fieldErrors, setFieldErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const [error, setError] = useState("");
   const popupRef = useRef(null);
 
@@ -88,6 +90,7 @@ const QuotePopup = ({ isOpen, onClose }) => {
       });
       setFieldErrors({});
       setError("");
+      setIsSubmitted(false);
     }
   }, [isOpen]);
 
@@ -126,7 +129,9 @@ const QuotePopup = ({ isOpen, onClose }) => {
         throw new Error(data.error || "Could not send your request.");
       }
 
-      onClose();
+      // Confirm on the spot rather than closing the popup — otherwise the
+      // dialog just disappears and there's nothing to say it worked.
+      setIsSubmitted(true);
     } catch (err) {
       setError(err.message || "Something went wrong. Please try again.");
     } finally {
@@ -158,8 +163,16 @@ const QuotePopup = ({ isOpen, onClose }) => {
           animation: "searchPopupScale 0.3s ease-out forwards",
         }}
       >
-        {/* Left Side - Form */}
+        {/* Left Side - Form, or the confirmation once submitted */}
         <div className="flex-1 p-6 lg:p-8">
+          {isSubmitted ? (
+            <FormSuccess
+              message="Your quote request has been received. Our team will review it and get back to you shortly."
+              actionLabel="Close"
+              onAction={onClose}
+            />
+          ) : (
+          <>
           <h2 className="text-[22px] lg:text-[26px] font-bold text-[#183F34] mb-6">
             Get an Instant Quote for
           </h2>
@@ -381,6 +394,8 @@ const QuotePopup = ({ isOpen, onClose }) => {
               )}
             </button>
           </form>
+          </>
+          )}
         </div>
 
         {/* Right Side - Contact Info with Background Image */}
