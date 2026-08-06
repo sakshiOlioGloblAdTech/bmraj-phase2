@@ -9,6 +9,7 @@ import IdealRangeSection from '@/components/sections/ProductListing/IdealRangeSe
 import { withSeoMeta } from '@/data/seoMeta';
 import JsonLd from '@/components/common/JsonLd';
 import { productSchema } from '@/lib/schema';
+import { imageSrcList, productImageList } from '@/lib/images';
 
 // Generate static params for all product details (SEO optimization)
 export async function generateStaticParams() {
@@ -52,7 +53,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: data.title,
       description: data.description,
-      images: data.images,
+      images: imageSrcList(data.images),
     },
   });
 }
@@ -73,7 +74,7 @@ export default async function ProductDetailPage({ params }) {
         data={productSchema({
           title: data.title,
           description: data.description,
-          images: data.images,
+          images: productImageList(data.images),
           route: `/${category}/${product}/${detail}`,
           material: data.specifications?.find((s) => s.label === 'Material')?.value,
         })}

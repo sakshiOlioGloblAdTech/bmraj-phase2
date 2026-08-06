@@ -12,6 +12,7 @@ import ProductDetailClient from '@/components/sections/ProductDetail/ProductDeta
 import { withSeoMeta } from '@/data/seoMeta';
 import JsonLd from '@/components/common/JsonLd';
 import { productSchema } from '@/lib/schema';
+import { imageSrcList, productImageList } from '@/lib/images';
 
 // Categories that have direct detail pages (no listing page)
 const DIRECT_DETAIL_CATEGORIES = ['food-packaging', 'crates', 'blow-molding-accessories', 'cosmetic-caps'];
@@ -65,7 +66,7 @@ export async function generateMetadata({ params }) {
       openGraph: {
         title: data.title,
         description: data.description,
-        images: data.images,
+        images: imageSrcList(data.images),
       },
     });
   }
@@ -109,7 +110,7 @@ export default async function ListingPage({ params }) {
           data={productSchema({
             title: data.title,
             description: data.description,
-            images: data.images,
+            images: productImageList(data.images),
             route: `/${category}/${product}`,
             material: data.specifications?.find((s) => s.label === 'Material')?.value,
           })}

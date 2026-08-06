@@ -381,6 +381,15 @@ export const productListingData = {
       products: [
         {
           id: 1,
+          title: 'Liner Type Drum',
+          slug: 'liner-type-drum',
+          imageUrl: '/listing/barrels/liner-type-drum.png',
+          capacity: '210 Liters',
+          material: 'HDPE',
+          features: ['Liner Compatible', 'Chemical Resistant', 'UN Certified']
+        },
+        {
+          id: 2,
           title: '210 LTR FULL OPEN TOP',
           slug: '210-ltr-full-open-top-barrel',
           imageUrl: '/listing/barrels/210-ltr-full-open-top.png',
@@ -389,7 +398,7 @@ export const productListingData = {
           features: ['Full Open Top', 'Easy Access', 'UN Certified']
         },
         {
-          id: 2,
+          id: 3,
           title: '210 LTR STRAIGHT BODY - L RING C TYPE',
           slug: '210-ltr-straight-body-l-ring-c-type-barrel',
           imageUrl: '/listing/barrels/210-ltr-straight-body-l-ring-c-type.png',
@@ -398,7 +407,7 @@ export const productListingData = {
           features: ['L Ring Design', 'Straight Body', 'UN Certified']
         },
         {
-          id: 3,
+          id: 4,
           title: 'L-Ring Type Drums (210 LTR, 235 LTR, 250 LTR)',
           slug: 'l-ring-type-barrels',
           imageUrl: '/listing/barrels/210-ltr-l-ring-type-drum.png',
@@ -407,7 +416,7 @@ export const productListingData = {
           features: ['Multiple Capacities', 'L Ring Design', 'UN Certified']
         },
         {
-          id: 4,
+          id: 5,
           title: 'Plastic Barrels & Drums',
           slug: 'plastic-barrels-drums',
           imageUrl: '/listing/containers-for-lubricants/plastic-barrels-drums.png',
@@ -1077,8 +1086,8 @@ export const productListingData = {
       products: [
         {
           id: 1,
-          title: 'Preform for Agro PET Bottles',
-          slug: '500-ml-preform-agro-pet-bottles',
+          title: 'PET Preform for Agro Bottles',
+          slug: 'pet-preform-agro-bottles',
           imageUrl: '/listing/pet-preforms/500-ml-preform-for-bottle-jar.png',
           capacity: '500 ML',
           material: 'PET',

@@ -1278,7 +1278,7 @@ export const allCategoryData = {
           description: 'Premium cake boxes for bakery and dessert packaging'
         },
         {
-          name: 'Shrikhand Container',
+          name: '500 Gram & 1 Kilo Shrikhand Container',
           slug: 'shrikhand-container',
           image: '/product-details/shrikhand-container/shrikhand-container-02.jpg',
           description: ''

@@ -72,11 +72,7 @@ const nextConfig = {
         permanent: true,
       },
       // Retired products — sent to the listing they used to sit in.
-      {
-        source: '/drums-and-barrels/barrels/liner-type-drum',
-        destination: '/drums-and-barrels/barrels',
-        permanent: true,
-      },
+      // (The Liner Type Drum was reinstated, so it has no redirect.)
       {
         source: '/drums-and-barrels/full-open-top-drums/185-kgs-210-ltr-drum',
         destination: '/drums-and-barrels/full-open-top-drums',
@@ -86,6 +82,12 @@ const nextConfig = {
       {
         source: '/cosmetic-caps/cosmetic-caps',
         destination: '/cosmetic-caps',
+        permanent: true,
+      },
+      // Renamed once the preform stopped being 500 ml only.
+      {
+        source: '/pet-bottles-preforms/preforms/500-ml-preform-agro-pet-bottles',
+        destination: '/pet-bottles-preforms/preforms/pet-preform-agro-bottles',
         permanent: true,
       },
     ];

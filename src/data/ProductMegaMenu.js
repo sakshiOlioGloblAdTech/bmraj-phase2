@@ -2,7 +2,7 @@ export const ProductWithCategories = [
     {
       id: 0,
       name: "Drums & Barrels",
-      productCount: 18,
+      productCount: 19,
       icon: "drums",
       description:
         "For over two decades, BMRaj has been a leader in plastic manufacturing, partnering with global brands.",
@@ -52,6 +52,7 @@ export const ProductWithCategories = [
           title: "Barrels",
           slug: "barrels",
           products: [
+            { name: "Liner Type Drum", slug: "liner-type-drum" },
             { name: "210 LTR Full Open Top", slug: "210-ltr-full-open-top-barrel" },
             { name: "210 LTR Straight Body - L Ring C Type", slug: "210-ltr-straight-body-l-ring-c-type-barrel" },
             { name: "L-Ring Type Drums (210, 235, 250 LTR)", slug: "l-ring-type-barrels" },
@@ -198,7 +199,7 @@ export const ProductWithCategories = [
           title: "Preforms (PET)",
           slug: "preforms",
           products: [
-            { name: "Preform for Agro PET Bottles", slug: "500-ml-preform-agro-pet-bottles" },
+            { name: "PET Preform for Agro Bottles", slug: "pet-preform-agro-bottles" },
             { name: "1 LTR Preform for Oil Bottle", slug: "1-ltr-preform-oil-bottle" },
             { name: "ROPP Preform 90 ml", slug: "ropp-preform-90-ml" },
             { name: "ROPP Preform 180 ml", slug: "ropp-preform-180-ml" },
@@ -225,7 +226,7 @@ export const ProductWithCategories = [
             { name: "500 gms Sweet Box", slug: "500-gms-sweet-box" },
             { name: "1 kg Sweet Box", slug: "1-kg-sweet-box" },
             { name: "1.5 LTR Cake Magic Box", slug: "1-5-ltr-cake-magic-box" },
-            { name: "Shrikhand Container", slug: "shrikhand-container" },
+            { name: "500 Gram & 1 Kilo Shrikhand Container", slug: "shrikhand-container" },
           ],
         },
       ],
@@ -261,8 +262,8 @@ export const ProductWithCategories = [
       skipSectionSlug: true,
       sections: [
         {
-          title: "Flip Top Caps",
-          slug: "flip-top-caps",
+          title: "Caps & Closures",
+          slug: "caps-closures",
           products: [
             { name: "35 DIA Flip Top Cap", slug: "35-dia-flip-top-cap" },
             { name: "40 DIA Flip Top Cap", slug: "40-dia-flip-top-cap" },

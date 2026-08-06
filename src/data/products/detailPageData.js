@@ -667,6 +667,55 @@ export const productDetailData = {
       },
     },
     'barrels': {
+      'liner-type-drum': {
+        title: 'LINER TYPE DRUM',
+        subtitle: 'Dual-Layer HDPE Drum with Internal Liner for High-Purity Packaging',
+        description: 'The Liner Type Drum from BMRaj Plastics features a dual-layer barrier design—combining a robust outer HDPE shell with a built-in inner liner—to safeguard sensitive contents against contamination and chemical interaction. Engineered for industries where product purity is non-negotiable, these drums are perfect for chemicals, pharmaceutical ingredients, food additives, and specialty liquids that demand extra protection.',
+        images: [
+          '/product-details/barrels/liner-type-drum/liner-type-drum-01.jpg',
+          '/product-details/barrels/liner-type-drum/liner-type-drum-02.jpg',
+          '/product-details/barrels/liner-type-drum/liner-type-drum-03.jpg',
+          '/product-details/barrels/liner-type-drum/liner-type-drum-04.jpg',
+        ],
+        technicalSpecification: {
+          description: 'Made from virgin High-Density Polyethylene (HDPE) with a built-in inner liner, this drum provides a dual-layer barrier against moisture, UV rays, and chemical reactions. With a typical capacity of 210 litres, it is blow moulded for uniform strength and can be customised in colour, closure type, and branding to meet your specific application needs.'
+        },
+        specifications: [
+          { label: 'Capacity', value: '210 Litres' },
+          { label: 'Weight', value: '~As per Requirement' },
+          { label: 'Mouth Opening', value: '50mm & 70mm top and bottom seal' },
+          { label: 'Material', value: 'Virgin HDPE' },
+          { label: 'Molding Process', value: 'Blow Molding' },
+          { label: 'Colour', value: 'As per Requirement' },
+          { label: 'Applications', value: 'Chemicals, Pharmaceutical Ingredients, Food Additives, Specialty Liquids' }
+        ],
+        parentCategory: {
+          name: 'Drums & Barrels',
+          slug: 'drums-and-barrels'
+        },
+        parentProduct: {
+          name: 'Barrels',
+          slug: 'barrels'
+        },
+        GlobalReachSection: {
+          title: 'Choose the Liner Type Drum',
+          description: 'Ideal for industries where product purity is non-negotiable, these drums are perfect for chemicals, pharmaceutical ingredients, food additives, and specialty liquids that demand extra protection.'
+        },
+        faq: [
+          {
+            title: 'Which industries commonly use Liner Type Drums?',
+            content: 'Liner Type Drums are widely used in: Pharmaceuticals & APIs, Agrochemicals & Pesticides, Food Additives & Flavours, Specialty Chemicals & Industrial Fluids.'
+          },
+          {
+            title: 'What makes the liner drum unique compared to standard HDPE drums?',
+            content: 'The key differentiator is the built-in inner liner that acts as an additional barrier to: Prevent permeation of aromatic or aggressive substances, Protect product integrity from external contamination, Extend storage life for sensitive materials.'
+          },
+          {
+            title: 'Can I customise the drum?',
+            content: 'Yes. Tailor this product to your operational and branding requirements: Capacity: 210 Litres Standard / Custom Available, Approximate Weight: As per Requirement (depends on model), Material: Virgin HDPE Outer Shell + Built-in Inner Liner, Molding Process: Blow Moulded for Consistent Wall Thickness, Closure Options: 50 mm & 70 mm Top and Bottom Seal Plugs, Colour: Standard Blue / Custom Colours on Request, Branding: Label or Print Options Available.'
+          }
+        ]
+      },
       '210-ltr-full-open-top-barrel': {
         title: '210 LTR FULL OPEN TOP BARREL',
         subtitle: 'Versatile HDPE Barrel for Easy Filling and Cleaning',
@@ -2552,7 +2601,7 @@ export const productDetailData = {
     },
     // TODO: awaiting copy and specifications from the client.
     'shrikhand-container': {
-      title: 'Shrikhand Container',
+      title: '500 Gram & 1 Kilo Shrikhand Container',
       subtitle: '',
       description: 'Product details coming soon.',
       images: [
@@ -2564,7 +2613,7 @@ export const productDetailData = {
         description: ''
       },
       specifications: [
-        { label: 'Capacity', value: 'To be confirmed' },
+        { label: 'Capacity', value: '500 gm & 1 kg' },
         { label: 'Material', value: 'To be confirmed' },
         { label: 'Molding Process', value: 'To be confirmed' },
         { label: 'Colour', value: 'To be confirmed' },
@@ -3165,8 +3214,8 @@ export const productDetailData = {
       },
     },
     'preforms': {
-      '500-ml-preform-agro-pet-bottles': {
-        title: 'PREFORM FOR AGRO PET BOTTLES',
+      'pet-preform-agro-bottles': {
+        title: 'PET Preform for Agro Bottles',
         subtitle: 'High-Clarity PET Preform for Beverage, Edible Oil, and FMCG Packaging',
         description: 'The 500 ml PET Preform is engineered for consistent performance in beverage, edible oil, and FMCG bottle manufacturing. Injection moulded from virgin PET, it offers clarity, dimensional precision, and strength, ensuring smooth blowing and uniform results in every production cycle.',
         images: [
@@ -3174,18 +3223,37 @@ export const productDetailData = {
           '/product-details/preforms/500-ml-preform-agro-pet-bottles/500-ml-preform-agro-pet-bottles-02.png',
           '/product-details/preforms/500-ml-preform-agro-pet-bottles/500-ml-preform-agro-pet-bottles-03.png',
           '/product-details/preforms/500-ml-preform-agro-pet-bottles/500-ml-preform-agro-pet-bottles-04.png',
+          // The cap and the blown bottle are both listed as available in the
+          // table, so both are shown. Labelled so they're not mistaken for the
+          // preform itself — shared with the Agro Bottle Cap page.
+          {
+            src: '/product-details/agro-bottle-cap/agro-bottle-cap-01.png',
+            label: 'Cap',
+            related: true,
+          },
+          {
+            src: '/product-details/agro-bottle-cap/agro-bottle-cap-02.png',
+            label: 'Blown Bottle',
+            related: true,
+          },
+          {
+            src: '/product-details/agro-bottle-cap/agro-bottle-cap-03.png',
+            label: 'Blown Bottle',
+            related: true,
+          },
         ],
         technicalSpecification: {
           description: 'Manufactured using high-precision injection molding, this preform ensures even wall thickness, accurate neck finish, and crystal clarity. Designed for 38 mm mouth OD, it delivers excellent flow and transparency for small-volume PET bottles and jars.'
         },
         specifications: [
-          { label: 'Capacity', value: '500 ml' },
+          { label: 'Capacity', value: '100 ml, 250 ml, 500 ml & 1000 ml' },
           { label: 'Material', value: 'PET (Polyethylene Terephthalate)' },
           { label: 'Molding Process', value: 'Injection Moulded' },
           { label: 'Weight', value: '55 gms' },
           { label: 'Colour', value: 'As per Requirement' },
           { label: 'Mouth OD', value: '38 mm' },
           { label: 'Cap', value: 'Available' },
+          { label: 'Blowing Bottle', value: 'Available' },
           { label: 'Applications', value: 'Agriculture, Water, Juice, Edible Oil, FMCG Bottles & Jars' }
         ],
         parentCategory: 'pet-bottles-preforms',
@@ -3618,7 +3686,16 @@ export const productDetailData = {
       subtitle: 'HDPE Bottle Cap for Agrochemical and Liquid Packaging Applications',
       description: 'BMRAJ’s Agro Bottle Caps are made from virgin HDPE (High-Density Polyethylene) to provide a secure closure for bottles used in pesticides, fertilizers, agrochemicals, and other liquids. It is designed for a reliable fit and easy use, offering consistent sealing and wad compatibility for different packaging needs (wad options available).',
       images: [
-        '/product-details/agro-bottle-cap/agro-bottle-cap-01.png',
+        // Both materials are offered, so each is badged rather than leaving a
+        // visitor to guess which cap they're looking at.
+        {
+          src: '/product-details/agro-bottle-cap/agro-bottle-cap-01.png',
+          label: 'HDPE Agro Cap',
+        },
+        {
+          src: '/product-details/agro-bottle-cap/agro-bottle-cap-pet-01.png',
+          label: 'PET Agro Cap',
+        },
         '/product-details/agro-bottle-cap/agro-bottle-cap-02.png',
         '/product-details/agro-bottle-cap/agro-bottle-cap-03.png',
       ],

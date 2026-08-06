@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { allCategoryData, productListingData, productDetailData } from "@/data/products";
 import { getCategoryName } from "@/utils/breadcrumbs";
+import { imageSrc } from "@/lib/images";
 
 // Build searchable product list from category data
 const buildSearchableProducts = () => {
@@ -71,7 +72,7 @@ const buildSearchableProducts = () => {
         name: entry.title,
         type: 'product',
         href: `/${categorySlug}/${productSlug}`,
-        image: entry.images?.[0] || '/product-placeholder.png',
+        image: imageSrc(entry.images?.[0]) || '/product-placeholder.png',
         description: entry.subtitle || '',
         parentCategory: getCategoryName(categorySlug)
       });

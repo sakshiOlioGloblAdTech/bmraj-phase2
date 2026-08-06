@@ -528,7 +528,7 @@ export const industriesPageData = {
       {
         // TODO: capacity, material and features pending from the client.
         id: 6,
-        title: 'Shrikhand Container',
+        title: '500 Gram & 1 Kilo Shrikhand Container',
         slug: 'shrikhand-container',
         href: '/food-packaging/shrikhand-container',
         imageUrl: '/product-details/shrikhand-container/shrikhand-container-02.jpg',
@@ -745,8 +745,8 @@ export const industriesPageData = {
       {
         id: 5,
         title: '500 ml Preform for Bottle/Jar',
-        slug: '500-ml-preform-agro-pet-bottles',
-        href: '/pet-bottles-preforms/preforms/500-ml-preform-agro-pet-bottles',
+        slug: 'pet-preform-agro-bottles',
+        href: '/pet-bottles-preforms/preforms/pet-preform-agro-bottles',
         imageUrl: '/listing/pet-preforms/500-ml-preform-for-bottle-jar.png',
         capacity: '500 ML',
         material: 'PET',
@@ -1659,8 +1659,8 @@ export const industriesPageData = {
       {
         id: 5,
         title: '500 ml Preform for Bottle/Jar',
-        slug: '500-ml-preform-agro-pet-bottles',
-        href: '/pet-bottles-preforms/preforms/500-ml-preform-agro-pet-bottles',
+        slug: 'pet-preform-agro-bottles',
+        href: '/pet-bottles-preforms/preforms/pet-preform-agro-bottles',
         imageUrl: '/listing/pet-preforms/500-ml-preform-for-bottle-jar.png',
         capacity: '500 ML',
         material: 'PET',

@@ -305,7 +305,7 @@ export const seoMeta = {
     title: '1 Litre PET Preform for Bottle & Jar Manufacturer | BMRAJ',
     description: 'BMRAJ\'s 1 LTR PET preform for bottle & jar — 1 ltr preform for oil bottle/jar, agro bottle preforms. 38mm, 46mm & 25mm neck sizes. ISO 9001 certified manufacturer India.',
   },
-  '/pet-bottles-preforms/preforms/500-ml-preform-agro-pet-bottles': {
+  '/pet-bottles-preforms/preforms/pet-preform-agro-bottles': {
     title: '500ml PET Preform for Bottle & Jar Manufacturer | BMRAJ India',
     description: 'BMRAJ\'s 500 ML PET preform for bottle & jar — pesticide bottle preforms, 500 ml preform for oil bottle. 38mm, 46mm & 25mm neck. ISO 9001 certified manufacturer India.',
   },
