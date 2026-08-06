@@ -253,18 +253,20 @@ export const ProductWithCategories = [
     {
       id: 7,
       name: "Cosmetic Caps",
-      productCount: 1,
+      productCount: 3,
       icon: "molding",
-      description: "Cosmetic caps and closures. Full range details coming soon.",
+      description: "PP flip top caps in 35, 40 and 50 DIA, with 3 mm and 5 mm orifice options.",
       image: "/product-details/cosmetic-caps/cosmetic-caps-01.jpg",
       slug: "cosmetic-caps",
       skipSectionSlug: true,
       sections: [
         {
-          title: "Cosmetic Caps",
-          slug: "cosmetic-caps",
+          title: "Flip Top Caps",
+          slug: "flip-top-caps",
           products: [
-            { name: "Cosmetic Caps", slug: "cosmetic-caps" },
+            { name: "35 DIA Flip Top Cap", slug: "35-dia-flip-top-cap" },
+            { name: "40 DIA Flip Top Cap", slug: "40-dia-flip-top-cap" },
+            { name: "50 DIA Flip Top Cap", slug: "50-dia-flip-top-cap" },
           ],
         },
       ],

@@ -4043,30 +4043,144 @@ export const productDetailData = {
   },
 
   // Cosmetic Caps - Direct Detail Pages (category -> detail, no listing page)
-  // TODO: awaiting copy and specifications from the client.
+  // Galleries are capped at 5 images. The 40 DIA set has three further shots on
+  // disk (-06 to -08) that are not shown; swap them in here if preferred.
   'cosmetic-caps': {
-    'cosmetic-caps': {
-      title: 'Cosmetic Caps',
-      subtitle: '',
-      description: 'Product details coming soon.',
+    '35-dia-flip-top-cap': {
+      title: '35 DIA FLIP TOP CAP',
+      subtitle: 'Compact PP Flip Top Cap for Controlled and Convenient Product Dispensing',
+      description: 'The 35 DIA Flip Top Cap is a compact polypropylene closure made for easy opening and controlled dispensing. It works well for personal care, cosmetic, healthcare, and FMCG packaging. You can choose a 3 mm or 5 mm orifice, depending on your product\'s flow needs. Both matt and gloss finishes are available to match your packaging design.',
       images: [
-        '/product-details/cosmetic-caps/cosmetic-caps-01.jpg',
-        '/product-details/cosmetic-caps/cosmetic-caps-02.png',
-        '/product-details/cosmetic-caps/cosmetic-caps-03.jpg',
-        '/product-details/cosmetic-caps/cosmetic-caps-04.jpg',
-        '/product-details/cosmetic-caps/cosmetic-caps-05.jpg',
+        '/product-details/cosmetic-caps/35-dia-flip-top-cap-01.jpg',
+        '/product-details/cosmetic-caps/35-dia-flip-top-cap-02.jpg',
+        '/product-details/cosmetic-caps/35-dia-flip-top-cap-03.jpg',
       ],
       technicalSpecification: {
-        description: ''
+        description: 'The 35 DIA Flip Top Cap is compact and comes with two orifice sizes. It gives manufacturers a practical way to control product dispensing and make bottles easy to use every day.'
       },
       specifications: [
-        { label: 'Material', value: 'To be confirmed' },
-        { label: 'Molding Process', value: 'To be confirmed' },
-        { label: 'Colour', value: 'To be confirmed' },
-        { label: 'Applications', value: 'To be confirmed' }
+        { label: 'Product Type', value: '35 DIA Flip Top Cap' },
+        { label: 'Material', value: 'PP (Polypropylene)' },
+        { label: 'Cap Weight', value: '4.40 ± 0.30 g' },
+        { label: 'Cap Height', value: '20.00 ± 0.2 mm' },
+        { label: 'Cap OD', value: '33.00 ± 0.2 mm' },
+        { label: 'Sleeve Ring OD', value: '22.90 ± 0.2 mm' },
+        { label: 'BIP Ring OD', value: '10.00 ± 0.15 mm' },
+        { label: 'Cap Orifice', value: '3 mm & 5 mm Available' },
+        { label: 'Cap Finish', value: 'Matt & Gloss Available' },
+        { label: 'Metalization', value: 'Available' }
       ],
       parentCategory: 'cosmetic-caps',
-      faq: []
+      GlobalReachSection: {
+        title: 'Get Better Control While Dispensing with Compact Closure',
+        description: 'The 35 DIA Flip Top Cap is made for simple dispensing. You can choose the orifice size and finish that best fit your product and packaging needs.'
+      },
+      faq: [
+        {
+          title: 'What orifice sizes are available for the 35 DIA Flip Top Cap?',
+          content: 'The 35 DIA Flip Top Cap is available with 3 mm and 5 mm orifice options, allowing the dispensing opening to be selected according to the product and packaging requirements.'
+        },
+        {
+          title: 'What packaging applications can use the 35 DIA Flip Top Cap?',
+          content: 'Flip top closures of this type can be used across personal care, cosmetic, healthcare, and FMCG packaging where convenient opening and controlled dispensing are required. Suitability for a specific formulation should be confirmed before selection.'
+        },
+        {
+          title: 'What finish options are available for the 35 DIA Flip Top Cap?',
+          content: 'The 35 DIA Flip Top Cap is available in both matt and gloss finishes to accommodate different packaging and branding preferences.'
+        }
+      ]
+    },
+    '40-dia-flip-top-cap': {
+      title: '40 DIA FLIP TOP CAP',
+      subtitle: 'Versatile PP Flip Top Cap with 3 mm and 5 mm Dispensing Options',
+      description: 'The 40 DIA Flip Top Cap is made from polypropylene and is great for packaging that needs easy access and controlled dispensing. Its larger size offers an option besides the 35 DIA model, but you can still choose between 3 mm and 5 mm orifices. You can also pick matt or gloss finishes to match your bottle and brand.',
+      images: [
+        '/product-details/cosmetic-caps/40-dia-flip-top-cap-01.png',
+        '/product-details/cosmetic-caps/40-dia-flip-top-cap-02.jpg',
+        '/product-details/cosmetic-caps/40-dia-flip-top-cap-03.jpg',
+        '/product-details/cosmetic-caps/40-dia-flip-top-cap-04.png',
+        '/product-details/cosmetic-caps/40-dia-flip-top-cap-05.jpg',
+      ],
+      technicalSpecification: {
+        description: 'The 40 DIA Flip Top Cap is a versatile closure with a 38.30 mm outer diameter and a choice of 3 mm or 5 mm orifices. Its size fits bottles well, and you can pick from two finishes for more flexibility in your packaging.'
+      },
+      specifications: [
+        { label: 'Product Type', value: '40 DIA Flip Top Cap' },
+        { label: 'Material', value: 'PP (Polypropylene)' },
+        { label: 'Cap Weight', value: '5.75 ± 0.30 g' },
+        { label: 'Cap Height', value: '23.30 ± 0.2 mm' },
+        { label: 'Cap OD', value: '38.30 ± 0.2 mm' },
+        { label: 'Sleeve Ring OD', value: '22.90 ± 0.2 mm' },
+        { label: 'BIP Ring OD', value: '10.00 ± 0.15 mm' },
+        { label: 'Cap Orifice', value: '3 mm & 5 mm Available' },
+        { label: 'Cap Finish', value: 'Matt & Gloss Available' },
+        { label: 'Metalization', value: 'Available' }
+      ],
+      parentCategory: 'cosmetic-caps',
+      GlobalReachSection: {
+        title: 'Greater Flexibility for Regular Product Dispensing',
+        description: 'The 40 DIA Flip Top Cap is a flexible closure with different orifice and finish options, making it suitable for liquid and semi-liquid consumer packaging.'
+      },
+      faq: [
+        {
+          title: 'What dispensing options are available for the 40 DIA Flip Top Cap?',
+          content: 'The 40 DIA Flip Top Cap can be supplied with either a 3 mm or 5 mm orifice, providing options for different product dispensing requirements.'
+        },
+        {
+          title: 'Where can the 40 DIA Flip Top Cap be used?',
+          content: 'The closure can suit a range of personal care, cosmetic, healthcare, and FMCG packaging applications. Final compatibility depends on the bottle neck and the product being packed.'
+        },
+        {
+          title: 'Is the 40 DIA Flip Top Cap available in matt and gloss finishes?',
+          content: 'Yes. Both matt and gloss finish options are available, giving brands flexibility in matching the closure with their overall packaging design.'
+        }
+      ]
+    },
+    '50-dia-flip-top-cap': {
+      title: '50 DIA FLIP TOP CAP',
+      subtitle: 'Large-Format PP Flip Top Cap for Convenient and Controlled Dispensing',
+      description: 'The 50 DIA Flip Top Cap is the biggest model in BMRAJ\'s flip top cap range, with a 47.60 mm outer diameter and 24.30 mm height. Made from polypropylene, it\'s designed for easy opening and controlled dispensing in larger packaging. You can choose a 3 mm or 5 mm orifice and pick either a matt or gloss finish.',
+      images: [
+        '/product-details/cosmetic-caps/50-dia-flip-top-cap-01.png',
+        '/product-details/cosmetic-caps/50-dia-flip-top-cap-02.jpg',
+        // Borrowed from the 35 DIA set until a third 50 DIA shot is available —
+        // the two closures look near-identical in white.
+        '/product-details/cosmetic-caps/35-dia-flip-top-cap-01.jpg',
+      ],
+      technicalSpecification: {
+        description: 'The 50 DIA Flip Top Cap is bigger and heavier than the 35 DIA and 40 DIA versions. It\'s a good choice if you need a larger closure, and you still get the same orifice and finish options.'
+      },
+      specifications: [
+        { label: 'Product Type', value: '50 DIA Flip Top Cap' },
+        { label: 'Material', value: 'PP (Polypropylene)' },
+        { label: 'Cap Weight', value: '8.30 ± 0.30 g' },
+        { label: 'Cap Height', value: '24.30 ± 0.2 mm' },
+        { label: 'Cap OD', value: '47.60 ± 0.2 mm' },
+        { label: 'Sleeve Ring OD', value: '22.90 ± 0.2 mm' },
+        { label: 'BIP Ring OD', value: '10.00 ± 0.15 mm' },
+        { label: 'Cap Orifice', value: '3 mm & 5 mm Available' },
+        { label: 'Cap Finish', value: 'Matt & Gloss Available' },
+        { label: 'Metalization', value: 'Available' }
+      ],
+      parentCategory: 'cosmetic-caps',
+      GlobalReachSection: {
+        title: 'Go Larger with the 50 DIA Flip Top Cap',
+        description: 'This larger flip top closure gives you faster options for dispensing and finish, so you can meet your bottle and packaging demands.'
+      },
+      faq: [
+        {
+          title: 'How does the 50 DIA Flip Top Cap differ from the 35 DIA and 40 DIA models?',
+          content: 'The 50 DIA model has the largest cap profile of the three, with a 47.60 ± 0.2 mm outer diameter, 24.30 ± 0.2 mm height, and 8.30 ± 0.30 g weight.'
+        },
+        {
+          title: 'What orifice sizes are available for the 50 DIA Flip Top Cap?',
+          content: 'It is available with 3 mm and 5 mm orifice options, allowing manufacturers to select the opening according to their dispensing requirements.'
+        },
+        {
+          title: 'Can the 50 DIA Flip Top Cap be supplied with different surface finishes?',
+          content: 'Yes. BMRAJ offers the 50 DIA Flip Top Cap in both matt and gloss finishes to suit different bottle designs and packaging presentations.'
+        }
+      ]
     },
   },
 };

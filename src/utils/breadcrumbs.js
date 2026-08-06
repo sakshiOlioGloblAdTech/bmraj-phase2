@@ -46,6 +46,10 @@ const productNames = {
   '1-kg-sweet-box': '1 kg Sweet Box',
   '1-5-ltr-cake-magic-box': '1.5 LTR Cake Magic Box',
   'shrikhand-container': 'Shrikhand Container',
+  // Cosmetic Caps (direct detail pages)
+  '35-dia-flip-top-cap': '35 DIA Flip Top Cap',
+  '40-dia-flip-top-cap': '40 DIA Flip Top Cap',
+  '50-dia-flip-top-cap': '50 DIA Flip Top Cap',
   // Industrial Crates
   'milk-crate': 'Milk Crate',
   'vegetable-fruit-crate': 'Vegetable & Fruit Crate',
