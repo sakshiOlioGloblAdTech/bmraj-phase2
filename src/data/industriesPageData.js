@@ -531,7 +531,7 @@ export const industriesPageData = {
         title: '500 Gram & 1 Kilo Shrikhand Container',
         slug: 'shrikhand-container',
         href: '/food-packaging/shrikhand-container',
-        imageUrl: '/product-details/shrikhand-container/shrikhand-container-02.jpg',
+        imageUrl: '/product-details/shrikhand-container/shrikhand-container-card.png',
         capacity: '',
         material: '',
         features: [],

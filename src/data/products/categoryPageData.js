@@ -1280,7 +1280,7 @@ export const allCategoryData = {
         {
           name: '500 Gram & 1 Kilo Shrikhand Container',
           slug: 'shrikhand-container',
-          image: '/product-details/shrikhand-container/shrikhand-container-02.jpg',
+          image: '/product-details/shrikhand-container/shrikhand-container-card.png',
           description: ''
         }
       ]
@@ -1732,19 +1732,19 @@ export const allCategoryData = {
         {
           name: '35 DIA Flip Top Cap',
           slug: '35-dia-flip-top-cap',
-          image: '/product-details/cosmetic-caps/35-dia-flip-top-cap-01.jpg',
+          image: '/product-details/cosmetic-caps/35-dia-flip-top-cap-card.png',
           description: 'Compact 33 mm OD closure for controlled, convenient dispensing'
         },
         {
           name: '40 DIA Flip Top Cap',
           slug: '40-dia-flip-top-cap',
-          image: '/product-details/cosmetic-caps/40-dia-flip-top-cap-01.png',
+          image: '/product-details/cosmetic-caps/40-dia-flip-top-cap-card.png',
           description: 'Mid-size 38.30 mm OD closure with 3 mm and 5 mm dispensing options'
         },
         {
           name: '50 DIA Flip Top Cap',
           slug: '50-dia-flip-top-cap',
-          image: '/product-details/cosmetic-caps/50-dia-flip-top-cap-01.png',
+          image: '/product-details/cosmetic-caps/50-dia-flip-top-cap-card.png',
           description: 'Large-format 47.60 mm OD closure for bigger packs'
         }
       ]

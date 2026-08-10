@@ -2283,9 +2283,9 @@ export const productDetailData = {
       subtitle: '',
       description: 'This 200-gram container from BMRAJ is designed for durable, high-performance packaging of cheese spread and similar semi-solid food products. Manufactured using virgin food-grade PP through precision injection molding, it offers excellent sealing, stack-friendly design, and consistent performance for food-processing lines.',
       images: [
+        '/product-details/200-gms-cheese-spread-container-with-lid/200-gms-cheese-spread-container-03.jpg',
         '/product-details/200-gms-cheese-spread-container-with-lid/200-gms-cheese-spread-container-01.jpg',
         '/product-details/200-gms-cheese-spread-container-with-lid/200-gms-cheese-spread-container-02.jpg',
-        '/product-details/200-gms-cheese-spread-container-with-lid/200-gms-cheese-spread-container-03.jpg',
         '/product-details/200-gms-cheese-spread-container-with-lid/200-gms-cheese-spread-container-04.jpg',
       ],
       technicalSpecification: {
@@ -3227,8 +3227,8 @@ export const productDetailData = {
           // table, so both are shown. Labelled so they're not mistaken for the
           // preform itself — shared with the Agro Bottle Cap page.
           {
-            src: '/product-details/agro-bottle-cap/agro-bottle-cap-01.png',
-            label: 'Cap',
+            src: '/product-details/agro-bottle-cap/pet-preform-caps-01.png',
+            label: 'PET Preform Caps',
             related: true,
           },
           {
@@ -3253,6 +3253,7 @@ export const productDetailData = {
           { label: 'Colour', value: 'As per Requirement' },
           { label: 'Mouth OD', value: '38 mm' },
           { label: 'Cap', value: 'Available' },
+          { label: 'Wad', value: 'Available' },
           { label: 'Blowing Bottle', value: 'Available' },
           { label: 'Applications', value: 'Agriculture, Water, Juice, Edible Oil, FMCG Bottles & Jars' }
         ],
@@ -3689,7 +3690,7 @@ export const productDetailData = {
         // Both materials are offered, so each is badged rather than leaving a
         // visitor to guess which cap they're looking at.
         {
-          src: '/product-details/agro-bottle-cap/agro-bottle-cap-01.png',
+          src: '/product-details/agro-bottle-cap/agro-bottle-cap-hdpe-01.png',
           label: 'HDPE Agro Cap',
         },
         {
