@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { getAllProductOptions } from "@/data/products";
 import FormSuccess from "@/components/common/FormSuccess";
+import { useRecaptcha } from "@/lib/useRecaptcha";
 
 const PRODUCT_OPTIONS = getAllProductOptions();
 
@@ -63,6 +64,7 @@ const QuotePopup = ({ isOpen, onClose }) => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [error, setError] = useState("");
   const popupRef = useRef(null);
+  const { executeRecaptcha } = useRecaptcha();
 
   // Handle escape key
   useEffect(() => {
@@ -118,10 +120,12 @@ const QuotePopup = ({ isOpen, onClose }) => {
 
     setIsSubmitting(true);
     try {
+      const recaptchaToken = await executeRecaptcha("quote");
+
       const res = await fetch("/api/quote", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, recaptchaToken }),
       });
       const data = await res.json();
 

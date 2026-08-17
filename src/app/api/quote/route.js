@@ -7,6 +7,7 @@ import {
   isValidEmail,
 } from "@/lib/mail";
 import { appendToSheet, isSheetConfigured } from "@/lib/sheet";
+import { verifyRecaptcha } from "@/lib/recaptcha";
 
 export const runtime = "nodejs";
 
@@ -27,7 +28,21 @@ export async function POST(request) {
     quantity,
     isPrintingRequired,
     message,
+    recaptchaToken,
   } = body || {};
+
+  // Verify the reCAPTCHA token before doing any work, so bot submissions are
+  // rejected up front. Fails open only when no secret key is configured.
+  const remoteIp =
+    request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || undefined;
+  const recaptcha = await verifyRecaptcha(recaptchaToken, "quote", remoteIp);
+  if (!recaptcha.ok) {
+    console.warn("[quote] reCAPTCHA rejected:", recaptcha.reason, "score:", recaptcha.score);
+    return NextResponse.json(
+      { ok: false, error: "Could not verify you are human. Please try again." },
+      { status: 400 }
+    );
+  }
 
   if (!fullName || !companyName || !phoneNumber || !email) {
     return NextResponse.json(
@@ -106,7 +121,7 @@ export async function POST(request) {
 
   try {
     await transporter.sendMail({
-      from: `"BMRaj Website" <${fromAddress}>`,
+      from: `"BMRAJ Website" <${fromAddress}>`,
       to: config.CONTACT_TO,
       ...(config.CONTACT_CC ? { cc: config.CONTACT_CC } : {}),
       replyTo: email,
@@ -114,7 +129,7 @@ export async function POST(request) {
       text: buildText({ heading: "New Quote Request", rows, message }),
       html: buildHtml({
         heading: "New Quote Request",
-        intro: "A new quote request has been submitted through the BMRaj website.",
+        intro: "A new quote request has been submitted through the BMRAJ website.",
         rows,
         message,
       }),

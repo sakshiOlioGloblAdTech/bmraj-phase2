@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { getAllProductOptions } from "@/data/products";
 import FormSuccess from "@/components/common/FormSuccess";
+import { useRecaptcha } from "@/lib/useRecaptcha";
 
 const PRODUCT_OPTIONS = getAllProductOptions();
 
@@ -53,6 +54,7 @@ export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [serverError, setServerError] = useState("");
+  const { executeRecaptcha } = useRecaptcha();
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -79,10 +81,12 @@ export default function ContactForm() {
 
     setIsSubmitting(true);
     try {
+      const recaptchaToken = await executeRecaptcha("contact");
+
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, recaptchaToken }),
       });
       const data = await res.json();
 
