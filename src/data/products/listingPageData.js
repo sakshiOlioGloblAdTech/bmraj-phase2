@@ -66,7 +66,7 @@ export const productListingData = {
         }
       ],
       relatedProducts: [
-        { name: 'Wide/Narrow Mouth Drum', slug: 'wide-narrow-mouth-drum' },
+        { name: 'Wide/Narrow Mouth Drum', slug: 'wide-narrow-drum' },
         { name: 'Rocket Drums', slug: 'rocket-drums' },
         { name: 'Oil & Grease Containers', slug: 'oil-grease-containers' },
         { name: 'Barrels', slug: 'barrels' }
@@ -390,15 +390,6 @@ export const productListingData = {
         },
         {
           id: 2,
-          title: '210 LTR FULL OPEN TOP',
-          slug: '210-ltr-full-open-top-barrel',
-          imageUrl: '/listing/barrels/210-ltr-full-open-top.png',
-          capacity: '210 Liters',
-          material: 'HDPE',
-          features: ['Full Open Top', 'Easy Access', 'UN Certified']
-        },
-        {
-          id: 3,
           title: '210 LTR STRAIGHT BODY - L RING C TYPE',
           slug: '210-ltr-straight-body-l-ring-c-type-barrel',
           imageUrl: '/listing/barrels/210-ltr-straight-body-l-ring-c-type.png',
@@ -407,7 +398,7 @@ export const productListingData = {
           features: ['L Ring Design', 'Straight Body', 'UN Certified']
         },
         {
-          id: 4,
+          id: 3,
           title: 'L-Ring Type Drums (210 LTR, 235 LTR, 250 LTR)',
           slug: 'l-ring-type-barrels',
           imageUrl: '/listing/barrels/210-ltr-l-ring-type-drum.png',
@@ -416,7 +407,7 @@ export const productListingData = {
           features: ['Multiple Capacities', 'L Ring Design', 'UN Certified']
         },
         {
-          id: 5,
+          id: 4,
           title: 'Plastic Barrels & Drums',
           slug: 'plastic-barrels-drums',
           imageUrl: '/listing/containers-for-lubricants/plastic-barrels-drums.png',

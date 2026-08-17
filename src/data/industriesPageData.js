@@ -37,10 +37,10 @@ export const industriesPageData = {
       },
       {
         id: 2,
-        title: '210 LTR Narrow Mouth Drums',
-        slug: '50-ltr-narrow-mouth-drums',
-        href: '/drums-and-barrels/wide-narrow-drum/50-ltr-narrow-mouth-drums',
-        imageUrl: '/listing/containers-for-lubricants/50-ltr-narrow-mouth-drums.png',
+        title: '210 LTR Straight Body L-Ring (C-Type) Barrel',
+        slug: '210-ltr-straight-body-l-ring-c-type-barrel',
+        href: '/drums-and-barrels/barrels/210-ltr-straight-body-l-ring-c-type-barrel',
+        imageUrl: '/listing/barrels/210-ltr-straight-body-l-ring-c-type.png',
         capacity: '210 Liters',
         material: 'HDPE',
         features: ['Chemical Resistant', 'Leak Proof', 'UN Certified'],
@@ -102,7 +102,7 @@ export const industriesPageData = {
     otherCategories: [],
     breadcrumbs: [
       { label: 'Home', href: '/' },
-      { label: 'Industries', href: '/industries' },
+      { label: 'Industries' },
       { label: 'Automotive', href: '/industries/automotive' },
     ],
     GlobalReachSection: {
@@ -326,7 +326,7 @@ export const industriesPageData = {
     otherCategories: [],
     breadcrumbs: [
       { label: 'Home', href: '/' },
-      { label: 'Industries', href: '/industries' },
+      { label: 'Industries' },
       { label: 'Caps and Closures', href: '/industries/caps-closures' },
     ],
     GlobalReachSection: {
@@ -553,7 +553,7 @@ export const industriesPageData = {
     otherCategories: [],
     breadcrumbs: [
       { label: 'Home', href: '/' },
-      { label: 'Industries', href: '/industries' },
+      { label: 'Industries' },
       { label: 'Food & Beverage', href: '/industries/food-beverage' },
     ],
     GlobalReachSection: {
@@ -762,6 +762,16 @@ export const industriesPageData = {
         material: 'PET',
         features: ['Uniform Wall', 'High Clarity', 'Precision Moulded'],
       },
+      {
+        id: 7,
+        title: 'Medipack',
+        slug: 'medipack',
+        href: '/pharma/medipack',
+        imageUrl: '/product-details/medipack/medipack-01.png',
+        capacity: '35 kg',
+        material: 'HDPE',
+        features: ['Seal Lock', 'Export Ready', 'Tamper Evident'],
+      },
     ],
     // Fallback link parts (used only if a product has no explicit `href`).
     productCategorySlug: 'small-bottles-containers',
@@ -779,7 +789,7 @@ export const industriesPageData = {
     otherCategories: [],
     breadcrumbs: [
       { label: 'Home', href: '/' },
-      { label: 'Industries', href: '/industries' },
+      { label: 'Industries' },
       { label: 'Healthcare / Pharma', href: '/industries/healthcare' },
     ],
     GlobalReachSection: {
@@ -1005,7 +1015,7 @@ export const industriesPageData = {
     otherCategories: [],
     breadcrumbs: [
       { label: 'Home', href: '/' },
-      { label: 'Industries', href: '/industries' },
+      { label: 'Industries' },
       { label: 'Homecare', href: '/industries/homecare' },
     ],
     GlobalReachSection: {
@@ -1211,7 +1221,7 @@ export const industriesPageData = {
     otherCategories: [],
     breadcrumbs: [
       { label: 'Home', href: '/' },
-      { label: 'Industries', href: '/industries' },
+      { label: 'Industries' },
       { label: 'Industrial Storage', href: '/industries/industrial' },
     ],
     GlobalReachSection: {
@@ -1467,7 +1477,7 @@ export const industriesPageData = {
     otherCategories: [],
     breadcrumbs: [
       { label: 'Home', href: '/' },
-      { label: 'Industries', href: '/industries' },
+      { label: 'Industries' },
       { label: 'Personal Care', href: '/industries/personal-care' },
     ],
     GlobalReachSection: {
@@ -1693,7 +1703,7 @@ export const industriesPageData = {
     otherCategories: [],
     breadcrumbs: [
       { label: 'Home', href: '/' },
-      { label: 'Industries', href: '/industries' },
+      { label: 'Industries' },
       { label: 'FMCG', href: '/industries/fmcg' },
     ],
     GlobalReachSection: {
@@ -1874,13 +1884,13 @@ export const industriesPageData = {
       },
       {
         id: 4,
-        title: '210 LTR Narrow Mouth Drums',
-        slug: '50-ltr-narrow-mouth-drums',
-        href: '/drums-and-barrels/wide-narrow-drum/50-ltr-narrow-mouth-drums',
-        imageUrl: '/listing/containers-for-lubricants/50-ltr-narrow-mouth-drums.png',
+        title: '210 LTR Straight Body L-Ring (C-Type) Barrel',
+        slug: '210-ltr-straight-body-l-ring-c-type-barrel',
+        href: '/drums-and-barrels/barrels/210-ltr-straight-body-l-ring-c-type-barrel',
+        imageUrl: '/listing/barrels/210-ltr-straight-body-l-ring-c-type.png',
         capacity: '210 Liters',
         material: 'HDPE',
-        features: ['Chemical Resistant', 'Narrow Mouth', 'UN Certified'],
+        features: ['Chemical Resistant', 'Reinforced L-Ring', 'UN Certified'],
       },
       {
         id: 5,
@@ -1919,7 +1929,7 @@ export const industriesPageData = {
     otherCategories: [],
     breadcrumbs: [
       { label: 'Home', href: '/' },
-      { label: 'Industries', href: '/industries' },
+      { label: 'Industries' },
       { label: 'Chemicals', href: '/industries/chemicals' },
     ],
     GlobalReachSection: {
@@ -2145,7 +2155,7 @@ export const industriesPageData = {
     otherCategories: [],
     breadcrumbs: [
       { label: 'Home', href: '/' },
-      { label: 'Industries', href: '/industries' },
+      { label: 'Industries' },
       { label: 'Pesticides / Fertilizers', href: '/industries/pesticides-fertilizers' },
     ],
     GlobalReachSection: {

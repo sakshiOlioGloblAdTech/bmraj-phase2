@@ -99,31 +99,31 @@ const servicesData = {
       description: "Deep industry knowledge is the foundation of a great partnership. Our team brings expertise to your specific challenges.",
       industries: [
         {
-          id: "fmcg-personal-care",
+          id: "fmcg",
           title: "FMCG & Personal Care",
           description: "Caps, closures, jars, and packaging parts.",
           image: "/fmcg.png",
         },
         {
-          id: "food-dairy",
+          id: "food-beverage",
           title: "Food & Dairy",
           description: "IML cups, containers, and tubs.",
           image: "/food-beverage.png",
         },
         {
-          id: "home-appliances",
+          id: "homecare",
           title: "Home Appliances",
           description: "Injection-moulded parts and components for brands.",
           image: "/homecare.png",
         },
         {
-          id: "healthcare-pharma",
+          id: "healthcare",
           title: "Healthcare & Pharma",
           description: "Precision moulded bottles, caps, and lab components.",
           image: "/healthcare.png",
         },
         {
-          id: "industrial-applications",
+          id: "industrial",
           title: "Industrial Applications",
           description: "Technical parts for heavy-duty and OEM use.",
           image: "/industrial.png",
@@ -276,13 +276,13 @@ const servicesData = {
       description: "Deep industry knowledge is the foundation of a great partnership. Our team brings expertise to your specific challenges.",
       industries: [
         {
-          id: "lubricants-oils",
+          id: "industrial",
           title: "Lubricants & Oils",
           description: "Jerrycans, bottles, and drums designed for leak-proof storage.",
           image: "/industrial.png",
         },
         {
-          id: "chemicals-solvents",
+          id: "chemicals",
           title: "Chemicals & Solvents",
           description: "UN-approved containers ensuring safe material handling.",
           image: "/industry-chemicals.png",
@@ -294,13 +294,13 @@ const servicesData = {
           image: "/food-beverage.png",
         },
         {
-          id: "agrochemicals",
+          id: "pesticides-fertilizers",
           title: "Agrochemicals",
           description: "Heavy-duty, chemical-resistant packaging for pesticides and fertilizers.",
           image: "/pesticides-fertilizers.png",
         },
         {
-          id: "pharmaceuticals",
+          id: "healthcare",
           title: "Pharmaceuticals",
           description: "Sterile-grade bottles and drums for liquid formulations.",
           image: "/healthcare.png",
@@ -454,31 +454,31 @@ const servicesData = {
       description: "Deep industry knowledge is the foundation of a great partnership. Our team brings expertise to your specific challenges.",
       industries: [
         {
-          id: "fmcg-personal-care",
+          id: "fmcg",
           title: "FMCG & Personal Care",
           description: "Containers, jars, caps and closures for packaging lines.",
           image: "/fmcg.png",
         },
         {
-          id: "food-dairy",
+          id: "food-beverage",
           title: "Food & Dairy",
           description: "Moulded cups, tubs, and packaging components with branding options.",
           image: "/food-beverage.png",
         },
         {
-          id: "pharma-healthcare",
+          id: "healthcare",
           title: "Pharma & Healthcare",
           description: "Safe, compliant packaging components for regulated use.",
           image: "/healthcare.png",
         },
         {
-          id: "industrial-applications",
+          id: "industrial",
           title: "Industrial Applications",
           description: "Heavy-duty components and multi-part assemblies.",
           image: "/industrial.png",
         },
         {
-          id: "consumer-utilities",
+          id: "homecare",
           title: "Consumer Utilities",
           description: "Finished plastic products and packaging components for manufacturing brands.",
           image: "/homecare.png",

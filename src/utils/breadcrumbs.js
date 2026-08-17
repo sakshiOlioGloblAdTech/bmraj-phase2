@@ -9,13 +9,14 @@ const categoryNames = {
   'food-packaging': 'Food Packaging',
   'crates': 'Industrial Crates',
   'blow-molding-accessories': 'Blow Molding Accessories',
-  'cosmetic-caps': 'Cosmetic Caps'
+  'cosmetic-caps': 'Cosmetic Caps',
+  'pharma': 'Pharma'
 };
 
 // Product name mapping (slug to display name)
 const productNames = {
   'full-open-top-drums': 'Full Open Top Drums',
-  'wide-narrow-mouth-drum': 'Wide/Narrow Mouth Drum',
+  'wide-narrow-drum': 'Wide/Narrow Mouth Drum',
   'rocket-drums': 'Rocket Drums',
   'oil-grease-containers': 'Oil & Grease Containers',
   'barrels': 'Barrels',
@@ -50,6 +51,8 @@ const productNames = {
   '35-dia-flip-top-cap': '35 DIA Flip Top Cap',
   '40-dia-flip-top-cap': '40 DIA Flip Top Cap',
   '50-dia-flip-top-cap': '50 DIA Flip Top Cap',
+  // Pharma (direct detail pages)
+  'medipack': 'Medipack',
   // Industrial Crates
   'milk-crate': 'Milk Crate',
   'vegetable-fruit-crate': 'Vegetable & Fruit Crate',

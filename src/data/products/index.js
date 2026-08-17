@@ -68,7 +68,7 @@ export const categorydata = [
     id: 2,
     name: 'Wide/Narrow Mouth Drum',
     image: '/category/mouth-drum.png',
-    slug: 'wide-narrow-mouth-drum',
+    slug: 'wide-narrow-drum',
     parentCategory: 'drums-and-barrels'
   },
   {

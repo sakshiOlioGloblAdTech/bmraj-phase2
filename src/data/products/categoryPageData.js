@@ -81,13 +81,13 @@ export const allCategoryData = {
         {
           name: 'Barrels',
           slug: 'barrels',
-          image: '/category/drum.png',
+          image: '/listing/barrels/210-ltr-l-ring-type-drum.png',
           description: 'Heavy-duty storage solutions'
         }
       ]
     },
     whyChoose: {
-      title: 'Why Choose BMRaj',
+      title: 'Why Choose BMRAJ',
       points: [
         {
           title: 'UN-Certified Safety',
@@ -540,7 +540,7 @@ export const allCategoryData = {
       description: 'We manufacture buckets and pails engineered to perform reliably across multiple industrial applications.',
       industries: [
         {
-          id: 'food-beverages',
+          id: 'food-beverage',
           title: 'Food & Beverages',
           description: 'Food-grade pails for edible oils, syrups, and food-safe bulk ingredients.',
           image: '/food-beverage.png',
@@ -817,7 +817,7 @@ export const allCategoryData = {
           icon: <AutomotiveIcon />
         },
         {
-          id: 'food-beverages',
+          id: 'food-beverage',
           title: 'Food & Beverages',
           description: 'Food-grade containers for beverage concentrates and food-safe applications.',
           image: '/food-beverage.png',
@@ -1024,7 +1024,7 @@ export const allCategoryData = {
       description: 'Our PET bottles and preforms are widely used by leading manufacturers for safe and durable packaging.',
       industries: [
         {
-          id: 'food-beverages',
+          id: 'food-beverage',
           title: 'Food & Beverages',
           description: 'Crystal-clear PET bottles for beverages, mineral water, and soft drinks.',
           image: '/food-beverage.png',
@@ -1290,7 +1290,7 @@ export const allCategoryData = {
       description: "BMRAJ's food-packaging containers serve manufacturers who demand high standards of hygiene, durability, and supply-chain readiness.",
       industries: [
         {
-          id: 'food-beverages',
+          id: 'food-beverage',
           title: 'Food & Beverages',
           description: 'Hygienic containers for dairy products, yogurt, cheese spreads, and food-safe applications.',
           image: '/food-beverage.png',
@@ -1504,7 +1504,7 @@ export const allCategoryData = {
       description: 'Our industrial crates cater to sectors demanding robust material handling, safe transit, and reuse cycles.',
       industries: [
         {
-          id: 'food-beverages',
+          id: 'food-beverage',
           title: 'Food & Beverages',
           description: 'Temperature-resistant crates for dairy products, produce, and cold chain operations.',
           image: '/food-beverage.png',
@@ -1843,6 +1843,156 @@ export const allCategoryData = {
           image: "/product-image/Food-packaging-001.png",
           bgColor: "#FFF9C4",
           description: "Consumer-safe, lightweight, and attractive food packaging, from dairy cups and jars to sweet and dessert boxes.",
+        },
+      ]
+    }
+  },
+
+  'pharma': {
+    name: 'Pharma',
+    slug: 'pharma',
+    IndustrialHero: {
+      title: 'Pharma Packaging',
+      subtitle: "BMRAJ's pharma packaging range is engineered for secure bulk storage and transport of pharmaceutical materials. The Medipack combines virgin HDPE construction, a tamper-evident seal lock, and export-ready pallet sizing to meet the handling and traceability demands of pharma supply chains.",
+      image: '/product-details/medipack/medipack-01.png',
+      floatingItems: [
+        "Bulk Storage",
+        "Injection Molding",
+        "Seal Lock",
+        "Export Ready",
+        "Pharma Grade",
+        "Bulk Storage",
+        "Injection Molding",
+        "Seal Lock",
+        "Export Ready",
+        "Pharma Grade",
+      ],
+      durableSection: {
+        titleHighlight: "Secure, Export-Ready",
+        titleNormal: "Pharma Storage Container",
+        description: "The Medipack is moulded from virgin HDPE for consistent wall strength and long service life. A seal lock closure and 1200 x 800 mm export pallet configuration (8+8) keep bulk pharma shipments tamper-evident and logistics-ready from the plant floor to the final destination."
+      }
+    },
+    categoryStats: [
+      {
+        id: 'durability',
+        title: 'Rugged HDPE Build',
+        subtitle: 'Virgin HDPE construction withstands the rigours of bulk pharma handling and repeated transport cycles.'
+      },
+      {
+        id: 'leak-proof',
+        title: 'Seal Lock Security',
+        subtitle: 'An integrated seal lock keeps contents tamper-evident from filling through to final delivery.'
+      },
+      {
+        id: 'ease-handling',
+        title: 'Export-Ready Handling',
+        subtitle: 'Sized for an 8+8 loading pattern on a standard 1200 x 800 mm export pallet.'
+      },
+      {
+        id: 'versatile',
+        title: 'Custom Print & Colour',
+        subtitle: 'Printing and colour can be customized to your product, batch, and branding requirements.'
+      }
+    ],
+    productLine: {
+      title: 'Our Range of Pharma Packaging',
+      description: "BMRAJ manufactures the Medipack, a 35 kg-capacity virgin HDPE storage container purpose-built for bulk pharmaceutical packaging, with a tamper-evident seal lock and export-ready pallet sizing.",
+      categories: [
+        {
+          name: 'Medipack',
+          slug: 'medipack',
+          image: '/product-details/medipack/medipack3-removebg.png',
+          description: '35 kg-capacity HDPE container with seal lock and export pallet sizing'
+        }
+      ]
+    },
+    whyChoose: {
+      title: 'Why Choose BMRAJ',
+      points: [
+        {
+          title: 'Two Decades of Moulding Experience',
+          content: 'BMRAJ has manufactured plastic packaging components for global brands for over twenty years.'
+        },
+        {
+          title: 'ISO 9001:2015 Certified Facility',
+          content: 'All processes run under one certified roof in Silvassa, ensuring consistent quality and traceability.'
+        },
+        {
+          title: 'Tamper-Evident by Design',
+          content: 'The seal lock closure is built into the Medipack, keeping bulk pharma shipments secure in transit.'
+        },
+        {
+          title: 'Export-Ready Logistics',
+          content: '1200 x 800 mm pallet sizing and an 8+8 loading pattern are engineered in from the start for efficient container and truck loading.'
+        },
+        {
+          title: 'Custom Configurations',
+          content: 'Colour and printing options available to suit your product, batch, and branding requirements.'
+        }
+      ]
+    },
+    GlobalReachSection: {
+      title: 'Get Your Ideal Pharma Packaging Solution',
+      description: "Talk to our team about the Medipack for your bulk pharmaceutical storage and transport needs."
+    },
+    faq: [
+      {
+        title: 'What is the Medipack designed for?',
+        content: 'The Medipack is a virgin HDPE storage container designed for bulk pharmaceutical storage and transport, with a 35 kg fill capacity.'
+      },
+      {
+        title: 'Is the Medipack tamper-evident?',
+        content: 'Yes. It is fitted with a seal lock that secures the container and indicates whether it has been opened in transit.'
+      },
+      {
+        title: 'How is the Medipack loaded for export?',
+        content: 'The Medipack is sized for an 8+8 loading configuration on a standard 1200 x 800 mm export pallet, for efficient container and truck loading.'
+      },
+      {
+        title: 'Can the Medipack be printed or customized?',
+        content: 'Yes. Printing is available for batch and product information, and colour can be customized as per requirement.'
+      },
+      {
+        title: 'What industries use the Medipack?',
+        content: 'The Medipack is built for pharmaceutical packaging and storage applications that require secure, traceable bulk containers.'
+      }
+    ],
+    exploreMoreProducts: {
+      title: "Explore More Products",
+      subtitle: "Explore BMRAJ's broader packaging and storage solutions across industrial sectors.",
+      products: [
+        {
+          id: 1,
+          title: "Drums & Barrels",
+          slug: "drums-and-barrels",
+          image: "/product-image/barrels-drums-01.png",
+          bgColor: "#C8E6F5",
+          description: "Full Open Top, L-Ring, and Narrow/Wide Mouth drums designed for maximum durability and UN-compliant performance.",
+        },
+        {
+          id: 2,
+          title: "Small Bottles & Containers",
+          slug: "small-bottles-containers",
+          image: "/product-image/Small-bottles-containers-01.png",
+          bgColor: "#FFE0B2",
+          description: "HDPE bottles and multi-purpose containers for lubricants, pesticides, cosmetics, and laboratory use.",
+        },
+        {
+          id: 3,
+          title: "PET Bottles & Preforms",
+          slug: "pet-bottles-preforms",
+          image: "/product-image/Pet-bottles-preforms-01.png",
+          bgColor: "#C8E6F5",
+          description: "PET bottles and preforms for beverage and liquid packaging.",
+        },
+        {
+          id: 4,
+          title: "Blow Molding Accessories",
+          slug: "blow-molding-accessories",
+          image: "/product-image/Blow-moulding-accesories-01.png",
+          bgColor: "#E1BEE7",
+          description: "High-quality caps, plugs, handles, and clamps engineered to complement our blow-moulded packaging solutions.",
         },
       ]
     }

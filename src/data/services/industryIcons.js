@@ -9,23 +9,15 @@ import {
   PesticidesIcon,
 } from "@/data/industries";
 
-// Map industry IDs to their icons
+// Map industry IDs (real /industries/<slug> values) to their icons
 const iconMap = {
-  // Injection Molding industries
-  "fmcg-personal-care": <FMCGIcon />,
-  "food-dairy": <FoodBeverageIcon />,
-  "home-appliances": <HomecareIcon />,
-  "healthcare-pharma": <HealthcareIcon />,
-  "industrial-applications": <IndustrialIcon />,
-  // Blow Molding industries
-  "lubricants-oils": <IndustrialIcon />,
-  "chemicals-solvents": <ChemicalsIcon />,
+  "fmcg": <FMCGIcon />,
   "food-beverage": <FoodBeverageIcon />,
-  "agrochemicals": <PesticidesIcon />,
-  "pharmaceuticals": <HealthcareIcon />,
-  // End-to-End Assembly industries
-  "pharma-healthcare": <HealthcareIcon />,
-  "consumer-utilities": <HomecareIcon />,
+  "homecare": <HomecareIcon />,
+  "healthcare": <HealthcareIcon />,
+  "industrial": <IndustrialIcon />,
+  "chemicals": <ChemicalsIcon />,
+  "pesticides-fertilizers": <PesticidesIcon />,
 };
 
 // Function to add icons to industries array
