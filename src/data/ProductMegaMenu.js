@@ -2,10 +2,10 @@ export const ProductWithCategories = [
     {
       id: 0,
       name: "Drums & Barrels",
-      productCount: 19,
+      productCount: 18,
       icon: "drums",
       description:
-        "For over two decades, BMRaj has been a leader in plastic manufacturing, partnering with global brands.",
+        "For over two decades, BMRAJ has been a leader in plastic manufacturing, partnering with global brands.",
       image: "/product-image/barrels-drums-01.png",
       slug: 'drums-and-barrels',
       sections: [
@@ -53,7 +53,6 @@ export const ProductWithCategories = [
           slug: "barrels",
           products: [
             { name: "Liner Type Drum", slug: "liner-type-drum" },
-            { name: "210 LTR Full Open Top", slug: "210-ltr-full-open-top-barrel" },
             { name: "210 LTR Straight Body - L Ring C Type", slug: "210-ltr-straight-body-l-ring-c-type-barrel" },
             { name: "L-Ring Type Drums (210, 235, 250 LTR)", slug: "l-ring-type-barrels" },
             { name: "Plastic Barrels & Drums", slug: "plastic-barrels-drums" },
@@ -304,6 +303,25 @@ export const ProductWithCategories = [
           products: [
             // { name: "Lugs", slug: "lugs" },
             { name: "Handles & Pin Assemblies", slug: "handles-pin-assemblies" },
+          ],
+        },
+      ],
+    },
+    {
+      id: 9,
+      name: "Pharma",
+      productCount: 1,
+      icon: "buckets",
+      description: "Heavy-duty HDPE storage container for bulk pharmaceutical packaging.",
+      image: "/product-details/medipack/medipack3-removebg.png",
+      slug: "pharma",
+      skipSectionSlug: true,
+      sections: [
+        {
+          title: "Pharma Storage",
+          slug: "pharma-storage",
+          products: [
+            { name: "Medipack", slug: "medipack" },
           ],
         },
       ],

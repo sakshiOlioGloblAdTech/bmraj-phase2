@@ -21,7 +21,7 @@ export default function WhyChooseUs({whyChooseData}) {
                     >
                         <img
                             src="/category/why-choose.png"
-                            alt="BMRaj factory operations"
+                            alt="BMRAJ factory operations"
                             className="rounded-xl shadow-lg w-full hover:shadow-2xl transition-shadow duration-500"
                         />
 

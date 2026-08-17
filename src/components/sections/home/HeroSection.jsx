@@ -14,10 +14,11 @@ export default function HeroSection() {
   const { ref: imageRef, isInView: imageInView } = useScrollAnimation({ threshold: 0.1 });
 
   return (
-    <section className="relative pt-38 pb-12">
-      <div className="flex flex-col gap-8 max pad">
+    <section className="relative h-[105vh] bg-white flex flex-col justify-between pt-38 overflow-x-hidden">
 
-        <div className="space-y-6 text-center">
+      <div className="relative flex flex-col lg:flex-row lg:items-start gap-10 lg:gap-6 max pad">
+
+        <div className="flex-1 space-y-6 text-left">
 
           <div
             ref={badgeRef}
@@ -41,30 +42,30 @@ export default function HeroSection() {
 
           <h1
             ref={titleRef}
-            className={`text-2xl sm:text-4xl md:text-5xl lg:text-[56px] font-bold text-[#183F34] leading-[1.1] px-4 scroll-fade-up stagger-1 ${titleInView ? 'in-view' : ''}`}
+            className={`text-3xl sm:text-4xl md:text-5xl lg:text-[56px] font-bold text-[#183F34] leading-[1.1] scroll-fade-up stagger-1 ${titleInView ? 'in-view' : ''}`}
           >
-            Your Packaging Partner: Delivering{' '}
-            <span className="text-[#139C57] block mt-1">Quality at Scale</span>
+            Custom Plastic Solutions,{' '}
+            <span className="text-[#139C57] block mt-1">Built for Your Business</span>
           </h1>
 
 
           <p
             ref={descRef}
-            className={`text-sm sm:text-base text-[#5D6865] text-center max-w-md md:max-w-xl lg:max-w-2xl mx-auto px-4 scroll-fade-up stagger-2 ${descInView ? 'in-view' : ''}`}
+            className={`text-sm sm:text-base text-[#5D6865] max-w-md scroll-fade-up stagger-2 ${descInView ? 'in-view' : ''}`}
           >
-          BMRAJ delivers compliant, durable, and design-perfect storage and packaging for industries and brands worldwide.
+          For over two decades, BMRAJ has been a leader in plastic manufacturing, partnering with global brands.
           </p>
 
 
           <div
             ref={buttonsRef}
-            className={`flex flex-col sm:flex-row gap-4 pt-2 justify-center scroll-fade-up stagger-3 ${buttonsInView ? 'in-view' : ''}`}
+            className={`flex flex-row gap-4 pt-2 scroll-fade-up stagger-3 ${buttonsInView ? 'in-view' : ''}`}
           >
             <Link
               href="/products"
               className="group inline-flex items-center justify-center bg-[#D1EEAE] text-[#139C57] px-7 py-3.5 rounded-xl font-semibold text-[15px] transition-all shadow-sm btn-hover-lift btn-shine btn-ripple btn-arrow-slide"
             >
-              Explore Prodcuts
+              Explore Products
               <svg
                 className="ml-2 w-5 h-5"
                 fill="none"
@@ -83,40 +84,34 @@ export default function HeroSection() {
               onClick={openQuote}
               className="inline-flex items-center justify-center bg-[#183F34] hover:bg-[#0f2a22] text-white px-7 py-3.5 rounded-xl font-semibold text-[15px] transition-all shadow-sm btn-hover-lift btn-shine btn-ripple neon-glow"
             >
-              Request a Quote
+              Get a Quote
             </button>
           </div>
         </div>
 
-        {/* Image Section - Bottom */}
+        {/* Image Section - Right (bottom on mobile) */}
         <div
           ref={imageRef}
-          className={`relative px-4 sm:px-8 md:px-[8%] scroll-scale-up stagger-4 ${imageInView ? 'in-view' : ''}`}
+          className={`relative flex-1 w-full scroll-scale-up stagger-4 ${imageInView ? 'in-view' : ''}`}
         >
-          {/* Box matches heroimg.png's native 5073x1292 ratio, so object-fill
-              stretches it by exactly 0% — no distortion and no cropping at any
-              viewport width. Change this ratio only alongside the image. */}
-          <div className="relative w-full aspect-[5073/1292]">
+          {/* Decorative grid-line background, positioned behind the hero image only */}
+          <Image
+            src="/mask-group-line.png"
+            alt=""
+            fill
+            sizes="60vw"
+            className="absolute inset-0 object-cover object-center pointer-events-none"
+          />
 
-            <div className="absolute inset-0 pointer-events-none">
-              <Image
-                src="/mask-group-line.png"
-                alt=""
-                fill
-                sizes="100vw"
-                className="object-cover object-center"
-                priority
-              />
-            </div>
-            <Image
-              src="/heroimg.png"
-              alt="Plastic products showcase"
-              fill
-              sizes="100vw"
-              className="object-fill"
-              priority
-            />
-          </div>
+          <Image
+            src="/hero-img-cover.png"
+            alt="Plastic products showcase"
+            width={979}
+            height={562}
+            sizes="(min-width: 1024px) 60vw, 100vw"
+            className="relative w-full h-auto lg:w-[140%] lg:max-w-none lg:-ml-[35%]"
+            priority
+          />
         </div>
 
       </div>

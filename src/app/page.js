@@ -18,7 +18,7 @@ export const metadata = withSeoMeta('/');
 export default function Home() {
   return (
     <>
-      <Header />
+      <Header transparent />
       <main>
       <HeroSection />
       <PackagingSolutionsSection />

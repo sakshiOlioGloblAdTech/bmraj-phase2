@@ -23,6 +23,7 @@ const productLinks = [
   { name: 'Crates', href: '/crates' },
   { name: 'Cosmetic Caps', href: '/cosmetic-caps' },
   { name: 'Blow Molding Accessories', href: '/blow-molding-accessories' },
+  { name: 'Pharma', href: '/pharma' },
 ];
 
 // const industryLinks = [

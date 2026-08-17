@@ -54,7 +54,7 @@ const ProductCard = ({ name, image, slug, categorySlug, cardRef, isInView }) => 
 const ProductLine = ({ productLineData, categorySlug }) => {
   // Use dynamic data if provided, otherwise fall back to static categorydata
   const title = productLineData?.title || 'Our Product Line';
-  const description = productLineData?.description || 'As a leading plastic manufacturer in India, the BMRaj story began with a focus on solving complex packaging solutions challenges.';
+  const description = productLineData?.description || 'As a leading plastic manufacturer in India, the BMRAJ story began with a focus on solving complex packaging solutions challenges.';
   const products = productLineData?.categories || categorydata;
 
   const { ref: headerRef, isInView: headerInView } = useScrollAnimation({ threshold: 0.2 });

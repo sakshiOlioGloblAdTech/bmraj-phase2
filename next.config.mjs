@@ -72,10 +72,15 @@ const nextConfig = {
         permanent: true,
       },
       // Retired products — sent to the listing they used to sit in.
-      // (The Liner Type Drum was reinstated, so it has no redirect.)
       {
         source: '/drums-and-barrels/full-open-top-drums/185-kgs-210-ltr-drum',
         destination: '/drums-and-barrels/full-open-top-drums',
+        permanent: true,
+      },
+      // Liner Type Drum has now been restored a second time — no redirect.
+      {
+        source: '/drums-and-barrels/barrels/210-ltr-full-open-top-barrel',
+        destination: '/drums-and-barrels/barrels',
         permanent: true,
       },
       // The placeholder product replaced by the three flip top caps.

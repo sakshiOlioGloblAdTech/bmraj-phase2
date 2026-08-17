@@ -670,12 +670,11 @@ export const productDetailData = {
       'liner-type-drum': {
         title: 'LINER TYPE DRUM',
         subtitle: 'Dual-Layer HDPE Drum with Internal Liner for High-Purity Packaging',
-        description: 'The Liner Type Drum from BMRaj Plastics features a dual-layer barrier design—combining a robust outer HDPE shell with a built-in inner liner—to safeguard sensitive contents against contamination and chemical interaction. Engineered for industries where product purity is non-negotiable, these drums are perfect for chemicals, pharmaceutical ingredients, food additives, and specialty liquids that demand extra protection.',
+        description: 'The Liner Type Drum from BMRAJ Plastics features a dual-layer barrier design—combining a robust outer HDPE shell with a built-in inner liner—to safeguard sensitive contents against contamination and chemical interaction. Engineered for industries where product purity is non-negotiable, these drums are perfect for chemicals, pharmaceutical ingredients, food additives, and specialty liquids that demand extra protection.',
         images: [
-          '/product-details/barrels/liner-type-drum/liner-type-drum-01.jpg',
-          '/product-details/barrels/liner-type-drum/liner-type-drum-02.jpg',
-          '/product-details/barrels/liner-type-drum/liner-type-drum-03.jpg',
-          '/product-details/barrels/liner-type-drum/liner-type-drum-04.jpg',
+          '/product-details/barrels/liner-type-drum/Liner-type-drum1.png',
+          '/product-details/barrels/liner-type-drum/Liner-type-drum2.png',
+          '/product-details/barrels/liner-type-drum/Liner-type-drum3.png',
         ],
         technicalSpecification: {
           description: 'Made from virgin High-Density Polyethylene (HDPE) with a built-in inner liner, this drum provides a dual-layer barrier against moisture, UV rays, and chemical reactions. With a typical capacity of 210 litres, it is blow moulded for uniform strength and can be customised in colour, closure type, and branding to meet your specific application needs.'
@@ -689,14 +688,8 @@ export const productDetailData = {
           { label: 'Colour', value: 'As per Requirement' },
           { label: 'Applications', value: 'Chemicals, Pharmaceutical Ingredients, Food Additives, Specialty Liquids' }
         ],
-        parentCategory: {
-          name: 'Drums & Barrels',
-          slug: 'drums-and-barrels'
-        },
-        parentProduct: {
-          name: 'Barrels',
-          slug: 'barrels'
-        },
+        parentCategory: 'drums-and-barrels',
+        parentProduct: 'barrels',
         GlobalReachSection: {
           title: 'Choose the Liner Type Drum',
           description: 'Ideal for industries where product purity is non-negotiable, these drums are perfect for chemicals, pharmaceutical ingredients, food additives, and specialty liquids that demand extra protection.'
@@ -713,49 +706,6 @@ export const productDetailData = {
           {
             title: 'Can I customise the drum?',
             content: 'Yes. Tailor this product to your operational and branding requirements: Capacity: 210 Litres Standard / Custom Available, Approximate Weight: As per Requirement (depends on model), Material: Virgin HDPE Outer Shell + Built-in Inner Liner, Molding Process: Blow Moulded for Consistent Wall Thickness, Closure Options: 50 mm & 70 mm Top and Bottom Seal Plugs, Colour: Standard Blue / Custom Colours on Request, Branding: Label or Print Options Available.'
-          }
-        ]
-      },
-      '210-ltr-full-open-top-barrel': {
-        title: '210 LTR FULL OPEN TOP BARREL',
-        subtitle: 'Versatile HDPE Barrel for Easy Filling and Cleaning',
-        description: 'The 210 LTR Full Open Top Barrel is designed for applications requiring easy access for filling, mixing, or cleaning. Ideal for bulk storage of chemicals, oils, and food additives, it features a removable lid secured with a metal clamp ring to ensure tight sealing and reusability in industrial operations.',
-        images: [
-          '/product-details/barrels/210-ltr-full-open-top-barrel/210-ltr-full-open-top-01.png',
-          '/product-details/barrels/210-ltr-full-open-top-barrel/210-ltr-full-open-top-02.png',
-          '/product-details/barrels/210-ltr-full-open-top-barrel/210-ltr-full-open-top-03.png',
-          '/product-details/barrels/210-ltr-full-open-top-barrel/210-ltr-full-open-top-04.png'
-        ],
-        technicalSpecification: {
-          description: 'Manufactured from virgin high-density polyethylene (HDPE), the 210 LTR Full Open Top Barrel offers a net capacity of 210 litres. It features a removable top lid with a locking ring clamp and UN-compliant seal for safe transport of hazardous or sensitive materials. The smooth inner surface prevents residue buildup and ensures easy cleaning for reuse.'
-        },
-        specifications: [
-          { label: 'Capacity', value: '210 Litres' },
-          { label: 'Weight', value: 'As per Requirement' },
-          { label: 'Mouth Opening', value: '470mm' },
-          { label: 'Material', value: 'Virgin HDPE' },
-          { label: 'Molding Process', value: 'Blow Moulded' },
-          { label: 'Colour', value: 'As per Requirement' },
-          { label: 'Applications', value: 'Chemicals, Pharmaceutical Ingredients, Food Additives' }
-        ],
-        parentCategory: 'drums-and-barrels',
-        parentProduct: 'barrels',
-        GlobalReachSection: {
-          title: 'Choose the 210 LTR Full Open Top Barrel',
-          description: 'Engineered for safe handling, easy maintenance, and compliance across industrial applications.'
-        },
-        faq: [
-          {
-            title: 'What industries use the 210 LTR Full Open Top Barrel?',
-            content: 'Commonly used in chemical, food processing, and paint manufacturing industries where regular mixing or cleaning is required.'
-          },
-          {
-            title: 'Is it suitable for hazardous goods?',
-            content: 'Yes. UN-tested variants are available for hazardous and export-grade materials.'
-          },
-          {
-            title: 'Can I customise the barrel?',
-            content: 'Yes. Customisation options include: Capacity: 210 Litres, Weight: As per Requirement, Material: Virgin HDPE (High-Density Polyethylene), Molding Process: Blow Moulded, Closure: Removable Top with Lock Ring Clamp, Colour: Standard Blue / As per Requirement, Certification: UN-Certified Models Available, Applications: Chemicals, Paints, Inks, Food Additives.'
           }
         ]
       },
@@ -2344,6 +2294,7 @@ export const productDetailData = {
       subtitle: '',
       description: 'The 400 gms Dahi Masti Cup from BMRAJ is designed for hygienic and efficient dairy packaging. Manufactured using food-grade Polypropylene (PP) through advanced injection molding, it ensures high rigidity, superior sealing, and reliable performance for curd, yogurt, and fermented dairy products.',
       images: [
+        '/product-details/400-gms-dahi-masti-cup/400-gms-dahi-masti-cup-05.png',
         '/product-details/400-gms-dahi-masti-cup/400-gms-dahi-masti-cup-01.jpg',
         '/product-details/400-gms-dahi-masti-cup/400-gms-dahi-masti-cup-02.jpg',
         '/product-details/400-gms-dahi-masti-cup/400-gms-dahi-masti-cup-03.jpg',
@@ -2603,24 +2554,66 @@ export const productDetailData = {
     'shrikhand-container': {
       title: '500 Gram & 1 Kilo Shrikhand Container',
       subtitle: '',
-      description: 'Product details coming soon.',
+      description: 'BMRAJ\'s Shrikhand Container is designed for hygienic, leak-proof packaging of shrikhand and other strained dairy desserts in 500 gm and 1 kg formats. Manufactured using food-grade Polypropylene (PP) through precision injection molding, it ensures a secure lid fit, consistent wall thickness, and reliable performance across cold-chain storage, retail display, and distribution.',
       images: [
         '/product-details/shrikhand-container/shrikhand-container-01.jpg',
         '/product-details/shrikhand-container/shrikhand-container-02.jpg',
         '/product-details/shrikhand-container/shrikhand-container-03.jpg',
       ],
       technicalSpecification: {
-        description: ''
+        description: 'Injection-moulded with even wall thickness and a snug, snap-fit lid, this container is built to hold its shape and seal under refrigeration. Available in 500 gm and 1 kg capacities, it supports stacking and high-volume filling lines for dairy and confectionery packers.'
       },
       specifications: [
         { label: 'Capacity', value: '500 gm & 1 kg' },
-        { label: 'Material', value: 'To be confirmed' },
-        { label: 'Molding Process', value: 'To be confirmed' },
-        { label: 'Colour', value: 'To be confirmed' },
-        { label: 'Applications', value: 'To be confirmed' }
+        { label: 'Material', value: 'PP (Polypropylene – Food Grade)' },
+        { label: 'Molding Process', value: 'Injection Moulded' },
+        { label: 'Colour', value: 'Customizable / As Per Requirement' },
+        { label: 'Applications', value: 'Shrikhand, Dairy Desserts, Sweets, Food Packaging' }
       ],
       parentCategory: 'food-packaging',
-      faq: []
+      idealRange: {
+        title: 'Use Cases of BMRAJ\'s Shrikhand Container',
+        applications: [
+          {
+            title: 'Dairy & Dessert Packaging',
+            description: 'Purpose-built for shrikhand, yogurt-based sweets, and other strained dairy desserts.'
+          },
+          {
+            title: 'Cold Chain Distribution',
+            description: 'Holds shape and seal integrity through refrigerated storage and transport.'
+          },
+          {
+            title: 'Retail & Festive Packaging',
+            description: 'Clean, presentable finish suited to retail shelves and festive/seasonal demand.'
+          },
+          {
+            title: 'Food Manufacturing Units',
+            description: 'Compatible with automated filling and sealing lines for dairy and sweet manufacturers.'
+          },
+          {
+            title: 'Custom Branding & Presentation',
+            description: 'Available with customized colour, lid style, and labeling for private-label packaging.'
+          }
+        ]
+      },
+      GlobalReachSection: {
+        title: 'Hygienic Packaging for Shrikhand & Dairy Desserts',
+        description: 'Choose BMRAJ\'s Shrikhand Container for food-safe materials, secure sealing, and reliable performance across 500 gm and 1 kg formats.'
+      },
+      faq: [
+        {
+          title: 'What capacities is the Shrikhand Container available in?',
+          content: 'The container is available in 500 gm and 1 kg capacities to suit different pack sizes and retail requirements.'
+        },
+        {
+          title: 'What material is the Shrikhand Container made from?',
+          content: 'It is made from virgin food-grade Polypropylene (PP), ensuring hygiene, durability, and safe contact with dairy products.'
+        },
+        {
+          title: 'Can the container be customized?',
+          content: 'Yes. We offer customization in colour, lid style, and labeling to align with your brand and packaging line requirements.'
+        }
+      ]
     },
   },
 
@@ -3219,6 +3212,10 @@ export const productDetailData = {
         subtitle: 'High-Clarity PET Preform for Beverage, Edible Oil, and FMCG Packaging',
         description: 'The 500 ml PET Preform is engineered for consistent performance in beverage, edible oil, and FMCG bottle manufacturing. Injection moulded from virgin PET, it offers clarity, dimensional precision, and strength, ensuring smooth blowing and uniform results in every production cycle.',
         images: [
+          // Leads the gallery: shows the preform-and-bottle pair across three
+          // of the four capacities, which is the strongest single image for a
+          // product now spanning 100/250/500/1000 ml.
+          '/product-details/preforms/500-ml-preform-agro-pet-bottles/500-ml-preform-agro-pet-bottles-05.png',
           '/product-details/preforms/500-ml-preform-agro-pet-bottles/500-ml-preform-agro-pet-bottles-01.png',
           '/product-details/preforms/500-ml-preform-agro-pet-bottles/500-ml-preform-agro-pet-bottles-02.png',
           '/product-details/preforms/500-ml-preform-agro-pet-bottles/500-ml-preform-agro-pet-bottles-03.png',
@@ -3249,7 +3246,8 @@ export const productDetailData = {
           { label: 'Capacity', value: '100 ml, 250 ml, 500 ml & 1000 ml' },
           { label: 'Material', value: 'PET (Polyethylene Terephthalate)' },
           { label: 'Molding Process', value: 'Injection Moulded' },
-          { label: 'Weight', value: '55 gms' },
+          // Ordered to match Capacity above: 100 ml / 250 ml / 500 ml / 1000 ml.
+          { label: 'Weight', value: '30 gms, 36 gms, 55 gms & 68 gms' },
           { label: 'Colour', value: 'As per Requirement' },
           { label: 'Mouth OD', value: '38 mm' },
           { label: 'Cap', value: 'Available' },
@@ -3491,10 +3489,13 @@ export const productDetailData = {
       subtitle: '',
       description: 'BMRAJ Bottle Caps and Inner Plugs are designed for secure, tamper-resistant, and leak-proof sealing of blow-moulded bottles and containers. Manufactured from virgin High-Density Polyethylene (HDPE) and Polypropylene (PP), they ensure dimensional accuracy, chemical resistance, and long-term reliability for industrial and commercial packaging.',
       images: [
-        '/product-details/blow-molding-accessories/bottle-caps-inner-plugs/bottle-caps-inner-plugs-1.jpg',
-        '/product-details/blow-molding-accessories/bottle-caps-inner-plugs/bottle-caps-inner-plugs-2.jpg',
-        '/product-details/blow-molding-accessories/bottle-caps-inner-plugs/bottle-caps-inner-plugs-3.jpg',
-        '/product-details/blow-molding-accessories/bottle-caps-inner-plugs/bottle-caps-inner-plugs-4.jpg',
+        // Leads with the newer shots, which show the cap and its inner plug
+        // together — a closer match to the product name than the older set,
+        // which only shows the caps on their own.
+        '/product-details/blow-molding-accessories/bottle-caps-inner-plugs/bottle-caps-inner-plugs-6.png',
+        '/product-details/blow-molding-accessories/bottle-caps-inner-plugs/bottle-caps-inner-plugs-8.png',
+        '/product-details/blow-molding-accessories/bottle-caps-inner-plugs/bottle-caps-inner-plugs-5.png',
+        '/product-details/blow-molding-accessories/bottle-caps-inner-plugs/bottle-caps-inner-plugs-7.png',
       ],
       technicalSpecification: {
         description: 'Injection-moulded for a perfect fit and sealing torque. Available in multiple sizes for versatile bottle designs.'
@@ -4257,6 +4258,84 @@ export const productDetailData = {
         {
           title: 'Can the 50 DIA Flip Top Cap be supplied with different surface finishes?',
           content: 'Yes. BMRAJ offers the 50 DIA Flip Top Cap in both matt and gloss finishes to suit different bottle designs and packaging presentations.'
+        }
+      ]
+    },
+  },
+
+  // Pharma - Direct Detail Pages (category -> detail, no listing page)
+  'pharma': {
+    'medipack': {
+      title: 'MEDIPACK',
+      subtitle: 'Heavy-Duty HDPE Storage Container for Bulk Pharmaceutical Packaging',
+      description: 'The Medipack is a heavy-duty HDPE storage container purpose-built for bulk pharmaceutical packaging and storage, offering a 35 kg capacity within a robust, stackable format. Manufactured from virgin HDPE, it combines a tamper-evident seal lock, custom print and colour options, and export-ready pallet sizing to meet the handling and traceability demands of pharma supply chains.',
+      images: [
+        '/product-details/medipack/medipack-01.png',
+        '/product-details/medipack/medipack-03.png',
+        '/product-details/medipack/medipack-04.png',
+        '/product-details/medipack/medipack-02.png',
+        '/product-details/medipack/medipack-05.png',
+        {
+          src: '/product-details/medipack/medipack-06.png',
+          label: 'Seal Lock',
+        },
+      ],
+      technicalSpecification: {
+        description: 'Built for bulk pharma storage, the Medipack holds a 35 kg fill capacity in a rigid virgin HDPE body weighing 2.8–3 kg empty. A seal lock secures the lid against tampering during transit, while surface printing is available for batch, product, or regulatory labelling. The container is engineered for an 8+8 loading configuration on a standard 1200 x 800 mm export pallet.'
+      },
+      specifications: [
+        { label: 'Product Type', value: 'Medipack' },
+        { label: 'Material', value: 'Virgin HDPE' },
+        { label: 'Product Weight', value: '2.8 – 3 kg' },
+        { label: 'Capacity', value: '35 kg (Storage)' },
+        { label: 'Colour', value: 'As Per Requirement' },
+        { label: 'Seal Lock', value: 'Available' },
+        { label: 'Printing', value: 'Available' },
+        { label: 'Export Pallet Loading (1200 x 800 mm)', value: '8 + 8 (16 Units/Pallet)' },
+        { label: 'Applications', value: 'Pharma' }
+      ],
+      parentCategory: 'pharma',
+      idealRange: {
+        title: 'Use Cases of BMRAJ\'s Medipack',
+        applications: [
+          {
+            title: 'Bulk Pharma Storage',
+            description: 'Designed to hold and protect 35 kg of pharmaceutical raw materials, intermediates, or finished goods.'
+          },
+          {
+            title: 'Tamper-Evident Transport',
+            description: 'An integrated seal lock secures contents during transit and confirms the container has not been opened en route.'
+          },
+          {
+            title: 'Export & Logistics',
+            description: 'Sized for an 8+8 loading pattern on a standard 1200 x 800 mm export pallet for efficient container and truck loading.'
+          },
+          {
+            title: 'Regulatory Labelling',
+            description: 'Printing is available for batch numbers, product identification, and compliance labelling directly on the container.'
+          },
+          {
+            title: 'Reusable Industrial Packaging',
+            description: 'Rigid virgin HDPE construction supports repeated use across multiple fill-transport-return cycles.'
+          }
+        ]
+      },
+      GlobalReachSection: {
+        title: 'Reliable Bulk Packaging for Pharma Supply Chains',
+        description: 'Choose BMRAJ\'s Medipack for secure, export-ready pharmaceutical storage — engineered for tamper-evidence, traceable printing, and efficient pallet logistics.'
+      },
+      faq: [
+        {
+          title: 'What is the storage capacity of the Medipack?',
+          content: 'The Medipack is designed for a 35 kg storage capacity, with an empty product weight of 2.8–3 kg.'
+        },
+        {
+          title: 'Is the Medipack tamper-evident?',
+          content: 'Yes. It is fitted with a seal lock that secures the container and indicates if it has been opened during transit.'
+        },
+        {
+          title: 'Can the Medipack be printed or customized?',
+          content: 'Yes. Printing is available for batch and product information, and colour can be customized as per requirement.'
         }
       ]
     },

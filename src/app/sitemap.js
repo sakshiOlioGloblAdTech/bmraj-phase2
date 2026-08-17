@@ -12,6 +12,7 @@ const DIRECT_DETAIL_CATEGORIES = new Set([
   "crates",
   "blow-molding-accessories",
   "cosmetic-caps",
+  "pharma",
 ]);
 
 function url(path, { priority = 0.7, changeFrequency = "monthly" } = {}) {

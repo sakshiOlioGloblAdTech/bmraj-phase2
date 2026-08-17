@@ -15,7 +15,7 @@ import { productSchema } from '@/lib/schema';
 import { imageSrcList, productImageList } from '@/lib/images';
 
 // Categories that have direct detail pages (no listing page)
-const DIRECT_DETAIL_CATEGORIES = ['food-packaging', 'crates', 'blow-molding-accessories', 'cosmetic-caps'];
+const DIRECT_DETAIL_CATEGORIES = ['food-packaging', 'crates', 'blow-molding-accessories', 'cosmetic-caps', 'pharma'];
 
 // Generate static params for all products (SEO optimization)
 export async function generateStaticParams() {
