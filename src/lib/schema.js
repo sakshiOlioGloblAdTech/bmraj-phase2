@@ -91,6 +91,56 @@ export function productSchema({ title, description, images, route, material }) {
 }
 
 /**
+ * A category or sub-category listing page — a page whose primary content is
+ * a list of other pages (sub-categories or individual products).
+ * @param {{name: string, description?: string, route: string, items: Array<{name: string, href: string}>}} args
+ */
+export function collectionPageSchema({ name, description, route, items = [] }) {
+  if (!name) return null;
+
+  const listItems = items.filter((item) => item && item.name && item.href);
+  if (listItems.length === 0) return null;
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name,
+    ...(description ? { description } : {}),
+    url: absoluteUrl(route),
+    mainEntity: {
+      '@type': 'ItemList',
+      itemListElement: listItems.map((item, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: item.name,
+        url: absoluteUrl(item.href),
+      })),
+    },
+  };
+}
+
+/**
+ * A blog post.
+ * No datePublished/dateModified: the blog data has no real publish dates,
+ * and inventing one would contradict the visible page.
+ */
+export function articleSchema({ title, description, image, route }) {
+  if (!title) return null;
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: title,
+    ...(description ? { description } : {}),
+    ...(image ? { image: [absoluteUrl(image)] } : {}),
+    url: absoluteUrl(route),
+    mainEntityOfPage: { '@type': 'WebPage', '@id': absoluteUrl(route) },
+    author: { '@id': `${SITE_URL}/#organization` },
+    publisher: { '@id': `${SITE_URL}/#organization` },
+  };
+}
+
+/**
  * FAQ block.
  * @param {Array<{title: string, content: string}>} faqs
  */

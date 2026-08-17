@@ -5,6 +5,16 @@ const nextConfig = {
 
   async redirects() {
     return [
+      // --- Canonical host: redirect the bare apex domain to www ---------
+      // Vercel serves both bmraj.com and www.bmraj.com; without this, search
+      // engines and links see two copies of every page under two hosts.
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'bmraj.com' }],
+        destination: 'https://www.bmraj.com/:path*',
+        permanent: true,
+      },
+
       // --- From the SEO audit: legacy URLs that 404 today ---------------
       // Duplicated category segments (/<category>/<category>) and old slugs.
       {

@@ -16,6 +16,8 @@ import { getCategoryIndustries } from '@/data/products/categoryPageData'
 import ExploreMoreProducts from '@/components/common/ExploreMoreProducts'
 import { Header } from '@/components/layouts'
 import { withSeoMeta } from '@/data/seoMeta'
+import JsonLd from '@/components/common/JsonLd'
+import { collectionPageSchema } from '@/lib/schema'
 
 
 // Generate static params for all categories (SEO optimization)
@@ -62,6 +64,17 @@ export default async function ProductCategory({ params }) {
   return (
     <>
       <Header />
+      <JsonLd
+        data={collectionPageSchema({
+          name: data.IndustrialHero?.title || data.name,
+          description: data.IndustrialHero?.subtitle,
+          route: `/${category}`,
+          items: (data.productLine?.categories || []).map((c) => ({
+            name: c.name,
+            href: `/${category}/${c.slug}`,
+          })),
+        })}
+      />
       <main className='mt-20'>
         <IndustrialHero heroData={{ ...data.IndustrialHero, breadcrumbs: data.breadcrumbs }}/>
       <CategoryStats statsData={data.categoryStats} />

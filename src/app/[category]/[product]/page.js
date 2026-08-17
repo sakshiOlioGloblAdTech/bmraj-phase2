@@ -11,7 +11,7 @@ import IdealRangeSection from '@/components/sections/ProductListing/IdealRangeSe
 import ProductDetailClient from '@/components/sections/ProductDetail/ProductDetailClient';
 import { withSeoMeta } from '@/data/seoMeta';
 import JsonLd from '@/components/common/JsonLd';
-import { productSchema } from '@/lib/schema';
+import { productSchema, collectionPageSchema } from '@/lib/schema';
 import { imageSrcList, productImageList } from '@/lib/images';
 
 // Categories that have direct detail pages (no listing page)
@@ -147,6 +147,17 @@ export default async function ListingPage({ params }) {
   return (
     <>
       <Header />
+      <JsonLd
+        data={collectionPageSchema({
+          name: data.title,
+          description: data.description,
+          route: `/${category}/${product}`,
+          items: (data.products || []).map((p) => ({
+            name: p.title,
+            href: `/${data.parentCategory}/${data.slug}/${p.slug}`,
+          })),
+        })}
+      />
       <div className="bg-[#F6F6EF] mt-20">
         <div className="max pad mx-auto pt-4 md:pt-8 lg:pt-12">
         <ProductHeader

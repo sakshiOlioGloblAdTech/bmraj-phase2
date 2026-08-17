@@ -5,6 +5,8 @@ import GlobalReachSection from '@/components/common/GlobalReachSection';
 import FrequentlyAsked from '@/components/sections/ProductCategory/FrequentlyAsked';
 import { getBlogPostBySlug, getAllBlogSlugs } from '@/data/blog';
 import { withSeoMeta } from '@/data/seoMeta';
+import JsonLd from '@/components/common/JsonLd';
+import { articleSchema } from '@/lib/schema';
 
 // Generate static params for all blog posts (SEO optimization)
 export async function generateStaticParams() {
@@ -43,6 +45,14 @@ export default async function BlogDetailPage({ params }) {
   return (
     <>
       <Header />
+      <JsonLd
+        data={articleSchema({
+          title: post.title,
+          description: post.excerpt,
+          image: post.heroImage,
+          route: `/blogs/${slug}`,
+        })}
+      />
       <main className="mt-20">
         <BlogDetail post={post} />
         {post.cta && (
