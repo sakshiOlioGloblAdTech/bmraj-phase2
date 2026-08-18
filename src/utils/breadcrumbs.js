@@ -31,7 +31,7 @@ const productNames = {
   'lubricating-oil-plastic-bottle': 'Lubricating Oil Plastic Bottle',
   'lube-oil-bottle': 'Lube Oil Bottle',
   'plastic-jerry-can': 'Plastic Jerry Can',
-  'plastic-barrels-drums': 'Plastic Barrels & Drums',
+  'plastic-barrels-drums': '210 LTR Drum',
   'open-top-drums': 'Full Open Top (FOT) Drum',
   '50-ltr-narrow-mouth-drums': '50 LTR Narrow Mouth Drum',
   '1-ltr-oil-jar': '1 LTR Oil Jar (PET)',

@@ -606,9 +606,12 @@ const ProductsMegaMenu = ({ isOpen, onClose }) => {
                       </Link>
                       <ul className="space-y-1.5 md:space-y-2">
                         {section.products.map((product, productIdx) => {
-                          const productHref = currentCategory.skipSectionSlug
+                          // A product can carry its own `href` when its real
+                          // page lives outside this section's URL segment
+                          // (e.g. grouped here for merchandising only).
+                          const productHref = product.href || (currentCategory.skipSectionSlug
                             ? `/${currentCategory.slug}/${product.slug}`
-                            : `/${currentCategory.slug}/${section.slug}/${product.slug}`;
+                            : `/${currentCategory.slug}/${section.slug}/${product.slug}`);
                           return (
                             <li key={productIdx}>
                               <Link

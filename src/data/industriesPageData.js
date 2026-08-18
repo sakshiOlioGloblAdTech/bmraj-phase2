@@ -244,7 +244,7 @@ export const industriesPageData = {
         title: 'Bottle Caps & Inner Plugs',
         slug: 'bottle-caps-inner-plugs',
         href: '/blow-molding-accessories/bottle-caps-inner-plugs',
-        imageUrl: '/category/blow-molding-accessories/bottle-caps-inner-plugs.png',
+        imageUrl: '/product-details/blow-molding-accessories/bottle-caps-inner-plugs/bottle-caps-inner-plugs-6.png',
         capacity: 'Standard',
         material: 'PP',
         features: ['Leak Proof', 'Easy Dispensing', 'Secure Fit'],

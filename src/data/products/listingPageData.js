@@ -408,7 +408,7 @@ export const productListingData = {
         },
         {
           id: 4,
-          title: 'Plastic Barrels & Drums',
+          title: '210 LTR Drum',
           slug: 'plastic-barrels-drums',
           imageUrl: '/listing/containers-for-lubricants/plastic-barrels-drums.png',
           capacity: '60-210 Liters',

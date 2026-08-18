@@ -86,8 +86,8 @@ export const seoMeta = {
     description: 'BMRAJ manufactures L-Ring type HDPE drums in 210, 235 & 250 LTR for bulk chemical & lubricant storage. Large plastic barrel manufacturer India. UN-certified. ISO 9001.',
   },
   '/drums-and-barrels/barrels/plastic-barrels-drums': {
-    title: 'Plastic Barrels & Drums for Lubricants | BMRAJ Industries India',
-    description: 'BMRAJ manufactures HDPE plastic barrels & drums for lubricant oil — lube oil drum, lubricant oil barrel, 50–210 LTR. Blow-moulded, ISO 9001 certified manufacturer India.',
+    title: '210 LTR Drum Manufacturer & Supplier in India | BMRAJ Industries',
+    description: 'BMRAJ manufactures HDPE 210 LTR drums for lubricant oil and industrial fluids — lube oil drum, lubricant oil barrel, 60–210 LTR. Blow-moulded, ISO 9001 certified manufacturer India.',
   },
   '/drums-and-barrels/full-open-top-drums': {
     title: 'Full Open Top Drums Manufacturer | HDPE Open Top Drum India',

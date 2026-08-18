@@ -797,7 +797,7 @@ export const productDetailData = {
         ]
       },
       'plastic-barrels-drums': {
-        title: 'PLASTIC BARRELS & DRUMS',
+        title: '210 LTR DRUM',
         subtitle: 'High-Capacity HDPE Barrels for Lubricants and Industrial Oils',
         description: 'Engineered for heavy-duty applications, BMRAJ Plastic Barrels ensure superior strength and reusability. Blow moulded from virgin HDPE, they provide outstanding chemical resistance and stacking stability for lubricant, oil, and process fluid packaging.',
         images: [
@@ -821,7 +821,7 @@ export const productDetailData = {
         parentCategory: 'drums-and-barrels',
         parentProduct: 'barrels',
         GlobalReachSection: {
-          title: 'Choose the Plastic Barrels & Drums',
+          title: 'Choose the 210 LTR Drum',
           description: 'Strong, compliant, and reliable, built for global lubricant packaging standards.'
         },
         faq: [
@@ -3344,7 +3344,7 @@ export const productDetailData = {
           { label: 'Neck OD with Thread', value: '24.10 ± 0.1 mm' },
           { label: 'Colour', value: 'As per Requirement' },
           { label: 'Closure Compatibility', value: 'ROPP Caps' },
-          { label: 'Applications', value: 'Pharma Syrups, Ayurvedic Liquids, Essential Oils, Nutraceutical Packaging' }
+          { label: 'Applications', value: 'For liquor' }
         ],
         parentCategory: 'pet-bottles-preforms',
         parentProduct: 'preforms',
@@ -3392,7 +3392,7 @@ export const productDetailData = {
           { label: 'Neck OD with Thread', value: '24.10 ± 0.1 mm' },
           { label: 'Colour', value: 'As per the requirement' },
           { label: 'Closure Compatibility', value: 'ROPP Caps' },
-          { label: 'Applications', value: 'Pharmaceutical Syrups, Nutraceuticals, Personal Care Liquids, FMCG Packaging' }
+          { label: 'Applications', value: 'For liquor' }
         ],
         parentCategory: 'pet-bottles-preforms',
         parentProduct: 'preforms',

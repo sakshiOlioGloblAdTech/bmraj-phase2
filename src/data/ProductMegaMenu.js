@@ -2,7 +2,7 @@ export const ProductWithCategories = [
     {
       id: 0,
       name: "Drums & Barrels",
-      productCount: 18,
+      productCount: 17,
       icon: "drums",
       description:
         "For over two decades, BMRAJ has been a leader in plastic manufacturing, partnering with global brands.",
@@ -18,7 +18,7 @@ export const ProductWithCategories = [
             { name: "45-50 LTR Drum", slug: "45-50-ltr-drum" },
             { name: "50-55 LTR Drum", slug: "50-55-ltr-drum" },
             { name: "60-65 LTR Drum", slug: "60-65-ltr-drum" },
-            { name: "Full Open Top Drums", slug: "open-top-drums" },
+            { name: "210 LTR Drum", slug: "plastic-barrels-drums", href: "/drums-and-barrels/barrels/plastic-barrels-drums" },
           ],
         },
         {
@@ -55,7 +55,6 @@ export const ProductWithCategories = [
             { name: "Liner Type Drum", slug: "liner-type-drum" },
             { name: "210 LTR Straight Body - L Ring C Type", slug: "210-ltr-straight-body-l-ring-c-type-barrel" },
             { name: "L-Ring Type Drums (210, 235, 250 LTR)", slug: "l-ring-type-barrels" },
-            { name: "Plastic Barrels & Drums", slug: "plastic-barrels-drums" },
           ],
         },
       ],
@@ -252,6 +251,25 @@ export const ProductWithCategories = [
     },
     {
       id: 7,
+      name: "Pharma",
+      productCount: 1,
+      icon: "buckets",
+      description: "Heavy-duty HDPE storage container for bulk pharmaceutical packaging.",
+      image: "/product-details/medipack/medipack3-removebg.png",
+      slug: "pharma",
+      skipSectionSlug: true,
+      sections: [
+        {
+          title: "Pharma Storage",
+          slug: "pharma-storage",
+          products: [
+            { name: "Medipack", slug: "medipack" },
+          ],
+        },
+      ],
+    },
+    {
+      id: 8,
       name: "Cosmetic Caps",
       productCount: 3,
       icon: "molding",
@@ -272,7 +290,7 @@ export const ProductWithCategories = [
       ],
     },
     {
-      id: 8,
+      id: 9,
       name: "Blow Molding Accessories",
       productCount: 11,
       icon: "molding",
@@ -303,25 +321,6 @@ export const ProductWithCategories = [
           products: [
             // { name: "Lugs", slug: "lugs" },
             { name: "Handles & Pin Assemblies", slug: "handles-pin-assemblies" },
-          ],
-        },
-      ],
-    },
-    {
-      id: 9,
-      name: "Pharma",
-      productCount: 1,
-      icon: "buckets",
-      description: "Heavy-duty HDPE storage container for bulk pharmaceutical packaging.",
-      image: "/product-details/medipack/medipack3-removebg.png",
-      slug: "pharma",
-      skipSectionSlug: true,
-      sections: [
-        {
-          title: "Pharma Storage",
-          slug: "pharma-storage",
-          products: [
-            { name: "Medipack", slug: "medipack" },
           ],
         },
       ],
